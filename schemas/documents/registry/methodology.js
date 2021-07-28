@@ -4,16 +4,16 @@ export default {
   title: 'Methodology',
   fields: [
     {
+      title: 'Name',
+      name: 'name',
+      type: 'customPortableText',
+      validation: Rule => Rule.required(),
+    },
+    {
       title: 'Path',
       name: 'path',
       type: 'string',
       description: 'This will be used in the methodology page url: "/methodologies/{path}"',
-      validation: Rule => Rule.required(),
-    },
-    {
-      title: 'Name',
-      name: 'name',
-      type: 'string',
       validation: Rule => Rule.required(),
     },
     {
@@ -24,7 +24,7 @@ export default {
     },
     {
       name: 'steps',
-      type: 'stepCardSection',
+      type: 'basicStepCardSection',
       title: 'Methodology Process',
       validation: Rule => Rule.required(),
     },
@@ -59,10 +59,8 @@ export default {
       title: 'Ecological Impact',
       name: 'ecologicalImpact',
       type: 'array',
-      description: 'Select existing ecological impact from "Shared" content',
       of: [{
-        type: 'reference',
-        to: [{type: 'ecologicalImpact'}] 
+        type: 'ecologicalImpactRelation',
       }],
       validation: Rule => Rule.required(),
     },

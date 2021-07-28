@@ -1,7 +1,7 @@
 export default {
   type: 'object',
   name: 'reviewSection',
-  title: 'Hero Section',
+  title: 'Review Section',
   fields: [
     {
       title: 'Title',
@@ -42,22 +42,7 @@ export default {
       type: 'array',
       of: [
         {
-          type: 'object',
-          fields: [
-            {
-              title: 'Title',
-              name: 'title',
-              type: 'string',
-              validation: Rule => Rule.required(),
-            },
-            {
-              title: 'Step cards',
-              name: 'stepCards',
-              type: 'array',
-              of: [{ type: 'stepCard' }],
-              validation: Rule => Rule.required(),
-            },
-          ]
+          type: 'basicStepCardSection',
         }
       ]
     }

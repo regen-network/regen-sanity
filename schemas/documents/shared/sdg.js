@@ -1,18 +1,12 @@
 export default {
-  title: 'Ecological Impact',
-  name: 'ecologicalImpact',
+  title: 'SDG',
+  name: 'sdg',
   type: 'document',
   fields: [
     {
-      title: 'Name',
-      name: 'name',
+      title: 'Title',
+      name: 'title',
       type: 'string',
-      validation: Rule => Rule.required(),
-    },
-    {
-      title: 'Description',
-      name: 'description',
-      type: 'customPortableText',
       validation: Rule => Rule.required(),
     },
     {

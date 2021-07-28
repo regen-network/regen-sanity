@@ -26,21 +26,21 @@ export default () => {
           .title('Registry')
           .items([
             S.listItem()
-              .title('Create Credit Class Page')
+              .title('Create Credit Class')
               .schemaType('createCreditClassPage')
               .child(
                 S.document()
                 .schemaType('createCreditClassPage')
               ),
             S.listItem()
-              .title('Create Methodology Page')
+              .title('Create Methodology')
               .schemaType('createMethodologyPage')
               .child(
                 S.document()
                 .schemaType('createMethodologyPage')
               ),
             S.listItem()
-              .title('Methodology Review Process Page')
+              .title('Methodology Review Process')
               .schemaType('methodologyReviewProcessPage')
               .child(
                 S.document()
@@ -53,8 +53,16 @@ export default () => {
                 S.documentTypeList('methodology')
                 .title('Methodologies')
               ),
+            S.listItem()
+              .title('Credit Classes')
+              .schemaType('creditClass')
+              .child(
+                S.documentTypeList('creditClass')
+                .title('Credit Classes')
+              ),
           ])
         ),
+
         // TODO
         S.listItem()
         .title('Website'),
@@ -87,11 +95,25 @@ export default () => {
                 .title('Resources')
               ),
             S.listItem()
+              .title('Media')
+              .schemaType('media')
+              .child(
+                S.documentTypeList('media')
+                .title('Media')
+              ),
+            S.listItem()
               .title('Ecological Impact')
               .schemaType('ecologicalImpact')
               .child(
                 S.documentTypeList('ecologicalImpact')
                 .title('Ecological Impact')
+              ),
+            S.listItem()
+              .title('SDGs')
+              .schemaType('sdg')
+              .child(
+                S.documentTypeList('sdg')
+                .title('SDGs')
               ),
           ])
         )

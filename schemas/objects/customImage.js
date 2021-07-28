@@ -9,16 +9,21 @@ export default {
       name: 'imageHref',
       type: 'url',
       validation: Rule => Rule.custom((imageHref, context) => {
-        return imageValidation(imageHref, context.document.image)
-      }).warning()
+        return imageValidation(imageHref, context.parent.image)
+      })
     },
     {
       title: 'Image',
       name: 'image',
       type: 'image',
       validation: Rule => Rule.custom((image, context) => {
-        return imageValidation(context.document.imageHref, image)
-      }).warning()
+        return imageValidation(context.parent.imageHref, image)
+      })
+    },
+    {
+      title: 'Image alt Tag',
+      name: 'imageAlt',
+      type: 'string',
     },
   ]
 }

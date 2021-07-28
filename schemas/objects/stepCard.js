@@ -49,7 +49,12 @@ export default {
     {
       title: 'Image',
       name: 'image',
-      type: 'image',
+      type: 'customImage',
+    },
+    {
+      title: 'Video URL',
+      name: 'videoSrc',
+      type: 'url',
     },
   ]
 }
