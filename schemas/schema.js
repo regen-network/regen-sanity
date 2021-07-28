@@ -22,9 +22,11 @@ import sdg from './documents/shared/sdg'
 import heroSection from './objects/sections/heroSection'
 import stepCardSection from './objects/sections/stepCardSection'
 import basicStepCardSection from './objects/sections/basicStepCardSection'
+import fullStepCardSection from './objects/sections/fullStepCardSection'
 import createMethodologyStepCardSection from './objects/sections/createMethodologyStepCardSection'
 import creditTypeSection from './objects/sections/creditTypeSection'
 import reviewSection from './objects/sections/reviewSection'
+import connectSection from './objects/sections/connectSection'
 
 import stepCard from './objects/stepCard'
 import bottomBanner from './objects/bottomBanner'
@@ -35,6 +37,10 @@ import button from './objects/button'
 import customImage from './objects/customImage'
 import link from './objects/link'
 import ecologicalImpactRelation from './objects/ecologicalImpactRelation'
+import documentation from './objects/documentation'
+import buyer from './objects/buyer'
+import landSteward from './objects/landSteward'
+import connectSectionLink from './objects/connectSectionLink'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -46,6 +52,7 @@ export default createSchema({
     heroSection,
     stepCardSection,
     basicStepCardSection,
+    fullStepCardSection,
     createMethodologyStepCardSection,
     creditTypeSection,
     reviewSection,
@@ -58,6 +65,11 @@ export default createSchema({
     customImage,
     link,
     ecologicalImpactRelation,
+    documentation,
+    buyer,
+    landSteward,
+    connectSection,
+    connectSectionLink,
     resource,
     faq,
     document,
