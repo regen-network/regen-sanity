@@ -2,7 +2,7 @@
   "name": "regensanity",
   "private": true,
   "version": "1.0.0",
-  "description": "This challenge consists in displaying the results of an API call using React and TypeScript",
+  "description": "Regen Sanity Studio",
   "main": "package.json",
   "author": "Marie Gauthier <marie@regen.network>",
   "license": "UNLICENSED",
