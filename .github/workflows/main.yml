@@ -1,0 +1,2 @@
+- name: GitHub Action for Sanity.io
+  uses: sanity-io/github-action-sanity@v0.1-alpha
