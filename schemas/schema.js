@@ -5,6 +5,7 @@ import createSchema from 'part:@sanity/base/schema-creator'
 import schemaTypes from 'all:part:@sanity/base/schema-type'
 
 // document schemas
+import homePage from './documents/registry/homePage'
 import createCreditClassPage from './documents/registry/createCreditClassPage'
 import createMethodologyPage from './documents/registry/createMethodologyPage'
 import methodologyReviewProcessPage from './documents/registry/methodologyReviewProcessPage'
@@ -17,6 +18,7 @@ import document from './documents/shared/document'
 import ecologicalImpact from './documents/shared/ecologicalImpact'
 import media from './documents/shared/media'
 import sdg from './documents/shared/sdg'
+import ecologicalOutcome from './documents/shared/ecologicalOutcome'
 
 // Object types
 import heroSection from './objects/sections/heroSection'
@@ -76,6 +78,8 @@ export default createSchema({
     ecologicalImpact,
     media,
     sdg,
+    ecologicalOutcome,
+    homePage,
     createCreditClassPage,
     createMethodologyPage,
     methodologyReviewProcessPage,

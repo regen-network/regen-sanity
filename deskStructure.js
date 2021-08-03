@@ -26,6 +26,13 @@ export default () => {
           .title('Registry')
           .items([
             S.listItem()
+              .title('Home')
+              .schemaType('homePage')
+              .child(
+                S.document()
+                .schemaType('homePage')
+              ),
+            S.listItem()
               .title('Create Credit Class')
               .schemaType('createCreditClassPage')
               .child(
@@ -107,6 +114,13 @@ export default () => {
               .child(
                 S.documentTypeList('ecologicalImpact')
                 .title('Ecological Impact')
+              ),
+            S.listItem()
+              .title('Ecological Outcomes')
+              .schemaType('ecologicalOutcome')
+              .child(
+                S.documentTypeList('ecologicalOutcome')
+                .title('Ecological Outcomes')
               ),
             S.listItem()
               .title('SDGs')

@@ -23,6 +23,13 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
+      title: 'Short Description',
+      name: 'shortDescription',
+      type: 'customPortableText',
+      description: 'This short description is shown on the Registry Homepage',
+      validation: Rule => Rule.required(),
+    },
+    {
       title: 'Ecological Impact',
       name: 'ecologicalImpact',
       type: 'array',

@@ -29,6 +29,24 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
+      name: 'outcomes',
+      type: 'array',
+      title: 'Ecological Outcomes',
+      of: [{ type: 'reference', to: [{type: 'ecologicalOutcome'}] }],
+      validation: Rule => Rule.required(),
+    },
+    {
+      title: 'Resources',
+      name: 'resources',
+      type: 'array',
+      description: 'Select existing resources from "Shared" content',
+      of: [{
+        type: 'reference',
+        to: [{type: 'resource'}] 
+      }],
+      validation: Rule => Rule.required(),
+    },
+    {
       name: 'bottomBanner',
       type: 'bottomBanner',
       title: 'Bottom Banner',
