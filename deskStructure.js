@@ -16,7 +16,6 @@ import S from '@sanity/desk-tool/structure-builder';
 export default () => {
   // const items = Structure.getFilteredDocumentTypeListItems();
   return S.list()
-      // .id('__root__')
       .title('Content')
       .items([
         S.listItem()
