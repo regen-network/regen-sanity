@@ -11,8 +11,8 @@ export default {
       validation: Rule => Rule.uri({
         allowRelative: true,
       }).custom((buttonHref, context) => {
-        return hrefValidation(buttonHref, context.parent.buttonDoc)
-      })
+        return validateLink(context, buttonHref, context.parent.buttonDoc)
+      }),
     },
     {
       name: 'buttonDoc',
@@ -21,10 +21,37 @@ export default {
       title: 'Document',
       description: 'Select an existing document from "Shared" content instead of providing a link',
       validation: Rule => Rule.custom((buttonDoc, context) => {
-        return hrefValidation(context.parent.buttonHref, buttonDoc)
-      })
+        return validateLink(context, context.parent.buttonHref, buttonDoc)
+      }),
     },
   ]
+}
+
+function validateLink(context, v1, v2) {
+  const btnIdx = context.path.findIndex(p => p === 'button')
+        
+  if (btnIdx > -1) {
+    let doc = context.document;
+    for (let i = 0; i <= btnIdx; i++) {
+      const path = context.path[i]
+      if (path._key) {
+        doc = doc.find(d => d._key === path._key)
+      } else {
+        doc = doc[context.path[i]]
+      }
+    }
+
+    // If link is within a button
+    if (doc._type === 'button') {
+      // Only do validation if buttonText is not empty
+      if (doc.buttonText) {
+        return hrefValidation(v1, v2)
+      } else {
+        return true;
+      }
+    }
+  }
+  return hrefValidation(v1, v2)
 }
 
 function hrefValidation(v1, v2) {
