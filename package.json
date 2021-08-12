@@ -8,7 +8,9 @@
   "license": "UNLICENSED",
   "scripts": {
     "start": "sanity start",
-    "build": "sanity build"
+    "build": "sanity build",
+    "deploy-graphql": "sanity graphql deploy --playground",
+    "deploy": "sanity graphql deploy --playground --dataset production && sanity dataset export staging staging.tar.gz && sanity dataset import staging.tar.gz production && rm staging.tar.gz"
   },
   "keywords": [
     "sanity"
