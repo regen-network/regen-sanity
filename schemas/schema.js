@@ -11,6 +11,7 @@ import createMethodologyPage from './documents/registry/createMethodologyPage'
 import methodologyReviewProcessPage from './documents/registry/methodologyReviewProcessPage'
 import methodology from './documents/registry/methodology'
 import creditClass from './documents/registry/creditClass'
+import landStewardsPage from './documents/registry/landStewardsPage'
 
 import resource from './documents/shared/resource'
 import faq from './documents/shared/faq'
@@ -85,5 +86,6 @@ export default createSchema({
     methodologyReviewProcessPage,
     methodology,
     creditClass,
+    landStewardsPage,
   ]),
 })

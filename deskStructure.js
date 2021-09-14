@@ -39,6 +39,13 @@ export default () => {
                 .schemaType('createCreditClassPage')
               ),
             S.listItem()
+              .title('Land Stewards Page')
+              .schemaType('landStewardsPage')
+              .child(
+                S.document()
+                .schemaType('landStewardsPage')
+              ),
+            S.listItem()
               .title('Create Methodology')
               .schemaType('createMethodologyPage')
               .child(
