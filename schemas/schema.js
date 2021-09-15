@@ -30,6 +30,7 @@ import createMethodologyStepCardSection from './objects/sections/createMethodolo
 import creditTypeSection from './objects/sections/creditTypeSection'
 import reviewSection from './objects/sections/reviewSection'
 import connectSection from './objects/sections/connectSection'
+import imageItemsSection from './objects/sections/imageItemsSection'
 
 import stepCard from './objects/stepCard'
 import bottomBanner from './objects/bottomBanner'
@@ -87,5 +88,6 @@ export default createSchema({
     methodology,
     creditClass,
     landStewardsPage,
+    imageItemsSection,
   ]),
 })
