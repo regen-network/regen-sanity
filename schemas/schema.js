@@ -20,6 +20,7 @@ import ecologicalImpact from './documents/shared/ecologicalImpact'
 import media from './documents/shared/media'
 import sdg from './documents/shared/sdg'
 import ecologicalOutcome from './documents/shared/ecologicalOutcome'
+import landManagementPractice from './documents/shared/landManagementPractice'
 
 // Object types
 import heroSection from './objects/sections/heroSection'
@@ -31,6 +32,8 @@ import creditTypeSection from './objects/sections/creditTypeSection'
 import reviewSection from './objects/sections/reviewSection'
 import connectSection from './objects/sections/connectSection'
 import imageItemsSection from './objects/sections/imageItemsSection'
+import dualImageSection from './objects/sections/dualImageSection'
+import practicesOutcomesSection from './objects/sections/practicesOutcomesSection'
 
 import stepCard from './objects/stepCard'
 import bottomBanner from './objects/bottomBanner'
@@ -45,6 +48,7 @@ import documentation from './objects/documentation'
 import buyer from './objects/buyer'
 import landSteward from './objects/landSteward'
 import connectSectionLink from './objects/connectSectionLink'
+import imageBoldTextLabel from './objects/imageBoldTextLabel'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -81,6 +85,7 @@ export default createSchema({
     media,
     sdg,
     ecologicalOutcome,
+    landManagementPractice,
     homePage,
     createCreditClassPage,
     createMethodologyPage,
@@ -89,5 +94,8 @@ export default createSchema({
     creditClass,
     landStewardsPage,
     imageItemsSection,
+    imageBoldTextLabel,
+    dualImageSection,
+    practicesOutcomesSection,
   ]),
 })

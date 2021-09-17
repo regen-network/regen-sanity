@@ -129,6 +129,13 @@ export default () => {
                 .title('Ecological Outcomes')
               ),
             S.listItem()
+              .title('Land Management Practices')
+              .schemaType('landManagementPractice')
+              .child(
+                S.documentTypeList('landManagementPractice')
+                .title('Land Management Practices')
+              ),
+            S.listItem()
               .title('SDGs')
               .schemaType('sdg')
               .child(

@@ -1,7 +1,7 @@
 export default {
-  name: 'card',
-  type: 'object',
-  title: 'Card',
+  title: 'Land Management Practice',
+  name: 'landManagementPractice',
+  type: 'document',
   fields: [
     {
       title: 'Title',
@@ -16,15 +16,10 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
-      title: 'Icon or Image',
+      title: 'Icon',
       name: 'icon',
       type: 'image',
       validation: Rule => Rule.required(),
-    },
-    {
-      title: 'Tooltip',
-      name: 'tooltip',
-      type: 'customPortableText',
     },
   ]
 }

@@ -11,12 +11,23 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
-      name: 'imageItemsSection',
+      name: 'designedForFarmersSection',
       type: 'imageItemsSection',
-      title: 'Image Items Section',
+      title: 'Designed for Farmers Section',
       validation: Rule => Rule.required(),
     },
-
+    {
+      name: 'joinFarmersSection',
+      type: 'dualImageSection',
+      title: 'Join Farmers Section',
+      validation: Rule => Rule.required(),
+    },
+    {
+      name: 'practicesOutcomesSection',
+      type: 'practicesOutcomesSection',
+      title: 'Practices and Outcomes Section',
+      validation: Rule => Rule.required(),
+    },
     {
       name: 'footerLink',
       type: 'url',
