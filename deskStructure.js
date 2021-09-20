@@ -142,6 +142,20 @@ export default () => {
                 S.documentTypeList('sdg')
                 .title('SDGs')
               ),
+            S.listItem()
+              .title('Timeline Items')
+              .schemaType('timelineItem')
+              .child(
+                S.documentTypeList('timelineItem')
+                .title('Timeline Items')
+              ),
+            S.listItem()
+              .title('Tags')
+              .schemaType('tag')
+              .child(
+                S.documentTypeList('tag')
+                .title('Tags')
+              ),
           ])
         )
       ])

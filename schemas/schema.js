@@ -21,6 +21,8 @@ import media from './documents/shared/media'
 import sdg from './documents/shared/sdg'
 import ecologicalOutcome from './documents/shared/ecologicalOutcome'
 import landManagementPractice from './documents/shared/landManagementPractice'
+import tag from './documents/shared/tag'
+import timelineItem from './documents/shared/timelineItem'
 
 // Object types
 import heroSection from './objects/sections/heroSection'
@@ -34,6 +36,7 @@ import connectSection from './objects/sections/connectSection'
 import imageItemsSection from './objects/sections/imageItemsSection'
 import dualImageSection from './objects/sections/dualImageSection'
 import practicesOutcomesSection from './objects/sections/practicesOutcomesSection'
+import timelineSection from './objects/sections/timelineSection'
 
 import stepCard from './objects/stepCard'
 import bottomBanner from './objects/bottomBanner'
@@ -86,6 +89,8 @@ export default createSchema({
     sdg,
     ecologicalOutcome,
     landManagementPractice,
+    timelineItem,
+    tag,
     homePage,
     createCreditClassPage,
     createMethodologyPage,
@@ -97,5 +102,6 @@ export default createSchema({
     imageBoldTextLabel,
     dualImageSection,
     practicesOutcomesSection,
+    timelineSection,
   ]),
 })

@@ -29,6 +29,12 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
+      name: 'timelineSection',
+      type: 'timelineSection',
+      title: 'Timeline Section',
+      validation: Rule => Rule.required(),
+    },
+    {
       name: 'footerLink',
       type: 'url',
       title: 'Footer Link',
