@@ -23,6 +23,7 @@ import ecologicalOutcome from './documents/shared/ecologicalOutcome'
 import landManagementPractice from './documents/shared/landManagementPractice'
 import tag from './documents/shared/tag'
 import timelineItem from './documents/shared/timelineItem'
+import featuredSection from './documents/shared/featuredSection'
 
 // Object types
 import heroSection from './objects/sections/heroSection'
@@ -103,5 +104,6 @@ export default createSchema({
     dualImageSection,
     practicesOutcomesSection,
     timelineSection,
+    featuredSection,
   ]),
 })

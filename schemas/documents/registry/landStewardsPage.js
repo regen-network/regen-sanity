@@ -35,6 +35,13 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
+      name: 'featuredSection',
+      type: 'reference',
+      to: [{type: 'featuredSection'}],
+      title: 'Featured Credit Section',
+      validation: Rule => Rule.required(),
+    },
+    {
       name: 'footerLink',
       type: 'url',
       title: 'Footer Link',

@@ -156,6 +156,13 @@ export default () => {
                 S.documentTypeList('tag')
                 .title('Tags')
               ),
+            S.listItem()
+              .title('Featured Sections')
+              .schemaType('featuredSection')
+              .child(
+                S.documentTypeList('featuredSection')
+                .title('Featured Sections')
+              ),
           ])
         )
       ])
