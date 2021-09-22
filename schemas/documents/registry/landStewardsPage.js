@@ -42,9 +42,22 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
+      name: 'moreQuestionsSection',
+      type: 'bottomBanner',
+      title: 'More Questions Section',
+      validation: Rule => Rule.required(),
+    },
+    {
+      name: 'footerButtonText',
+      type: 'string',
+      title: 'Footer Button Text',
+      validation: Rule => Rule.required(),
+    },
+    {
       name: 'footerLink',
       type: 'url',
-      title: 'Footer Link',
+      title: 'Footer Button Link',
+      description: 'This opens in a modal',
       validation: Rule => Rule.required(),
     },
     {

@@ -20,5 +20,16 @@ export default {
       type: 'button',
       validation: Rule => Rule.required(),
     },
+    {
+      title: 'Second Button',
+      name: 'secondButton',
+      type: 'button',
+      description: '(Optional)'
+    },
+    {
+      title: 'Image',
+      name: 'image',
+      type: 'customImage',
+    },
   ]
 }
