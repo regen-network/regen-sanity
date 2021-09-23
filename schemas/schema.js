@@ -12,6 +12,7 @@ import methodologyReviewProcessPage from './documents/registry/methodologyReview
 import methodology from './documents/registry/methodology'
 import creditClass from './documents/registry/creditClass'
 import landStewardsPage from './documents/registry/landStewardsPage'
+import buyersPage from './documents/registry/buyersPage'
 
 import resource from './documents/shared/resource'
 import faq from './documents/shared/faq'
@@ -98,6 +99,7 @@ export default createSchema({
     methodologyReviewProcessPage,
     methodology,
     creditClass,
+    buyersPage,
     landStewardsPage,
     imageItemsSection,
     imageBoldTextLabel,

@@ -32,6 +32,13 @@ export default () => {
                 .schemaType('homePage')
               ),
             S.listItem()
+              .title('Buyers Page')
+              .schemaType('buyersPage')
+              .child(
+                S.document()
+                .schemaType('buyersPage')
+              ),
+            S.listItem()
               .title('Create Credit Class')
               .schemaType('createCreditClassPage')
               .child(
