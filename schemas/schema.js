@@ -39,6 +39,7 @@ import imageItemsSection from './objects/sections/imageItemsSection'
 import dualImageSection from './objects/sections/dualImageSection'
 import practicesOutcomesSection from './objects/sections/practicesOutcomesSection'
 import timelineSection from './objects/sections/timelineSection'
+import imageGridSection from './objects/sections/imageGridSection'
 
 import stepCard from './objects/stepCard'
 import bottomBanner from './objects/bottomBanner'
@@ -54,6 +55,7 @@ import buyer from './objects/buyer'
 import landSteward from './objects/landSteward'
 import connectSectionLink from './objects/connectSectionLink'
 import imageBoldTextLabel from './objects/imageBoldTextLabel'
+import imageGridItem from './objects/imageGridItem'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -107,5 +109,7 @@ export default createSchema({
     practicesOutcomesSection,
     timelineSection,
     featuredSection,
+    imageGridItem,
+    imageGridSection,
   ]),
 })
