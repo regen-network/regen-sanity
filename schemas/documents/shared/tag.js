@@ -1,3 +1,5 @@
+import isColor from "../../../plugins/isColor"
+
 export default {
   name: 'tag',
   type: 'document',
@@ -13,7 +15,10 @@ export default {
       title: 'Color',
       name: 'color',
       type: 'string',
-      validation: Rule => Rule.required(),
+      validation: Rule => Rule.custom(colorString => {
+        return isColor(colorString);
+      }).warning().required(),
+      description: 'Must be a legal CSS color, as in https://www.w3schools.com/cssref/css_colors_legal.asp',
     },
   ]
 }
