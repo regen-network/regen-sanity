@@ -2,7 +2,7 @@ export default {
   name: 'landStewardsPage',
   type: 'document',
   title: 'For Land Stewards Page',
-  __experimental_actions: ['update', 'create', 'delete', 'publish'],
+  __experimental_actions: ['update', 'publish'],
   fields: [
     {
       name: 'heroSection',
@@ -48,16 +48,9 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
-      name: 'footerButtonText',
-      type: 'string',
-      title: 'Footer Button Text',
-      validation: Rule => Rule.required(),
-    },
-    {
-      name: 'footerLink',
-      type: 'url',
-      title: 'Footer Button Link',
-      description: 'This opens in a modal',
+      name: 'footerButton',
+      type: 'button',
+      title: 'Footer Button',
       validation: Rule => Rule.required(),
     },
     {

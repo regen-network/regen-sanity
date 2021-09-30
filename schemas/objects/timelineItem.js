@@ -1,7 +1,7 @@
 export default {
   title: 'Timeline Item',
   name: 'timelineItem',
-  type: 'document',
+  type: 'object',
   fields: [
     {
       title: 'Title',
@@ -12,8 +12,8 @@ export default {
     {
       title: 'URL',
       name: 'url',
-      description: '(optional)',
       type: 'string',
+      description: '(Optional)',
     },
     {
       title: 'Image',
@@ -26,6 +26,7 @@ export default {
       name: 'tags',
       type: 'array',
       of: [{ type: 'reference', to: [{type: 'tag'}] }],
+      description: '(Optional)',
     },
   ]
 }

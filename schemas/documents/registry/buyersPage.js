@@ -2,7 +2,7 @@ export default {
   name: 'buyersPage',
   type: 'document',
   title: 'For Buyers Page',
-  __experimental_actions: ['update', 'create', 'delete', 'publish'],
+  __experimental_actions: ['update', 'publish'],
   fields: [
     {
       name: 'heroSection',
@@ -34,7 +34,6 @@ export default {
       type: 'string',
       title: 'Footer Button Text',
       validation: Rule => Rule.required(),
-      default: '',
     },
     {
       name: 'metadata',

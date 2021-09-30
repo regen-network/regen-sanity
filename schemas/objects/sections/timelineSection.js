@@ -13,7 +13,7 @@ export default {
       title: 'Timeline Items',
       name: 'timelineItems',
       type: 'array',
-      of: [{ type: 'reference', to: [{type: 'timelineItem'}] }],
+      of: [{type: 'timelineItem'}],
       validation: Rule => Rule.required(),
     },
   ]

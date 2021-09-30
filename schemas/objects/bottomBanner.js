@@ -13,6 +13,7 @@ export default {
       title: 'Description',
       name: 'description',
       type: 'customPortableText',
+      description: '(Optional)'
     },
     {
       title: 'Button',
@@ -30,6 +31,7 @@ export default {
       title: 'Image',
       name: 'image',
       type: 'customImage',
+      description: '(Optional)'
     },
   ]
 }

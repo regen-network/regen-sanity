@@ -16,9 +16,9 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
-      title: 'Link',
-      name: 'link',
-      type: 'string',
+      title: 'Button',
+      name: 'button',
+      type: 'button',
       validation: Rule => Rule.required(),
     },
     {

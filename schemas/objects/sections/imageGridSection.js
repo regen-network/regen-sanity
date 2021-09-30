@@ -7,6 +7,7 @@ export default {
       title: 'Background Image',
       name: 'backgroundImage',
       type: 'customImage',
+      description: '(Optional)'
     },
     {
       title: 'Items',

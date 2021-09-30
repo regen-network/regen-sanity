@@ -23,7 +23,6 @@ import sdg from './documents/shared/sdg'
 import ecologicalOutcome from './documents/shared/ecologicalOutcome'
 import landManagementPractice from './documents/shared/landManagementPractice'
 import tag from './documents/shared/tag'
-import timelineItem from './documents/shared/timelineItem'
 import featuredSection from './documents/shared/featuredSection'
 
 // Object types
@@ -56,6 +55,7 @@ import landSteward from './objects/landSteward'
 import connectSectionLink from './objects/connectSectionLink'
 import imageBoldTextLabel from './objects/imageBoldTextLabel'
 import imageGridItem from './objects/imageGridItem'
+import timelineItem from './objects/timelineItem'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
