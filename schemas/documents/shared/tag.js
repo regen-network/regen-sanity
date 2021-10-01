@@ -1,4 +1,4 @@
-import isColor from "../../../plugins/isColor"
+import isColor from "../../../utils/isColor"
 
 export default {
   name: 'tag',
