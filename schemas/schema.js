@@ -11,6 +11,8 @@ import createMethodologyPage from './documents/registry/createMethodologyPage'
 import methodologyReviewProcessPage from './documents/registry/methodologyReviewProcessPage'
 import methodology from './documents/registry/methodology'
 import creditClass from './documents/registry/creditClass'
+import landStewardsPage from './documents/registry/landStewardsPage'
+import buyersPage from './documents/registry/buyersPage'
 
 import resource from './documents/shared/resource'
 import faq from './documents/shared/faq'
@@ -19,6 +21,9 @@ import ecologicalImpact from './documents/shared/ecologicalImpact'
 import media from './documents/shared/media'
 import sdg from './documents/shared/sdg'
 import ecologicalOutcome from './documents/shared/ecologicalOutcome'
+import landManagementPractice from './documents/shared/landManagementPractice'
+import tag from './documents/shared/tag'
+import featuredSection from './documents/shared/featuredSection'
 
 // Object types
 import heroSection from './objects/sections/heroSection'
@@ -29,6 +34,11 @@ import createMethodologyStepCardSection from './objects/sections/createMethodolo
 import creditTypeSection from './objects/sections/creditTypeSection'
 import reviewSection from './objects/sections/reviewSection'
 import connectSection from './objects/sections/connectSection'
+import imageItemsSection from './objects/sections/imageItemsSection'
+import dualImageSection from './objects/sections/dualImageSection'
+import practicesOutcomesSection from './objects/sections/practicesOutcomesSection'
+import timelineSection from './objects/sections/timelineSection'
+import imageGridSection from './objects/sections/imageGridSection'
 
 import stepCard from './objects/stepCard'
 import bottomBanner from './objects/bottomBanner'
@@ -43,6 +53,9 @@ import documentation from './objects/documentation'
 import buyer from './objects/buyer'
 import landSteward from './objects/landSteward'
 import connectSectionLink from './objects/connectSectionLink'
+import imageBoldTextLabel from './objects/imageBoldTextLabel'
+import imageGridItem from './objects/imageGridItem'
+import timelineItem from './objects/timelineItem'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -79,11 +92,24 @@ export default createSchema({
     media,
     sdg,
     ecologicalOutcome,
+    landManagementPractice,
+    timelineItem,
+    tag,
     homePage,
     createCreditClassPage,
     createMethodologyPage,
     methodologyReviewProcessPage,
     methodology,
     creditClass,
+    buyersPage,
+    landStewardsPage,
+    imageItemsSection,
+    imageBoldTextLabel,
+    dualImageSection,
+    practicesOutcomesSection,
+    timelineSection,
+    featuredSection,
+    imageGridItem,
+    imageGridSection,
   ]),
 })

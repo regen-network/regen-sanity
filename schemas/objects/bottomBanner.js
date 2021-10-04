@@ -13,12 +13,25 @@ export default {
       title: 'Description',
       name: 'description',
       type: 'customPortableText',
+      description: '(Optional)'
     },
     {
       title: 'Button',
       name: 'button',
       type: 'button',
       validation: Rule => Rule.required(),
+    },
+    {
+      title: 'Second Button',
+      name: 'secondButton',
+      type: 'button',
+      description: '(Optional)'
+    },
+    {
+      title: 'Image',
+      name: 'image',
+      type: 'customImage',
+      description: '(Optional)'
     },
   ]
 }

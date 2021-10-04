@@ -1,11 +1,11 @@
 export default {
-  name: 'card',
-  type: 'object',
-  title: 'Card',
+  title: 'Image Grid Item',
+  name: 'imageGridItem',
+  type: 'document',
   fields: [
     {
-      title: 'Title',
-      name: 'title',
+      title: 'Header',
+      name: 'header',
       type: 'string',
       validation: Rule => Rule.required(),
     },
@@ -16,15 +16,11 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
-      title: 'Icon or Image',
-      name: 'icon',
-      type: 'image',
+      title: 'Image',
+      name: 'image',
+      type: 'customImage',
       validation: Rule => Rule.required(),
-    },
-    {
-      title: 'Tooltip',
-      name: 'tooltip',
-      type: 'customPortableText',
     },
   ]
 }
+

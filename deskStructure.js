@@ -32,6 +32,13 @@ export default () => {
                 .schemaType('homePage')
               ),
             S.listItem()
+              .title('Buyers Page')
+              .schemaType('buyersPage')
+              .child(
+                S.document()
+                .schemaType('buyersPage')
+              ),
+            S.listItem()
               .title('Create Credit Class')
               .schemaType('createCreditClassPage')
               .child(
@@ -44,6 +51,13 @@ export default () => {
               .child(
                 S.document()
                 .schemaType('createMethodologyPage')
+              ),
+            S.listItem()
+              .title('Land Stewards Page')
+              .schemaType('landStewardsPage')
+              .child(
+                S.document()
+                .schemaType('landStewardsPage')
               ),
             S.listItem()
               .title('Methodology Review Process')
@@ -122,11 +136,32 @@ export default () => {
                 .title('Ecological Outcomes')
               ),
             S.listItem()
+              .title('Land Management Practices')
+              .schemaType('landManagementPractice')
+              .child(
+                S.documentTypeList('landManagementPractice')
+                .title('Land Management Practices')
+              ),
+            S.listItem()
               .title('SDGs')
               .schemaType('sdg')
               .child(
                 S.documentTypeList('sdg')
                 .title('SDGs')
+              ),
+            S.listItem()
+              .title('Tags')
+              .schemaType('tag')
+              .child(
+                S.documentTypeList('tag')
+                .title('Tags')
+              ),
+            S.listItem()
+              .title('Featured Sections')
+              .schemaType('featuredSection')
+              .child(
+                S.documentTypeList('featuredSection')
+                .title('Featured Sections')
               ),
           ])
         )
