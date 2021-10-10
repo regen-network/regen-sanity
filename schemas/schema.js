@@ -5,44 +5,46 @@ import createSchema from 'part:@sanity/base/schema-creator'
 import schemaTypes from 'all:part:@sanity/base/schema-type'
 
 // document schemas
-import homePage from './documents/registry/homePage'
 import createCreditClassPage from './documents/registry/createCreditClassPage'
 import createMethodologyPage from './documents/registry/createMethodologyPage'
-import methodologyReviewProcessPage from './documents/registry/methodologyReviewProcessPage'
-import methodology from './documents/registry/methodology'
 import creditClass from './documents/registry/creditClass'
+import homePage from './documents/registry/homePage'
+import homePageWeb from './documents/www/homePageWeb'
+import methodology from './documents/registry/methodology'
+import methodologyReviewProcessPage from './documents/registry/methodologyReviewProcessPage'
 
-import resource from './documents/shared/resource'
-import faq from './documents/shared/faq'
 import document from './documents/shared/document'
 import ecologicalImpact from './documents/shared/ecologicalImpact'
-import media from './documents/shared/media'
-import sdg from './documents/shared/sdg'
 import ecologicalOutcome from './documents/shared/ecologicalOutcome'
+import faq from './documents/shared/faq'
+import media from './documents/shared/media'
+import resource from './documents/shared/resource'
+import sdg from './documents/shared/sdg'
 
 // Object types
-import heroSection from './objects/sections/heroSection'
-import stepCardSection from './objects/sections/stepCardSection'
 import basicStepCardSection from './objects/sections/basicStepCardSection'
-import fullStepCardSection from './objects/sections/fullStepCardSection'
+import connectSection from './objects/sections/connectSection'
 import createMethodologyStepCardSection from './objects/sections/createMethodologyStepCardSection'
 import creditTypeSection from './objects/sections/creditTypeSection'
+import fullStepCardSection from './objects/sections/fullStepCardSection'
+import heroSection from './objects/sections/heroSection'
+import homeFoldSection from './objects/sections/homeFoldSection'
 import reviewSection from './objects/sections/reviewSection'
-import connectSection from './objects/sections/connectSection'
+import stepCardSection from './objects/sections/stepCardSection'
 
-import stepCard from './objects/stepCard'
 import bottomBanner from './objects/bottomBanner'
-import card from './objects/card'
-import pageMetadata from './objects/pageMetadata'
-import customPortableText from './objects/customPortableText'
 import button from './objects/button'
-import customImage from './objects/customImage'
-import link from './objects/link'
-import ecologicalImpactRelation from './objects/ecologicalImpactRelation'
-import documentation from './objects/documentation'
 import buyer from './objects/buyer'
-import landSteward from './objects/landSteward'
+import card from './objects/card'
 import connectSectionLink from './objects/connectSectionLink'
+import customImage from './objects/customImage'
+import customPortableText from './objects/customPortableText'
+import documentation from './objects/documentation'
+import ecologicalImpactRelation from './objects/ecologicalImpactRelation'
+import landSteward from './objects/landSteward'
+import link from './objects/link'
+import pageMetadata from './objects/pageMetadata'
+import stepCard from './objects/stepCard'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -51,39 +53,41 @@ export default createSchema({
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
-    heroSection,
-    stepCardSection,
     basicStepCardSection,
-    fullStepCardSection,
-    createMethodologyStepCardSection,
-    creditTypeSection,
-    reviewSection,
-    stepCard,
     bottomBanner,
-    card,
-    pageMetadata,
-    customPortableText,
     button,
-    customImage,
-    link,
-    ecologicalImpactRelation,
-    documentation,
     buyer,
-    landSteward,
+    card,
     connectSection,
     connectSectionLink,
-    resource,
-    faq,
-    document,
-    ecologicalImpact,
-    media,
-    sdg,
-    ecologicalOutcome,
-    homePage,
     createCreditClassPage,
     createMethodologyPage,
-    methodologyReviewProcessPage,
-    methodology,
+    createMethodologyStepCardSection,
     creditClass,
+    creditTypeSection,
+    customImage,
+    customPortableText,
+    document,
+    documentation,
+    ecologicalImpact,
+    ecologicalImpactRelation,
+    ecologicalOutcome,
+    faq,
+    fullStepCardSection,
+    heroSection,
+    homeFoldSection,
+    homePage,
+    homePageWeb,
+    landSteward,
+    link,
+    media,
+    methodology,
+    methodologyReviewProcessPage,
+    pageMetadata,
+    resource,
+    reviewSection,
+    sdg,
+    stepCard,
+    stepCardSection,
   ]),
 })
