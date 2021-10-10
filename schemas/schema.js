@@ -5,46 +5,59 @@ import createSchema from 'part:@sanity/base/schema-creator'
 import schemaTypes from 'all:part:@sanity/base/schema-type'
 
 // document schemas
-import createCreditClassPage from './documents/registry/createCreditClassPage'
-import createMethodologyPage from './documents/registry/createMethodologyPage'
-import creditClass from './documents/registry/creditClass'
 import homePage from './documents/registry/homePage'
 import homePageWeb from './documents/www/homePageWeb'
-import methodology from './documents/registry/methodology'
+import createCreditClassPage from './documents/registry/createCreditClassPage'
+import createMethodologyPage from './documents/registry/createMethodologyPage'
 import methodologyReviewProcessPage from './documents/registry/methodologyReviewProcessPage'
+import methodology from './documents/registry/methodology'
+import creditClass from './documents/registry/creditClass'
+import landStewardsPage from './documents/registry/landStewardsPage'
+import buyersPage from './documents/registry/buyersPage'
 
+import resource from './documents/shared/resource'
+import faq from './documents/shared/faq'
 import document from './documents/shared/document'
 import ecologicalImpact from './documents/shared/ecologicalImpact'
-import ecologicalOutcome from './documents/shared/ecologicalOutcome'
-import faq from './documents/shared/faq'
 import media from './documents/shared/media'
-import resource from './documents/shared/resource'
 import sdg from './documents/shared/sdg'
+import ecologicalOutcome from './documents/shared/ecologicalOutcome'
+import landManagementPractice from './documents/shared/landManagementPractice'
+import tag from './documents/shared/tag'
+import featuredSection from './documents/shared/featuredSection'
 
 // Object types
+import heroSection from './objects/sections/heroSection'
+import stepCardSection from './objects/sections/stepCardSection'
 import basicStepCardSection from './objects/sections/basicStepCardSection'
-import connectSection from './objects/sections/connectSection'
+import fullStepCardSection from './objects/sections/fullStepCardSection'
 import createMethodologyStepCardSection from './objects/sections/createMethodologyStepCardSection'
 import creditTypeSection from './objects/sections/creditTypeSection'
-import fullStepCardSection from './objects/sections/fullStepCardSection'
-import heroSection from './objects/sections/heroSection'
-import homeFoldSection from './objects/sections/homeFoldSection'
 import reviewSection from './objects/sections/reviewSection'
-import stepCardSection from './objects/sections/stepCardSection'
+import connectSection from './objects/sections/connectSection'
+import imageItemsSection from './objects/sections/imageItemsSection'
+import dualImageSection from './objects/sections/dualImageSection'
+import practicesOutcomesSection from './objects/sections/practicesOutcomesSection'
+import timelineSection from './objects/sections/timelineSection'
+import imageGridSection from './objects/sections/imageGridSection'
 
-import bottomBanner from './objects/bottomBanner'
-import button from './objects/button'
-import buyer from './objects/buyer'
-import card from './objects/card'
-import connectSectionLink from './objects/connectSectionLink'
-import customImage from './objects/customImage'
-import customPortableText from './objects/customPortableText'
-import documentation from './objects/documentation'
-import ecologicalImpactRelation from './objects/ecologicalImpactRelation'
-import landSteward from './objects/landSteward'
-import link from './objects/link'
-import pageMetadata from './objects/pageMetadata'
 import stepCard from './objects/stepCard'
+import bottomBanner from './objects/bottomBanner'
+import card from './objects/card'
+import pageMetadata from './objects/pageMetadata'
+import customPortableText from './objects/customPortableText'
+import button from './objects/button'
+import customImage from './objects/customImage'
+import link from './objects/link'
+import ecologicalImpactRelation from './objects/ecologicalImpactRelation'
+import documentation from './objects/documentation'
+import buyer from './objects/buyer'
+import landSteward from './objects/landSteward'
+import connectSectionLink from './objects/connectSectionLink'
+import imageBoldTextLabel from './objects/imageBoldTextLabel'
+import imageGridItem from './objects/imageGridItem'
+import timelineItem from './objects/timelineItem'
+import homeFoldSection from './objects/sections/homeFoldSection'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -53,41 +66,54 @@ export default createSchema({
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
+    heroSection,
+    stepCardSection,
     basicStepCardSection,
+    fullStepCardSection,
+    homeFoldSection,
+    createMethodologyStepCardSection,
+    creditTypeSection,
+    reviewSection,
+    stepCard,
     bottomBanner,
-    button,
-    buyer,
     card,
+    pageMetadata,
+    customPortableText,
+    button,
+    customImage,
+    link,
+    ecologicalImpactRelation,
+    documentation,
+    buyer,
+    landSteward,
     connectSection,
     connectSectionLink,
-    createCreditClassPage,
-    createMethodologyPage,
-    createMethodologyStepCardSection,
-    creditClass,
-    creditTypeSection,
-    customImage,
-    customPortableText,
-    document,
-    documentation,
-    ecologicalImpact,
-    ecologicalImpactRelation,
-    ecologicalOutcome,
+    resource,
     faq,
-    fullStepCardSection,
-    heroSection,
-    homeFoldSection,
+    document,
+    ecologicalImpact,
+    media,
+    sdg,
+    ecologicalOutcome,
+    landManagementPractice,
+    timelineItem,
+    tag,
     homePage,
     homePageWeb,
-    landSteward,
-    link,
-    media,
-    methodology,
+    createCreditClassPage,
+    createMethodologyPage,
     methodologyReviewProcessPage,
-    pageMetadata,
-    resource,
-    reviewSection,
-    sdg,
-    stepCard,
-    stepCardSection,
+    methodology,
+    creditClass,
+    buyersPage,
+    landStewardsPage,
+    imageItemsSection,
+    imageBoldTextLabel,
+    dualImageSection,
+    practicesOutcomesSection,
+    timelineSection,
+    featuredSection,
+    imageGridItem,
+    imageGridSection,
   ]),
 })
