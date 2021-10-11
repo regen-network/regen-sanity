@@ -6,8 +6,14 @@ export default {
   fields: [
     {
       name: 'homeFoldSection',
-      type: 'homeFoldSection',
+      type: 'titleAndDescription',
       title: 'Fold Section',
+      validation: Rule => Rule.required(),
+    },
+    {
+      name: 'marketplaceSection',
+      type: 'marketplaceSection',
+      title: 'Marketplace Section',
       validation: Rule => Rule.required(),
     },
   ],

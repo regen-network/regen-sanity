@@ -1,11 +1,11 @@
 export default {
   type: 'object',
-  name: 'homeFoldSection',
-  title: 'Home Fold Section',
+  name: 'titleAndDescription',
+  title: 'Title and Description',
   fields: [
     {
-      title: 'Tagline',
-      name: 'tagline',
+      title: 'Title',
+      name: 'title',
       type: 'string',
       validation: Rule => Rule.required(),
     },

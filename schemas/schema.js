@@ -57,7 +57,10 @@ import connectSectionLink from './objects/connectSectionLink'
 import imageBoldTextLabel from './objects/imageBoldTextLabel'
 import imageGridItem from './objects/imageGridItem'
 import timelineItem from './objects/timelineItem'
-import homeFoldSection from './objects/sections/homeFoldSection'
+import titleAndDescription from './objects/titleAndDescription'
+import bodyGreenTextWithPopover from './objects/bodyGreenTextWithPopover'
+import marketplaceSection from './objects/sections/marketplaceSection'
+import callToAction from './objects/callToAction'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -70,7 +73,6 @@ export default createSchema({
     stepCardSection,
     basicStepCardSection,
     fullStepCardSection,
-    homeFoldSection,
     createMethodologyStepCardSection,
     creditTypeSection,
     reviewSection,
@@ -80,12 +82,15 @@ export default createSchema({
     pageMetadata,
     customPortableText,
     button,
+    bodyGreenTextWithPopover,
     customImage,
     link,
     ecologicalImpactRelation,
     documentation,
     buyer,
     landSteward,
+    marketplaceSection,
+    callToAction,
     connectSection,
     connectSectionLink,
     resource,
@@ -94,6 +99,7 @@ export default createSchema({
     ecologicalImpact,
     media,
     sdg,
+    titleAndDescription,
     ecologicalOutcome,
     landManagementPractice,
     timelineItem,
