@@ -9,6 +9,7 @@ import homePage from './documents/registry/homePage'
 import homePageWeb from './documents/www/homePageWeb'
 import createCreditClassPage from './documents/registry/createCreditClassPage'
 import createMethodologyPage from './documents/registry/createMethodologyPage'
+import developersPage from './documents/www/developersPage'
 import methodologyReviewProcessPage from './documents/registry/methodologyReviewProcessPage'
 import methodology from './documents/registry/methodology'
 import creditClass from './documents/registry/creditClass'
@@ -54,13 +55,21 @@ import documentation from './objects/documentation'
 import buyer from './objects/buyer'
 import landSteward from './objects/landSteward'
 import connectSectionLink from './objects/connectSectionLink'
-import imageBoldTextLabel from './objects/imageBoldTextLabel'
+import imageBoldTextLabel from './objects/templates/imageBoldTextLabel'
 import imageGridItem from './objects/imageGridItem'
 import timelineItem from './objects/timelineItem'
-import titleAndDescription from './objects/titleAndDescription'
+import titleBody from './objects/templates/titleBody'
 import bodyGreenTextWithPopover from './objects/bodyGreenTextWithPopover'
-import marketplaceSection from './objects/sections/marketplaceSection'
+import marketplaceSection from './objects/sections/homePageWeb/marketplaceSection'
 import callToAction from './objects/callToAction'
+import climateSection from './objects/sections/homePageWeb/climateSection'
+import carbonPlusSection from './objects/sections/homePageWeb/carbonPlusSection'
+import homeValuesSection from './objects/sections/homePageWeb/homeValuesSection'
+import valuesImageItem from './objects/sections/homePageWeb/valuesImageItem'
+import devApproachSection from './objects/sections/developerPage/devApproachSection'
+import devLedgerSection from './objects/sections/developerPage/devLedgerSection'
+import devOpenAgSection from './objects/sections/developerPage/devOpenAgSection'
+import devCareersSection from './objects/sections/developerPage/devCareersSection'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -93,16 +102,22 @@ export default createSchema({
     callToAction,
     connectSection,
     connectSectionLink,
+    developersPage,
+    devApproachSection,
+    devCareersSection,
+    devLedgerSection,
+    devOpenAgSection,
     resource,
     faq,
     document,
     ecologicalImpact,
     media,
     sdg,
-    titleAndDescription,
+    titleBody,
     ecologicalOutcome,
     landManagementPractice,
     timelineItem,
+    valuesImageItem,
     tag,
     homePage,
     homePageWeb,
@@ -113,6 +128,9 @@ export default createSchema({
     creditClass,
     buyersPage,
     landStewardsPage,
+    climateSection,
+    carbonPlusSection,
+    homeValuesSection,
     imageItemsSection,
     imageBoldTextLabel,
     dualImageSection,

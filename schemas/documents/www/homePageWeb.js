@@ -6,7 +6,7 @@ export default {
   fields: [
     {
       name: 'homeFoldSection',
-      type: 'titleAndDescription',
+      type: 'titleBody',
       title: 'Fold Section',
       validation: Rule => Rule.required(),
     },
@@ -14,6 +14,30 @@ export default {
       name: 'marketplaceSection',
       type: 'marketplaceSection',
       title: 'Marketplace Section',
+      validation: Rule => Rule.required(),
+    },
+    {
+      name: 'climateSection',
+      type: 'climateSection',
+      title: 'Climate Section',
+      validation: Rule => Rule.required(),
+    },
+    {
+      name: 'carbonPlusSection',
+      type: 'carbonPlusSection',
+      title: 'Carbon Plus Section',
+      validation: Rule => Rule.required(),
+    },
+    {
+      name: 'ledgerDescription',
+      type: 'text',
+      title: 'Ledger Section Description',
+      validation: Rule => Rule.required(),
+    },
+    {
+      name: 'valuesSection',
+      type: 'homeValuesSection',
+      title: 'Values Section',
       validation: Rule => Rule.required(),
     },
   ],

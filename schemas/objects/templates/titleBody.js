@@ -1,7 +1,7 @@
 export default {
   type: 'object',
-  name: 'titleAndDescription',
-  title: 'Title and Description',
+  name: 'titleBody',
+  title: 'Title and plain text Body',
   fields: [
     {
       title: 'Title',
@@ -10,8 +10,8 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
-      title: 'Description',
-      name: 'description',
+      title: 'Body',
+      name: 'body',
       type: 'string',
       validation: Rule => Rule.required(),
     },

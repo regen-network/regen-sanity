@@ -97,6 +97,13 @@ export default () => {
                   S.document()
                     .schemaType('homePageWeb')
                 ),
+              S.listItem()
+                .title('Developers Page')
+                .schemaType('developersPage')
+                .child(
+                  S.document()
+                    .schemaType('developersPage')
+                ),
             ])
         )
       ,
