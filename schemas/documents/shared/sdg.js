@@ -6,10 +6,16 @@ export default {
   type: 'document',
   fields: [
     {
+      title: 'Title',
+      name: 'title',
+      type: 'string',
+      validation: Rule => Rule.required(),
+    },
+     {
       title: 'IRI',
       name: 'iri',
+      description: 'This can be generated based on the title',
       type: 'slug',
-      hidden: true,
       validation: Rule => Rule.required(),
       options: {
         source: 'title',
@@ -17,12 +23,6 @@ export default {
           return slugifyToIRI(input);
         }
       },
-    },
-    {
-      title: 'Title',
-      name: 'title',
-      type: 'string',
-      validation: Rule => Rule.required(),
     },
     {
       title: 'Image',

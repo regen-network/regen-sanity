@@ -1,3 +1,6 @@
+import slugifyToIRI from "../../../utils/slugifyToIRI";
+import toPlainText from "../../../utils/toPlainText";
+
 export default {
   type: 'document',
   name: 'creditClass',
@@ -8,6 +11,19 @@ export default {
       name: 'name',
       type: 'customPortableText',
       validation: Rule => Rule.required(),
+    },
+    {
+      title: 'IRI',
+      name: 'iri',
+      description: 'This can be generated based on the name',
+      type: 'slug',
+      validation: Rule => Rule.required(),
+      options: {
+        source: 'name',
+        slugify: (input) => {
+          return `${slugifyToIRI(toPlainText(input))}CreditClass`;
+        }
+      },
     },
     {
       title: 'Path',

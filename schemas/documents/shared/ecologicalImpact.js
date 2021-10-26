@@ -6,10 +6,16 @@ export default {
   type: 'document',
   fields: [
     {
+      title: 'Name',
+      name: 'name',
+      type: 'string',
+      validation: Rule => Rule.required(),
+    },
+    {
       title: 'IRI',
       name: 'iri',
+      description: 'This can be generated based on the name',
       type: 'slug',
-      hidden: true,
       validation: Rule => Rule.required(),
       options: {
         source: 'name',
@@ -17,12 +23,6 @@ export default {
           return slugifyToIRI(input);
         }
       },
-    },
-    {
-      title: 'Name',
-      name: 'name',
-      type: 'string',
-      validation: Rule => Rule.required(),
     },
     {
       title: 'Description',
@@ -35,6 +35,11 @@ export default {
       name: 'image',
       type: 'customImage',
       validation: Rule => Rule.required(),
+    },
+    {
+      title: 'Standard',
+      name: 'standard',
+      type: 'customImage',
     },
   ]
 }
