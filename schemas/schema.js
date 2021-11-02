@@ -70,6 +70,8 @@ import devApproachSection from './objects/sections/developerPage/devApproachSect
 import devLedgerSection from './objects/sections/developerPage/devLedgerSection'
 import devOpenAgSection from './objects/sections/developerPage/devOpenAgSection'
 import devCareersSection from './objects/sections/developerPage/devCareersSection'
+import devTestnetSection from './objects/sections/developerPage/devTestnetSection'
+import homeFoldSection from './objects/sections/homePageWeb/homeFoldSection'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -107,6 +109,8 @@ export default createSchema({
     devCareersSection,
     devLedgerSection,
     devOpenAgSection,
+    devTestnetSection,
+    homeFoldSection,
     resource,
     faq,
     document,

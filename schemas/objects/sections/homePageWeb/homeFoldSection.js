@@ -1,26 +1,25 @@
 export default {
   type: 'object',
-  name: 'devOpenAgSection',
-  title: 'Top Section',
+  name: 'homeFoldSection',
+  title: 'Home Fold Section',
   fields: [
     {
-      title: 'Image',
-      name: 'image',
-      type: 'customImage',
-      validation: Rule => Rule.required(),
-    },
-    {
-      title: 'Header',
-      name: 'header',
+      title: 'Title',
+      name: 'title',
       type: 'string',
       validation: Rule => Rule.required(),
     },
     {
       title: 'Body',
       name: 'body',
-      type: 'customPortableText',
+      type: 'string',
+      validation: Rule => Rule.required(),
+    },
+    {
+      title: 'Image',
+      name: 'image',
+      type: 'image',
       validation: Rule => Rule.required(),
     },
   ],
 }
-

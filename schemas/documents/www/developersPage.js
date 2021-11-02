@@ -47,5 +47,11 @@ export default {
       title: 'Connect Section Header',
       validation: Rule => Rule.required(),
     },
+    {
+      name: 'testnetSection',
+      type: 'devTestnetSection',
+      title: 'Testnet Section',
+      validation: Rule => Rule.required(),
+    },
   ],
 };

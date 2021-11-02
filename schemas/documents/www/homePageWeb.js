@@ -4,9 +4,15 @@ export default {
   title: 'Web Home Page',
   __experimental_actions: ['update', 'create', /*'delete', */ 'publish'],
   fields: [
+    // {
+    //   name: 'seoImage',
+    //   type: 'image',
+    //   title: 'SEO image',
+    //   validation: Rule => Rule.required()
+    // },
     {
       name: 'homeFoldSection',
-      type: 'titleBody',
+      type: 'homeFoldSection',
       title: 'Fold Section',
       validation: Rule => Rule.required(),
     },

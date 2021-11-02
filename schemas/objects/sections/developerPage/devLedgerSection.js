@@ -6,7 +6,7 @@ export default {
     {
       title: 'Cosmos Image',
       name: 'cosmosImage',
-      type: 'image',
+      type: 'customImage',
       validation: Rule => Rule.required(),
     },
     {

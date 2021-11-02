@@ -18,19 +18,13 @@ export default {
     {
       title: 'Body',
       name: 'body',
-      type: 'text',
+      type: 'customPortableText',
       validation: Rule => Rule.required(),
     },
     {
-      title: 'Button Link',
-      name: 'buttonLink',
-      type: 'string',
-      validation: Rule => Rule.required(),
-    },
-    {
-      title: 'Button Text',
-      name: 'buttonText',
-      type: 'string',
+      title: 'Button',
+      name: 'button',
+      type: 'button',
       validation: Rule => Rule.required(),
     },
   ],
