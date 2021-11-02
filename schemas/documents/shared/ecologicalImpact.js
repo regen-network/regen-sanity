@@ -1,3 +1,5 @@
+import slugifyToIRI from "../../../utils/slugifyToIRI";
+
 export default {
   title: 'Ecological Impact',
   name: 'ecologicalImpact',
@@ -10,6 +12,19 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
+      title: 'IRI',
+      name: 'iri',
+      description: 'This can be generated based on the name',
+      type: 'slug',
+      validation: Rule => Rule.required(),
+      options: {
+        source: 'name',
+        slugify: (input) => {
+          return slugifyToIRI(input);
+        }
+      },
+    },
+    {
       title: 'Description',
       name: 'description',
       type: 'customPortableText',
@@ -20,6 +35,11 @@ export default {
       name: 'image',
       type: 'customImage',
       validation: Rule => Rule.required(),
+    },
+    {
+      title: 'Standard',
+      name: 'standard',
+      type: 'customImage',
     },
   ]
 }
