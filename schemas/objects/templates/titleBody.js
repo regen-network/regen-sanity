@@ -12,7 +12,7 @@ export default {
     {
       title: 'Body',
       name: 'body',
-      type: 'string',
+      type: 'text',
       validation: Rule => Rule.required(),
     },
   ],

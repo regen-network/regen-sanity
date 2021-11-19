@@ -15,6 +15,7 @@ import methodology from './documents/registry/methodology'
 import creditClass from './documents/registry/creditClass'
 import landStewardsPage from './documents/registry/landStewardsPage'
 import buyersPage from './documents/registry/buyersPage'
+import mainnetPage from './documents/www/mainnetPage'
 
 import resource from './documents/shared/resource'
 import faq from './documents/shared/faq'
@@ -72,6 +73,30 @@ import devOpenAgSection from './objects/sections/developerPage/devOpenAgSection'
 import devCareersSection from './objects/sections/developerPage/devCareersSection'
 import devTestnetSection from './objects/sections/developerPage/devTestnetSection'
 import homeFoldSection from './objects/sections/homePageWeb/homeFoldSection'
+import titleCustomBody from './objects/templates/titleCustomBody'
+import sharedSections from './documents/www/sharedSections'
+import mainnetLaunchInfoSection from './objects/sections/mainnetPage/mainnetLaunchInfoSection'
+import mainnetActionItem from './objects/sections/mainnetActionItem'
+import mainnetWhatsNextSection from './objects/sections/mainnetPage/mainnetWhatsNextSection'
+import mainnetInfoItem from './objects/sections/mainnetInfoItem'
+import blogSection from './objects/sections/blogSection'
+import blogPost from './objects/blogPost'
+import caseStudiesPage from './documents/www/caseStudiesPage'
+import caseStudyAboutSection from './objects/sections/caseStudyPage/caseStudyAboutSection'
+import caseStudyApproachSection from './objects/sections/caseStudyPage/caseStudyApproachSection'
+import caseStudyBottomSection from './objects/sections/caseStudyPage/caseStudyBottomSection'
+import caseStudyConclusionSection from './objects/sections/caseStudyPage/caseStudyConclusionSection'
+import caseStudyContextSection from './objects/sections/caseStudyPage/caseStudyContextSection'
+import caseStudyFigureSection from './objects/sections/caseStudyPage/caseStudyFigureSection'
+import caseStudyFundingSection from './objects/sections/caseStudyPage/caseStudyFundingSection'
+import caseStudyFigure from './objects/sections/caseStudyFigure'
+import caseStudyPage from './documents/www/caseStudyPage'
+import caseStudiesListSection from './objects/sections/caseStudiesPage/caseStudiesListSection'
+import caseStudiesAboutSection from './objects/sections/caseStudiesPage/caseStudiesAboutSection'
+import caseStudiesContextSection from './objects/sections/caseStudiesPage/caseStudiesContextSection'
+import caseStudiesApproachSection from './objects/sections/caseStudiesPage/caseStudiesApproachSection'
+import caseStudiesFundingSection from './objects/sections/caseStudiesPage/caseStudiesFundingSection'
+import imageWithTitle from './objects/imageWithTitle'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -111,6 +136,31 @@ export default createSchema({
     devOpenAgSection,
     devTestnetSection,
     homeFoldSection,
+    titleCustomBody,
+    sharedSections,
+    mainnetPage,
+    mainnetLaunchInfoSection,
+    mainnetActionItem,
+    mainnetInfoItem,
+    mainnetWhatsNextSection,
+    blogSection,
+    blogPost,
+    caseStudiesPage,
+    caseStudiesListSection,
+    caseStudiesAboutSection,
+    caseStudiesContextSection,
+    caseStudiesApproachSection,
+    caseStudiesFundingSection,
+    caseStudyBottomSection,
+    caseStudyAboutSection,
+    caseStudyApproachSection,
+    caseStudyConclusionSection,
+    caseStudyContextSection,
+    caseStudyFigureSection,
+    caseStudyFundingSection,
+    caseStudyFigure,
+    caseStudyPage,
+    imageWithTitle,
     resource,
     faq,
     document,

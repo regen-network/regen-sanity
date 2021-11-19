@@ -44,14 +44,14 @@ export default {
     {
       name: 'careersSection',
       type: 'devCareersSection',
-      title: 'Connect Section Header',
+      title: 'Careers Section',
       validation: Rule => Rule.required(),
     },
-    {
-      name: 'testnetSection',
-      type: 'devTestnetSection',
-      title: 'Testnet Section',
-      validation: Rule => Rule.required(),
-    },
+    // {
+    //   name: 'testnetSection',
+    //   type: 'devTestnetSection',
+    //   title: 'Testnet Section',
+    //   validation: Rule => Rule.required(),
+    // },
   ],
 };

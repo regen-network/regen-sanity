@@ -1,17 +1,11 @@
 export default {
   type: 'object',
-  name: 'devOpenAgSection',
-  title: 'Top Section',
+  name: 'titleCustomBody',
+  title: 'Title and rich text body',
   fields: [
     {
-      title: 'Image',
-      name: 'image',
-      type: 'image',
-      validation: Rule => Rule.required(),
-    },
-    {
-      title: 'Header',
-      name: 'header',
+      title: 'Title',
+      name: 'title',
       type: 'string',
       validation: Rule => Rule.required(),
     },
@@ -23,4 +17,3 @@ export default {
     },
   ],
 }
-

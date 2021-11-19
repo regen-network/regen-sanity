@@ -1,6 +1,9 @@
 {
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "javascript.format.enable": true,
   "javascript.format.semicolons": "remove",
-  "editor.defaultFormatter": "vscode.typescript-language-features"
+  "editor.defaultFormatter": "vscode.typescript-language-features",
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#394755" // Change this color!
+  }
 }

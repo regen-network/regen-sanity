@@ -10,7 +10,7 @@ export default {
       type: 'url',
       validation: Rule => Rule.custom((imageHref, context) => {
         return imageValidation(imageHref, context.parent.image)
-      })
+      }),
     },
     {
       title: 'Image',
@@ -18,12 +18,13 @@ export default {
       type: 'image',
       validation: Rule => Rule.custom((image, context) => {
         return imageValidation(context.parent.imageHref, image)
-      })
+      }),
     },
     {
-      title: 'Image alt Tag',
+      title: 'Image alt tag (for accessibility)',
       name: 'imageAlt',
       type: 'string',
+      validation: Rule => Rule.required(),
     },
   ]
 }

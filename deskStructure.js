@@ -104,6 +104,37 @@ export default () => {
                   S.document()
                     .schemaType('developersPage')
                 ),
+              S.listItem()
+                .title('Mainnet Page')
+                .schemaType('mainnetPage')
+                .child(
+                  S.document()
+                    .schemaType('mainnetPage')
+                ),
+              S.listItem()
+                .title('Shared Sections')
+                .schemaType('sharedSections')
+                .child(
+                  S.document()
+                    .schemaType('sharedSections')
+                ),
+              S.listItem()
+                .title('Case Studies')
+                .schemaType('caseStudiesPage')
+                .child(
+                  S.document()
+                    .schemaType('caseStudiesPage')
+                ),
+              S.listItem()
+                .title('Case Study Pages')
+                .schemaType('caseStudyPage')
+                .child(
+                  S.documentList()
+                    .filter('_type == "caseStudyPage"')
+                    .params({ type: 'caseStudyPage' })
+                    .id('case-studies-list')
+                    .schemaType('caseStudyPage')
+                ),
             ])
         )
       ,
