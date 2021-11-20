@@ -1,17 +1,17 @@
 export default {
+  title: 'Request Type',
+  name: 'requestType',
   type: 'object',
-  name: 'homeFoldSection',
-  title: 'Home Fold Section',
   fields: [
     {
-      title: 'Title',
-      name: 'title',
+      title: 'Label',
+      name: 'label',
       type: 'string',
       validation: Rule => Rule.required(),
     },
     {
-      title: 'Body',
-      name: 'body',
+      title: 'Value',
+      name: 'value',
       type: 'string',
       validation: Rule => Rule.required(),
     },

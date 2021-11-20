@@ -97,6 +97,18 @@ import caseStudiesContextSection from './objects/sections/caseStudiesPage/caseSt
 import caseStudiesApproachSection from './objects/sections/caseStudiesPage/caseStudiesApproachSection'
 import caseStudiesFundingSection from './objects/sections/caseStudiesPage/caseStudiesFundingSection'
 import imageWithTitle from './objects/imageWithTitle'
+import communityPage from './documents/www/communityPage'
+import communityConnectSection from './objects/sections/communityPage/communityConnectSection'
+import communityGoToSection from './objects/sections/communityPage/communityGoToSection'
+import communityCollectiveSection from './objects/sections/communityPage/communityCollectiveSection'
+import communityCollaborateSection from './objects/sections/communityPage/communityCollaborateSection'
+import resourcesCard from './objects/resourcesCard'
+import contactPage from './documents/www/contactPage'
+import requestType from './objects/requestType'
+import titleImageCustomBody from './objects/templates/titleImageCustomBody'
+import titleImage from './objects/templates/titleImage'
+import faqPage from './documents/www/faqPage'
+import faqCategory from './objects/faqCategory'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -161,6 +173,18 @@ export default createSchema({
     caseStudyFigure,
     caseStudyPage,
     imageWithTitle,
+    communityPage,
+    communityConnectSection,
+    communityGoToSection,
+    communityCollectiveSection,
+    communityCollaborateSection,
+    resourcesCard,
+    contactPage,
+    requestType,
+    titleImage,
+    titleImageCustomBody,
+    faqPage,
+    faqCategory,
     resource,
     faq,
     document,

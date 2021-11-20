@@ -1,4 +1,4 @@
-import toPlainText from "../../../utils/toPlainText";
+import toPlainText from "../../../utils/toPlainText"
 
 export default {
   name: 'resource',
@@ -41,7 +41,7 @@ export default {
       title: 'title',
     },
     prepare(selection) {
-      const {title} = selection
+      const { title } = selection
       return {
         title: toPlainText(title),
       }

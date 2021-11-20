@@ -119,7 +119,7 @@ export default () => {
                     .schemaType('sharedSections')
                 ),
               S.listItem()
-                .title('Case Studies')
+                .title('Case Studies Page')
                 .schemaType('caseStudiesPage')
                 .child(
                   S.document()
@@ -129,11 +129,29 @@ export default () => {
                 .title('Case Study Pages')
                 .schemaType('caseStudyPage')
                 .child(
-                  S.documentList()
-                    .filter('_type == "caseStudyPage"')
-                    .params({ type: 'caseStudyPage' })
-                    .id('case-studies-list')
-                    .schemaType('caseStudyPage')
+                  S.documentTypeList('caseStudyPage')
+                    .title('case study page')
+                ),
+              S.listItem()
+                .title('Community Page')
+                .schemaType('communityPage')
+                .child(
+                  S.document()
+                    .schemaType('communityPage')
+                ),
+              S.listItem()
+                .title('Contact Page')
+                .schemaType('contactPage')
+                .child(
+                  S.document()
+                    .schemaType('contactPage')
+                ),
+              S.listItem()
+                .title('FAQ Page')
+                .schemaType('faqPage')
+                .child(
+                  S.document()
+                    .schemaType('faqPage')
                 ),
             ])
         )

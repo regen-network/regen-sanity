@@ -1,7 +1,7 @@
 export default {
   type: 'object',
-  name: 'homeFoldSection',
-  title: 'Home Fold Section',
+  name: 'titleImageCustomBody',
+  title: 'Title with image and rich text body',
   fields: [
     {
       title: 'Title',
@@ -10,9 +10,15 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
+      title: 'Image',
+      name: 'image',
+      type: 'customImage',
+      validation: Rule => Rule.required(),
+    },
+    {
       title: 'Body',
       name: 'body',
-      type: 'string',
+      type: 'customPortableText',
       validation: Rule => Rule.required(),
     },
   ],
