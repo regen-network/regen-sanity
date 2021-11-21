@@ -153,6 +153,13 @@ export default () => {
                   S.document()
                     .schemaType('faqPage')
                 ),
+              S.listItem()
+                .title('Fund Page')
+                .schemaType('fundPage')
+                .child(
+                  S.document()
+                    .schemaType('fundPage')
+                ),
             ])
         )
       ,

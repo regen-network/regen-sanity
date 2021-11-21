@@ -109,6 +109,8 @@ import titleImageCustomBody from './objects/templates/titleImageCustomBody'
 import titleImage from './objects/templates/titleImage'
 import faqPage from './documents/www/faqPage'
 import faqCategory from './objects/faqCategory'
+import fundPage from './documents/www/fundPage'
+import fundCallToAction from './objects/fundCallToAction'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -185,6 +187,8 @@ export default createSchema({
     titleImageCustomBody,
     faqPage,
     faqCategory,
+    fundPage,
+    fundCallToAction,
     resource,
     faq,
     document,
