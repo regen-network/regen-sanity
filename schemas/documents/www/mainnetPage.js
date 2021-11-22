@@ -40,5 +40,14 @@ export default {
       title: "What's Next Section",
       validation: Rule => Rule.required(),
     },
+    {
+      name: 'mediaItems',
+      title: "Media Items",
+      type: 'array',
+      of: [
+        { type: 'reference', to: [{ type: 'media' }] }
+      ],
+      validation: Rule => Rule.required(),
+    },
   ],
 };

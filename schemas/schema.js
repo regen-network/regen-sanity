@@ -111,6 +111,9 @@ import faqPage from './documents/www/faqPage'
 import faqCategory from './objects/faqCategory'
 import fundPage from './documents/www/fundPage'
 import fundCallToAction from './objects/fundCallToAction'
+import investPage from './documents/www/investPage'
+import partnersPage from './documents/www/partnersPage'
+import partnerLogo from './objects/partnerLogo'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -174,6 +177,9 @@ export default createSchema({
     caseStudyFundingSection,
     caseStudyFigure,
     caseStudyPage,
+    investPage,
+    partnersPage,
+    partnerLogo,
     imageWithTitle,
     communityPage,
     communityConnectSection,

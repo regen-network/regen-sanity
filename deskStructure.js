@@ -160,6 +160,20 @@ export default () => {
                   S.document()
                     .schemaType('fundPage')
                 ),
+              S.listItem()
+                .title('Invest Page')
+                .schemaType('investPage')
+                .child(
+                  S.document()
+                    .schemaType('investPage')
+                ),
+              S.listItem()
+                .title('Partners Page')
+                .schemaType('partnersPage')
+                .child(
+                  S.document()
+                    .schemaType('partnersPage')
+                ),
             ])
         )
       ,
