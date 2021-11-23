@@ -174,6 +174,13 @@ export default () => {
                   S.document()
                     .schemaType('partnersPage')
                 ),
+              S.listItem()
+                .title('Presskit Page')
+                .schemaType('presskitPage')
+                .child(
+                  S.document()
+                    .schemaType('presskitPage')
+                ),
             ])
         )
       ,
@@ -254,6 +261,13 @@ export default () => {
                 .child(
                   S.documentTypeList('featuredSection')
                     .title('Featured Sections')
+                ),
+              S.listItem()
+                .title('Team Members')
+                .schemaType('regenTeamMember')
+                .child(
+                  S.documentTypeList('regenTeamMember')
+                    .title('Team Members')
                 ),
             ])
         )

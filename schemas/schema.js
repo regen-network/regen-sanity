@@ -114,6 +114,17 @@ import fundCallToAction from './objects/fundCallToAction'
 import investPage from './documents/www/investPage'
 import partnersPage from './documents/www/partnersPage'
 import partnerLogo from './objects/partnerLogo'
+import presskitPage from './documents/www/presskitPage'
+import presskitFeaturedSection from './objects/sections/presskit/presskitFeaturedSection'
+import presskitAwardsSection from './objects/sections/presskit/presskitAwardsSection'
+import titleImageLink from './objects/templates/titleImageLink'
+import presskitTimelineItem from './objects/presskitTimelineItem'
+import presskitTimelineSection from './objects/sections/presskit/presskitTimelineSection'
+import presskitTeamSection from './objects/sections/presskit/presskitTeamSection'
+import nameTitleImage from './objects/templates/nameTitleImage'
+import presskitLogosSection from './objects/sections/presskit/presskitLogosSection'
+import presskitPhotosSection from './objects/sections/presskit/presskitPhotosSection'
+import regenTeamMember from './objects/sections/regenTeamMember'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -180,6 +191,16 @@ export default createSchema({
     investPage,
     partnersPage,
     partnerLogo,
+    presskitPage,
+    presskitFeaturedSection,
+    presskitAwardsSection,
+    presskitTimelineItem,
+    presskitTimelineSection,
+    presskitTeamSection,
+    presskitLogosSection,
+    presskitPhotosSection,
+    nameTitleImage,
+    regenTeamMember,
     imageWithTitle,
     communityPage,
     communityConnectSection,
@@ -190,6 +211,7 @@ export default createSchema({
     contactPage,
     requestType,
     titleImage,
+    titleImageLink,
     titleImageCustomBody,
     faqPage,
     faqCategory,
