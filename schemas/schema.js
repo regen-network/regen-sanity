@@ -125,6 +125,33 @@ import nameTitleImage from './objects/templates/nameTitleImage'
 import presskitLogosSection from './objects/sections/presskit/presskitLogosSection'
 import presskitPhotosSection from './objects/sections/presskit/presskitPhotosSection'
 import regenTeamMember from './objects/sections/regenTeamMember'
+import resourcesPage from './documents/www/resourcesPage'
+import resourcesRegistrySection from './objects/sections/resourcesPage/resourcesRegistrySection'
+import resourcesRegistrySubSection from './objects/sections/resourcesPage/resourcesRegistrySubSection'
+import resourcesLedgerSection from './objects/sections/resourcesPage/resourcesLedgerSection'
+import sciencePage from './documents/www/sciencePage'
+import scienceOpenScienceSection from './objects/sections/sciencePage/scienceOpenScienceSection'
+import imageCustomBody from './objects/templates/imageCustomBody'
+import sciencePartnershipSection from './objects/sections/sciencePage/sciencePartnershipSection'
+import scienceCommunitySection from './objects/sections/sciencePage/scienceCommunitySection'
+import scienceCommunityMember from './objects/sections/sciencePage/scienceCommunityMember'
+import titleImageBody from './objects/templates/titleImageBody'
+import scienceTitleDescriptionSection from './objects/sections/sciencePage/scienceTitleDescriptionSection'
+import teamPage from './documents/www/teamPage'
+import teamSection from './objects/sections/teamPage/teamSection'
+import tokenPage from './documents/www/tokenPage'
+import tokenInfoSection from './objects/sections/tokenPage/tokenInfoSection'
+import tokenPoolSection from './objects/sections/tokenPage/tokenPoolSection'
+import teamStakingSection from './objects/sections/tokenPage/teamStakingSection'
+import tokenNewsletterSection from './objects/sections/tokenPage/tokenNewsletterSection'
+import titleBodyButton from './objects/templates/titleBodyButton'
+import imageLink from './objects/templates/imageLink'
+import validatorsPage from './documents/www/validatorsPage'
+import validator from './objects/sections/validatorsPage/validator'
+import validatorWhoSection from './objects/sections/validatorsPage/validatorWhoSection'
+import walletAddressRegistrationPage from './documents/www/walletAddressRegistrationPage'
+import walletAddressRegistrationWalletSection from './objects/sections/walletAddressRegistrationPage/walletAddressRegistrationWalletSection'
+import walletAddressRegistrationFormSection from './objects/sections/walletAddressRegistrationPage/walletAddressRegistrationFormSection'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -199,7 +226,34 @@ export default createSchema({
     presskitTeamSection,
     presskitLogosSection,
     presskitPhotosSection,
+    resourcesPage,
+    resourcesRegistrySection,
+    resourcesRegistrySubSection,
+    resourcesLedgerSection,
+    scienceOpenScienceSection,
+    sciencePartnershipSection,
+    scienceCommunitySection,
+    scienceCommunityMember,
+    scienceTitleDescriptionSection,
+    titleImageBody,
+    imageCustomBody,
+    sciencePage,
+    teamPage,
+    teamSection,
+    tokenPage,
+    tokenInfoSection,
+    tokenPoolSection,
+    teamStakingSection,
+    tokenNewsletterSection,
+    titleBodyButton,
     nameTitleImage,
+    imageLink,
+    validatorsPage,
+    validatorWhoSection,
+    validator,
+    walletAddressRegistrationPage,
+    walletAddressRegistrationWalletSection,
+    walletAddressRegistrationFormSection,
     regenTeamMember,
     imageWithTitle,
     communityPage,

@@ -181,6 +181,48 @@ export default () => {
                   S.document()
                     .schemaType('presskitPage')
                 ),
+              S.listItem()
+                .title('Resources Page')
+                .schemaType('resourcesPage')
+                .child(
+                  S.document()
+                    .schemaType('resourcesPage')
+                ),
+              S.listItem()
+                .title('Science Page')
+                .schemaType('sciencePage')
+                .child(
+                  S.document()
+                    .schemaType('sciencePage')
+                ),
+              S.listItem()
+                .title('Team Page')
+                .schemaType('teamPage')
+                .child(
+                  S.document()
+                    .schemaType('teamPage')
+                ),
+              S.listItem()
+                .title('Token Page')
+                .schemaType('tokenPage')
+                .child(
+                  S.document()
+                    .schemaType('tokenPage')
+                ),
+              S.listItem()
+                .title('Validators Page')
+                .schemaType('validatorsPage')
+                .child(
+                  S.document()
+                    .schemaType('validatorsPage')
+                ),
+              S.listItem()
+                .title('Wallet Address Registration Page')
+                .schemaType('walletAddressRegistrationPage')
+                .child(
+                  S.document()
+                    .schemaType('walletAddressRegistrationPage')
+                ),
             ])
         )
       ,

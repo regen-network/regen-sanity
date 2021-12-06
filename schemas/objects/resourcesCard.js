@@ -30,6 +30,12 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
+      title: 'Updated',
+      description: 'optional',
+      name: 'updated',
+      type: 'string',
+    },
+    {
       title: 'Button Href',
       name: 'buttonHref',
       type: 'string',
