@@ -10,7 +10,7 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
-      title: 'Wallet not found Button Text',
+      title: 'Wallet found Button Text',
       name: 'walletFoundButtonText',
       type: 'string',
       validation: Rule => Rule.required(),
