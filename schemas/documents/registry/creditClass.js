@@ -1,5 +1,5 @@
-import slugifyToIRI from "../../../utils/slugifyToIRI";
-import toPlainText from "../../../utils/toPlainText";
+import slugifyToIRI from "../../../utils/slugifyToIRI"
+import toPlainText from "../../../utils/toPlainText"
 
 export default {
   type: 'document',
@@ -21,7 +21,7 @@ export default {
       options: {
         source: 'name',
         slugify: (input) => {
-          return `${slugifyToIRI(toPlainText(input))}CreditClass`;
+          return `${slugifyToIRI(toPlainText(input))}CreditClass`
         }
       },
     },
@@ -68,7 +68,7 @@ export default {
       description: 'Select existing SDGs from "Shared" content',
       of: [{
         type: 'reference',
-        to: [{type: 'sdg'}] 
+        to: [{ type: 'sdg' }]
       }],
       validation: Rule => Rule.required(),
     },

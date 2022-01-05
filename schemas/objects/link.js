@@ -17,7 +17,7 @@ export default {
     {
       name: 'buttonDoc',
       type: 'reference',
-      to: [{type: 'doc'}],
+      to: [{ type: 'doc' }],
       title: 'Document',
       description: 'Select an existing document from "Shared" content instead of providing a link',
       validation: Rule => Rule.custom((buttonDoc, context) => {
@@ -29,10 +29,10 @@ export default {
 
 function validateLink(context, v1, v2) {
   const btnIdx = context.path.findIndex(p => p === 'button')
-        
+
   if (btnIdx > -1) {
-    let doc = context.document;
-    for (let i = 0; i <= btnIdx; i++) {
+    let doc = context.document
+    for (let i = 0;i <= btnIdx;i++) {
       const path = context.path[i]
       if (path._key) {
         doc = doc.find(d => d._key === path._key)
@@ -47,7 +47,7 @@ function validateLink(context, v1, v2) {
       if (doc.buttonText) {
         return hrefValidation(v1, v2)
       } else {
-        return true;
+        return true
       }
     }
   }

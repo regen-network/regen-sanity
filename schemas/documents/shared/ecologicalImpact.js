@@ -1,4 +1,4 @@
-import slugifyToIRI from "../../../utils/slugifyToIRI";
+import slugifyToIRI from "../../../utils/slugifyToIRI"
 
 export default {
   title: 'Ecological Impact',
@@ -20,7 +20,7 @@ export default {
       options: {
         source: 'name',
         slugify: (input) => {
-          return slugifyToIRI(input);
+          return slugifyToIRI(input)
         }
       },
     },

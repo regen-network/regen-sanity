@@ -43,7 +43,7 @@ export default {
       type: 'array',
       of: [{
         type: 'reference',
-        to: [{type: 'faq'}] 
+        to: [{ type: 'faq' }]
       }],
     },
     {

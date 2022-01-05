@@ -13,7 +13,7 @@ export default {
       name: 'ecologicalImpact',
       description: 'Select existing ecological impact from "Shared" content',
       type: 'reference',
-      to: [{type: 'ecologicalImpact'}],
+      to: [{ type: 'ecologicalImpact' }],
     },
   ],
   preview: {
@@ -22,9 +22,9 @@ export default {
       primary: 'primary',
     },
     prepare(selection) {
-      const {ecologicalImpact, primary} = selection
+      const { ecologicalImpact, primary } = selection
       return {
-        title: `${ecologicalImpact} (${primary? 'primary' : 'co-benefit'})`,
+        title: `${ecologicalImpact} (${primary ? 'primary' : 'co-benefit'})`,
       }
     }
   }

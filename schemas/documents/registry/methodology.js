@@ -49,7 +49,7 @@ export default {
       description: 'Select existing resources from "Shared" content',
       of: [{
         type: 'reference',
-        to: [{type: 'resource'}] 
+        to: [{ type: 'resource' }]
       }],
       validation: Rule => Rule.required(),
     },

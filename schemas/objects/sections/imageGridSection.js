@@ -13,7 +13,7 @@ export default {
       title: 'Items',
       name: 'items',
       type: 'array',
-      of: [{type: 'imageGridItem'}],
+      of: [{ type: 'imageGridItem' }],
       validation: Rule => Rule.required(),
     },
   ]

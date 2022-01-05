@@ -37,7 +37,7 @@ export default {
     {
       name: 'featuredSection',
       type: 'reference',
-      to: [{type: 'featuredSection'}],
+      to: [{ type: 'featuredSection' }],
       title: 'Featured Credit Section',
       validation: Rule => Rule.required(),
     },
@@ -59,4 +59,4 @@ export default {
       title: 'SEO & Metadata',
     },
   ],
-};
+}

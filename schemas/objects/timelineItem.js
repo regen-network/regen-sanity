@@ -25,7 +25,7 @@ export default {
       title: 'Tags',
       name: 'tags',
       type: 'array',
-      of: [{ type: 'reference', to: [{type: 'tag'}] }],
+      of: [{ type: 'reference', to: [{ type: 'tag' }] }],
       description: '(Optional)',
     },
   ]

@@ -17,7 +17,7 @@ export default {
       description: 'Select existing resources from "Shared" content',
       of: [{
         type: 'reference',
-        to: [{type: 'resource'}] 
+        to: [{ type: 'resource' }]
       }],
       validation: Rule => Rule.required(),
     },
@@ -28,10 +28,10 @@ export default {
       description: 'Select existing media of type "video" from "Shared" content',
       of: [{
         type: 'reference',
-        to: [{type: 'media'}],
+        to: [{ type: 'media' }],
         options: {
           filter: 'type == $type',
-          filterParams: {type: 'video'}
+          filterParams: { type: 'video' }
         }
       }],
       validation: Rule => Rule.required(),
