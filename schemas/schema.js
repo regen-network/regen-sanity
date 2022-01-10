@@ -111,7 +111,6 @@ import faqPage from './documents/www/faqPage';
 import faqCategory from './objects/faqCategory';
 import fundPage from './documents/www/fundPage';
 import fundCallToAction from './objects/fundCallToAction';
-import investPage from './documents/www/investPage';
 import partnersPage from './documents/www/partnersPage';
 import partnerLogo from './objects/partnerLogo';
 import presskitPage from './documents/www/presskitPage';
@@ -215,7 +214,6 @@ export default createSchema({
     caseStudyFundingSection,
     caseStudyFigure,
     caseStudyPage,
-    investPage,
     partnersPage,
     partnerLogo,
     presskitPage,
