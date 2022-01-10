@@ -19,7 +19,8 @@ export default {
       title: 'Tooltip Message',
       name: 'tooltipText',
       type: 'string',
-      description: '(Optional) If any text is underlined in the description, it will show this message when hovered'
+      description:
+        '(Optional) If any text is underlined in the description, it will show this message when hovered',
     },
-  ]
-}
+  ],
+};

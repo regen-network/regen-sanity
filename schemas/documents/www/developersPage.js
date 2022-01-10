@@ -1,4 +1,3 @@
-
 export default {
   name: 'developersPage',
   type: 'document',
@@ -48,4 +47,4 @@ export default {
       validation: Rule => Rule.required(),
     },
   ],
-}
+};

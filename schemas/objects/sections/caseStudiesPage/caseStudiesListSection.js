@@ -16,5 +16,5 @@ export default {
       title: 'List Section View Link Text',
       validation: Rule => Rule.required(),
     },
-  ]
+  ],
 };

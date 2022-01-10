@@ -52,5 +52,4 @@ export default {
       validation: Rule => Rule.required(),
     },
   ],
-}
-
+};

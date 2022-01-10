@@ -13,10 +13,12 @@ export default {
       title: 'Posts',
       name: 'posts',
       type: 'array',
-      of: [{
-        type: 'blogPost',
-      }],
+      of: [
+        {
+          type: 'blogPost',
+        },
+      ],
       validation: Rule => Rule.required(),
-    }
+    },
   ],
-}
+};

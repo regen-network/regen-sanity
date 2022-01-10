@@ -42,11 +42,9 @@ export default {
     },
     {
       name: 'mediaItems',
-      title: "Media Items",
+      title: 'Media Items',
       type: 'array',
-      of: [
-        { type: 'reference', to: [{ type: 'media' }] }
-      ],
+      of: [{ type: 'reference', to: [{ type: 'media' }] }],
       validation: Rule => Rule.required(),
     },
   ],

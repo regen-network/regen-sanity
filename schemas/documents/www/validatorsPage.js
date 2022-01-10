@@ -33,5 +33,5 @@ export default {
       type: 'titleCustomBody',
       validation: Rule => Rule.required(),
     },
-  ]
-}
+  ],
+};

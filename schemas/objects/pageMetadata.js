@@ -15,5 +15,5 @@ export default {
       title: 'Open Graph Image',
       description: 'Image for sharing previews on Facebook, Twitter etc.',
     },
-  ]
-}
+  ],
+};

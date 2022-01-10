@@ -41,10 +41,12 @@ export default {
       title: 'FAQ',
       name: 'faqs',
       type: 'array',
-      of: [{
-        type: 'reference',
-        to: [{ type: 'faq' }]
-      }],
+      of: [
+        {
+          type: 'reference',
+          to: [{ type: 'faq' }],
+        },
+      ],
     },
     {
       title: 'Image',
@@ -56,5 +58,5 @@ export default {
       name: 'videoSrc',
       type: 'url',
     },
-  ]
-}
+  ],
+};

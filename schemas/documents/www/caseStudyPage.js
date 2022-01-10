@@ -14,7 +14,7 @@ export default {
       name: 'slug',
       type: 'slug',
       options: {
-        source: 'name'
+        source: 'name',
       },
     },
     {
@@ -78,4 +78,4 @@ export default {
       validation: Rule => Rule.required(),
     },
   ],
-}
+};

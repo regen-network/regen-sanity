@@ -22,10 +22,10 @@ export default {
       primary: 'primary',
     },
     prepare(selection) {
-      const { ecologicalImpact, primary } = selection
+      const { ecologicalImpact, primary } = selection;
       return {
         title: `${ecologicalImpact} (${primary ? 'primary' : 'co-benefit'})`,
-      }
-    }
-  }
-}
+      };
+    },
+  },
+};

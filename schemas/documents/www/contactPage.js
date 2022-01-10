@@ -20,9 +20,7 @@ export default {
       title: 'Form Request Types',
       name: 'formRequestTypes',
       type: 'array',
-      of: [
-        { type: 'requestType' }
-      ],
+      of: [{ type: 'requestType' }],
       validation: Rule => Rule.required(),
     },
     {

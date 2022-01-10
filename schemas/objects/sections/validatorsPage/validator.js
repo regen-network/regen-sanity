@@ -19,10 +19,12 @@ export default {
       title: 'Members',
       name: 'members',
       type: 'array',
-      of: [{
-        type: 'imageLink',
-      }],
+      of: [
+        {
+          type: 'imageLink',
+        },
+      ],
       validation: Rule => Rule.required(),
-    }
+    },
   ],
-}
+};

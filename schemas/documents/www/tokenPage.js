@@ -58,5 +58,5 @@ export default {
       type: 'tokenNewsletterSection',
       validation: Rule => Rule.required(),
     },
-  ]
-}
+  ],
+};

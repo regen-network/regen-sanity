@@ -13,10 +13,8 @@ export default {
       title: 'Images',
       name: 'images',
       type: 'array',
-      of: [
-        { type: 'imageWithTitle' }
-      ],
+      of: [{ type: 'imageWithTitle' }],
       validation: Rule => Rule.required(),
     },
   ],
-}
+};

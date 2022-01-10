@@ -9,6 +9,7 @@
   "scripts": {
     "start": "sanity start",
     "build": "sanity build",
+    "prettier": "prettier --write '**/*.js'",
     "deploy-graphql": "sanity graphql deploy --playground",
     "deploy": "sanity graphql deploy --playground --dataset production && sanity dataset export staging staging.tar.gz && sanity dataset import staging.tar.gz production --replace && rm staging.tar.gz",
     "import-production": "sanity dataset export production production.tar.gz && sanity dataset import production.tar.gz staging --replace && rm production.tar.gz"
@@ -29,5 +30,7 @@
     "react-dom": "^17.0",
     "sanity-plugin-intl-input": "^5.2.1"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "prettier": "^2.5.1"
+  }
 }

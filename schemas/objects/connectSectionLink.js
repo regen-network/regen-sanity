@@ -19,19 +19,19 @@ export default {
       title: 'Icon',
       name: 'icon',
       type: 'image',
-      validation: Rule => Rule.required()
-        .custom(icon => {
+      validation: Rule =>
+        Rule.required().custom(icon => {
           if (icon.asset && icon.asset._ref && !icon.asset._ref.endsWith('svg')) {
-            return 'Please select an SVG file'
+            return 'Please select an SVG file';
           }
-          return true
+          return true;
         }),
     },
     {
       title: 'Link',
       name: 'href',
       type: 'link',
-      validation: Rule => Rule.required()
+      validation: Rule => Rule.required(),
     },
-  ]
-}
+  ],
+};

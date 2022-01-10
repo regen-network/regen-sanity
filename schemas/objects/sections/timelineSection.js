@@ -16,5 +16,5 @@ export default {
       of: [{ type: 'timelineItem' }],
       validation: Rule => Rule.required(),
     },
-  ]
-}
+  ],
+};

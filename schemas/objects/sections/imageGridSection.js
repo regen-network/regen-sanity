@@ -7,7 +7,7 @@ export default {
       title: 'Background Image',
       name: 'backgroundImage',
       type: 'customImage',
-      description: '(Optional)'
+      description: '(Optional)',
     },
     {
       title: 'Items',
@@ -16,5 +16,5 @@ export default {
       of: [{ type: 'imageGridItem' }],
       validation: Rule => Rule.required(),
     },
-  ]
-}
+  ],
+};

@@ -27,5 +27,5 @@ export default {
       type: 'teamSection',
       validation: Rule => Rule.required(),
     },
-  ]
-}
+  ],
+};

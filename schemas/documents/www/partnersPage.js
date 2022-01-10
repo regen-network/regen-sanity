@@ -24,11 +24,9 @@ export default {
     },
     {
       name: 'partners',
-      title: "Partners",
+      title: 'Partners',
       type: 'array',
-      of: [
-        { type: 'partnerLogo' }
-      ],
+      of: [{ type: 'partnerLogo' }],
       validation: Rule => Rule.required(),
     },
   ],

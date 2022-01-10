@@ -19,20 +19,24 @@ export default {
       title: 'Documents',
       name: 'documents',
       type: 'array',
-      of: [{
-        type: 'reference',
-        to: [{ type: 'doc' }],
-      }],
+      of: [
+        {
+          type: 'reference',
+          to: [{ type: 'doc' }],
+        },
+      ],
       validation: Rule => Rule.required(),
     },
     {
       title: 'Subsections',
       name: 'subsections',
       type: 'array',
-      of: [{
-        type: 'resourcesRegistrySubSection',
-      }],
+      of: [
+        {
+          type: 'resourcesRegistrySubSection',
+        },
+      ],
       validation: Rule => Rule.required(),
     },
   ],
-}
+};

@@ -27,5 +27,5 @@ export default {
       description: 'Optional, e.g. "Monitoring", "Marketing", "Project Plan", etc.',
       type: 'string',
     },
-  ]
-}
+  ],
+};

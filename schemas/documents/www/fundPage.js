@@ -38,9 +38,7 @@ export default {
       title: 'Calls To Action',
       name: 'callsToAction',
       type: 'array',
-      of: [
-        { type: 'fundCallToAction' }
-      ],
+      of: [{ type: 'fundCallToAction' }],
       validation: Rule => Rule.required(),
     },
   ],

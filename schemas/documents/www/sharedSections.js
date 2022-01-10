@@ -16,5 +16,5 @@ export default {
       type: 'blogSection',
       validation: Rule => Rule.required(),
     },
-  ]
-}
+  ],
+};

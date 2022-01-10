@@ -20,5 +20,5 @@ export default {
       name: 'image',
       type: 'customImage',
     },
-  ]
-}
+  ],
+};

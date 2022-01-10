@@ -34,5 +34,5 @@ export default {
       of: [{ type: 'stepCard' }],
       validation: Rule => Rule.required(),
     },
-  ]
-}
+  ],
+};

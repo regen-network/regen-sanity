@@ -47,5 +47,5 @@ export default {
       of: [{ type: 'card' }],
       validation: Rule => Rule.required(),
     },
-  ]
-}
+  ],
+};

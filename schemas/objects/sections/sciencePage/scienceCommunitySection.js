@@ -19,10 +19,12 @@ export default {
       title: 'Members',
       name: 'members',
       type: 'array',
-      of: [{
-        type: 'scienceCommunityMember',
-      }],
+      of: [
+        {
+          type: 'scienceCommunityMember',
+        },
+      ],
       validation: Rule => Rule.required(),
-    }
+    },
   ],
-}
+};

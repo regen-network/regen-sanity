@@ -1,5 +1,5 @@
-import slugifyToIRI from "../../../utils/slugifyToIRI"
-import toPlainText from "../../../utils/toPlainText"
+import slugifyToIRI from '../../../utils/slugifyToIRI';
+import toPlainText from '../../../utils/toPlainText';
 
 export default {
   type: 'document',
@@ -20,16 +20,17 @@ export default {
       validation: Rule => Rule.required(),
       options: {
         source: 'name',
-        slugify: (input) => {
-          return `${slugifyToIRI(toPlainText(input))}CreditClass`
-        }
+        slugify: input => {
+          return `${slugifyToIRI(toPlainText(input))}CreditClass`;
+        },
       },
     },
     {
       title: 'Path',
       name: 'path',
       type: 'string',
-      description: 'This will be used in the credit class page url: "/credit-classes/{path}"',
+      description:
+        'This will be used in the credit class page url: "/credit-classes/{path}"',
       validation: Rule => Rule.required(),
     },
     {
@@ -49,9 +50,11 @@ export default {
       title: 'Ecological Impact',
       name: 'ecologicalImpact',
       type: 'array',
-      of: [{
-        type: 'ecologicalImpactRelation',
-      }],
+      of: [
+        {
+          type: 'ecologicalImpactRelation',
+        },
+      ],
       validation: Rule => Rule.required(),
     },
     {
@@ -66,10 +69,12 @@ export default {
       name: 'sdgs',
       type: 'array',
       description: 'Select existing SDGs from "Shared" content',
-      of: [{
-        type: 'reference',
-        to: [{ type: 'sdg' }]
-      }],
+      of: [
+        {
+          type: 'reference',
+          to: [{ type: 'sdg' }],
+        },
+      ],
       validation: Rule => Rule.required(),
     },
     {
@@ -84,5 +89,5 @@ export default {
       type: 'landSteward',
       validation: Rule => Rule.required(),
     },
-  ]
-}
+  ],
+};

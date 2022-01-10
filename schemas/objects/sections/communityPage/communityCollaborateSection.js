@@ -13,10 +13,8 @@ export default {
       title: 'Cards',
       name: 'cards',
       type: 'array',
-      of: [
-        { type: 'resourcesCard' }
-      ],
+      of: [{ type: 'resourcesCard' }],
       validation: Rule => Rule.required(),
     },
   ],
-}
+};

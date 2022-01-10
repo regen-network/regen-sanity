@@ -25,10 +25,12 @@ export default {
       title: 'Items',
       name: 'items',
       type: 'array',
-      of: [{
-        type: 'presskitTimelineItem',
-      }],
+      of: [
+        {
+          type: 'presskitTimelineItem',
+        },
+      ],
       validation: Rule => Rule.required(),
-    }
+    },
   ],
-}
+};

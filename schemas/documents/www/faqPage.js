@@ -8,9 +8,7 @@ export default {
       title: 'Categories',
       name: 'categories',
       type: 'array',
-      of: [
-        { type: 'faqCategory' }
-      ],
+      of: [{ type: 'faqCategory' }],
       validation: Rule => Rule.required(),
     },
   ],

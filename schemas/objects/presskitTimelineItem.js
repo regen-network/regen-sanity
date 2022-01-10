@@ -20,6 +20,5 @@ export default {
       name: 'description',
       type: 'string',
     },
-  ]
-}
-
+  ],
+};

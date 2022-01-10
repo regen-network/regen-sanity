@@ -28,6 +28,5 @@ export default {
       of: [{ type: 'reference', to: [{ type: 'tag' }] }],
       description: '(Optional)',
     },
-  ]
-}
-
+  ],
+};

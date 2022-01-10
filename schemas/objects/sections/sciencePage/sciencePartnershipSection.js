@@ -13,10 +13,12 @@ export default {
       title: 'Partners',
       name: 'partners',
       type: 'array',
-      of: [{
-        type: 'imageCustomBody',
-      }],
+      of: [
+        {
+          type: 'imageCustomBody',
+        },
+      ],
       validation: Rule => Rule.required(),
-    }
+    },
   ],
-}
+};

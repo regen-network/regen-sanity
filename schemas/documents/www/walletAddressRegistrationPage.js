@@ -27,5 +27,5 @@ export default {
       type: 'walletAddressRegistrationFormSection',
       validation: Rule => Rule.required(),
     },
-  ]
-}
+  ],
+};

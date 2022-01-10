@@ -2,7 +2,8 @@ export default {
   name: 'documentation',
   type: 'object',
   title: 'Documentation',
-  description: 'Latest version, program and other Methodology details are not editable from the CMS since they are considered dynamic content that is pulled from the Postgres database',
+  description:
+    'Latest version, program and other Methodology details are not editable from the CMS since they are considered dynamic content that is pulled from the Postgres database',
   validation: Rule => Rule.required(),
   fields: [
     {
@@ -23,5 +24,5 @@ export default {
       type: 'customImage',
       validation: Rule => Rule.required(),
     },
-  ]
-}
+  ],
+};

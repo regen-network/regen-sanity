@@ -13,11 +13,13 @@ export default {
       title: 'Cards',
       name: 'cards',
       type: 'array',
-      of: [{
-        type: 'reference',
-        to: [{ type: 'resource' }],
-      }],
+      of: [
+        {
+          type: 'reference',
+          to: [{ type: 'resource' }],
+        },
+      ],
       validation: Rule => Rule.required(),
     },
   ],
-}
+};

@@ -17,10 +17,9 @@ export default {
         {
           type: 'reference',
           to: [{ type: 'faq' }],
-        }
+        },
       ],
       validation: Rule => Rule.required(),
     },
-  ]
-}
-
+  ],
+};

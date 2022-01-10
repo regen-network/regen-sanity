@@ -19,11 +19,13 @@ export default {
       title: 'Outcomes',
       name: 'outcomes',
       type: 'array',
-      of: [{
-        type: 'reference',
-        to: [{ type: 'ecologicalOutcome' }],
-      }],
+      of: [
+        {
+          type: 'reference',
+          to: [{ type: 'ecologicalOutcome' }],
+        },
+      ],
       validation: Rule => Rule.required(),
-    }
+    },
   ],
-}
+};

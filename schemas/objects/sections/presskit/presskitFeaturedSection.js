@@ -13,11 +13,13 @@ export default {
       title: 'Articles',
       name: 'articles',
       type: 'array',
-      of: [{
-        type: 'reference',
-        to: [{ type: 'media' }],
-      }],
+      of: [
+        {
+          type: 'reference',
+          to: [{ type: 'media' }],
+        },
+      ],
       validation: Rule => Rule.required(),
-    }
+    },
   ],
-}
+};

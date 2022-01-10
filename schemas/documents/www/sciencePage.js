@@ -33,5 +33,5 @@ export default {
       type: 'scienceCommunitySection',
       validation: Rule => Rule.required(),
     },
-  ]
-}
+  ],
+};

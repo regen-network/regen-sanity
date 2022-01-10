@@ -18,10 +18,8 @@ export default {
       title: 'Figures',
       name: 'figures',
       type: 'array',
-      of: [
-        { type: 'caseStudyFigure' },
-      ],
+      of: [{ type: 'caseStudyFigure' }],
       validation: Rule => Rule.required(),
     },
   ],
-}
+};

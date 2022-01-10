@@ -13,10 +13,12 @@ export default {
       title: 'Items',
       name: 'items',
       type: 'array',
-      of: [{
-        type: 'titleImageLink',
-      }],
+      of: [
+        {
+          type: 'titleImageLink',
+        },
+      ],
       validation: Rule => Rule.required(),
-    }
+    },
   ],
-}
+};

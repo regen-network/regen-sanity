@@ -19,10 +19,12 @@ export default {
       title: 'Validators',
       name: 'validators',
       type: 'array',
-      of: [{
-        type: 'validator',
-      }],
+      of: [
+        {
+          type: 'validator',
+        },
+      ],
       validation: Rule => Rule.required(),
-    }
+    },
   ],
-}
+};

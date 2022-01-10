@@ -13,7 +13,7 @@ export default {
       title: 'Image',
       name: 'image',
       type: 'customImage',
-      validation: Rule => Rule.required()
+      validation: Rule => Rule.required(),
     },
-  ]
-}
+  ],
+};

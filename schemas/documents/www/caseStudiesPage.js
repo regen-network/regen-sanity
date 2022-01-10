@@ -44,10 +44,12 @@ export default {
       name: 'caseStudies',
       type: 'array',
       title: 'Case Studies',
-      of: [{
-        type: 'reference',
-        to: [{ type: 'caseStudyPage' }],
-      }],
+      of: [
+        {
+          type: 'reference',
+          to: [{ type: 'caseStudyPage' }],
+        },
+      ],
       validation: Rule => Rule.required(),
     },
     {
@@ -56,5 +58,5 @@ export default {
       title: 'Conclusion Section Header',
       validation: Rule => Rule.required(),
     },
-  ]
+  ],
 };

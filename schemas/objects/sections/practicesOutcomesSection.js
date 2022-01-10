@@ -29,5 +29,5 @@ export default {
       of: [{ type: 'reference', to: [{ type: 'ecologicalOutcome' }] }],
       validation: Rule => Rule.required(),
     },
-  ]
-}
+  ],
+};

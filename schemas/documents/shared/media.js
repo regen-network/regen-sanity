@@ -42,9 +42,9 @@ export default {
         list: [
           { title: 'Video', value: 'video' },
           { title: 'Article', value: 'article' },
-          { title: 'Podcast', value: 'podcast' }
+          { title: 'Podcast', value: 'podcast' },
         ],
-      }
+      },
     },
-  ]
-}
+  ],
+};

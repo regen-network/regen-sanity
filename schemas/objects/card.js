@@ -26,5 +26,5 @@ export default {
       name: 'tooltip',
       type: 'customPortableText',
     },
-  ]
-}
+  ],
+};

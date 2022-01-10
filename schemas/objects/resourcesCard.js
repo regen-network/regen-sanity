@@ -44,5 +44,5 @@ export default {
   ],
   initialValue: {
     buttonText: 'Learn More',
-  }
-}
+  },
+};

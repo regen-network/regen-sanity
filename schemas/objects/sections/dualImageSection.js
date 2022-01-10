@@ -21,5 +21,5 @@ export default {
       type: 'imageBoldTextLabel',
       validation: Rule => Rule.required(),
     },
-  ]
-}
+  ],
+};

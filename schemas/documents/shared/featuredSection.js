@@ -33,5 +33,5 @@ export default {
       type: 'customPortableText',
       validation: Rule => Rule.required(),
     },
-  ]
-}
+  ],
+};

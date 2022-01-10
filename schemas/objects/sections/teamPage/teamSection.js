@@ -13,11 +13,13 @@ export default {
       title: 'Members',
       name: 'members',
       type: 'array',
-      of: [{
-        type: 'reference',
-        to: [{ type: 'regenTeamMember' }],
-      }],
+      of: [
+        {
+          type: 'reference',
+          to: [{ type: 'regenTeamMember' }],
+        },
+      ],
       validation: Rule => Rule.required(),
     },
   ],
-}
+};

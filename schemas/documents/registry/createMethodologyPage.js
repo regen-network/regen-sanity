@@ -34,10 +34,12 @@ export default {
       name: 'resources',
       type: 'array',
       description: 'Select existing resources from "Shared" content',
-      of: [{
-        type: 'reference',
-        to: [{ type: 'resource' }]
-      }],
+      of: [
+        {
+          type: 'reference',
+          to: [{ type: 'resource' }],
+        },
+      ],
       validation: Rule => Rule.required(),
     },
     {

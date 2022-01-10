@@ -25,10 +25,12 @@ export default {
       title: 'Phases',
       name: 'phases',
       type: 'array',
-      of: [{
-        type: 'titleBody',
-      }],
+      of: [
+        {
+          type: 'titleBody',
+        },
+      ],
       validation: Rule => Rule.required(),
-    }
+    },
   ],
-}
+};
