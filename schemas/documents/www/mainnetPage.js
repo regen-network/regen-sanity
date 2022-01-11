@@ -2,7 +2,7 @@ export default {
   name: 'mainnetPage',
   type: 'document',
   title: 'Mainnet Page',
-  __experimental_actions: ['update', 'create', /*'delete', */ 'publish'],
+  __experimental_actions: ['update', /* 'create', 'delete', */ 'publish'],
   fields: [
     {
       name: 'launchDate',

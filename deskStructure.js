@@ -67,7 +67,7 @@ export default () => {
             .title('Website')
             .items([
               S.listItem()
-                .title('Home Web')
+                .title('Home Page')
                 .schemaType('homePageWeb')
                 .child(S.document().schemaType('homePageWeb')),
               S.listItem()

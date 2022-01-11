@@ -2,7 +2,7 @@ export default {
   name: 'caseStudiesPage',
   type: 'document',
   title: 'Case Studies Page',
-  __experimental_actions: ['update', 'create', /*'delete', */ 'publish'],
+  __experimental_actions: ['update', /* 'create', 'delete', */ 'publish'],
   fields: [
     {
       name: 'topSection',

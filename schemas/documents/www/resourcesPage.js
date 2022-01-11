@@ -2,7 +2,7 @@ export default {
   name: 'resourcesPage',
   type: 'document',
   title: 'Resources Page',
-  __experimental_actions: ['update', 'create', /*'delete', */ 'publish'],
+  __experimental_actions: ['update', /* 'create', 'delete', */ 'publish'],
   fields: [
     {
       name: 'topSection',

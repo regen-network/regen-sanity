@@ -2,7 +2,7 @@ export default {
   name: 'developersPage',
   type: 'document',
   title: 'Developers Page',
-  __experimental_actions: ['update', 'create', /*'delete', */ 'publish'],
+  __experimental_actions: ['update', /* 'create', 'delete', */ 'publish'],
   fields: [
     {
       name: 'topSection',
