@@ -17,7 +17,7 @@ I have...
 - [ ] provided a link to the relevant issue or specification
 - [ ] reviewed "Files changed" and left comments if necessary
 - [ ] added new items content to `./deskStructure.js`
-- [ ] go through ["Deploying to production" instructions](../../README.md#deploying-to-production) after this PR (and other PRs depending on this one, e.g. on regen-network/regen-web, if applicable) get merged
+- [ ] go through ["Deploying to production" instructions](https://github.com/regen-network/regen-sanity/blob/main/README.md#deploying-to-production) after this PR (and other PRs depending on this one, e.g. on regen-network/regen-web, if applicable) get merged
 
 ### Reviewers Checklist
 
