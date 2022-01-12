@@ -21,6 +21,5 @@ export default {
       type: 'customImage',
       validation: Rule => Rule.required(),
     },
-  ]
-}
-
+  ],
+};

@@ -1,4 +1,4 @@
-import toPlainText from "../../../utils/toPlainText";
+import toPlainText from '../../../utils/toPlainText';
 
 export default {
   name: 'resource',
@@ -33,7 +33,8 @@ export default {
       name: 'lastUpdated',
       type: 'date',
       title: 'Last Updated',
-      description: 'If not provided, the "last updated" date displayed will be the stored updated_at date of this Resource item or corresponding Document item'
+      description:
+        'If not provided, the "last updated" date displayed will be the stored updated_at date of this Resource item or corresponding Document item',
     },
   ],
   preview: {
@@ -41,10 +42,10 @@ export default {
       title: 'title',
     },
     prepare(selection) {
-      const {title} = selection
+      const { title } = selection;
       return {
         title: toPlainText(title),
-      }
-    }
-  }
-}
+      };
+    },
+  },
+};

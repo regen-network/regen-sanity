@@ -1,4 +1,4 @@
-import slugifyToIRI from "../../../utils/slugifyToIRI";
+import slugifyToIRI from '../../../utils/slugifyToIRI';
 
 export default {
   title: 'Ecological Impact',
@@ -19,9 +19,9 @@ export default {
       validation: Rule => Rule.required(),
       options: {
         source: 'name',
-        slugify: (input) => {
+        slugify: input => {
           return slugifyToIRI(input);
-        }
+        },
       },
     },
     {
@@ -41,5 +41,5 @@ export default {
       name: 'standard',
       type: 'customImage',
     },
-  ]
-}
+  ],
+};

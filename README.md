@@ -11,9 +11,14 @@ Install dependencies using `yarn`.
 1. Run `yarn start` to start the studio locally.
 2. When adding new documents or objects to the schema, make sure to import them from `schemas/schemas.js`. In case of documents, you'll also need to make sure to add them to the appropriate list in `deskStructure` so it gets displayed on the Studio, whether it's as part under "Registry", "Website" or "Shared".
 
+### Formatting
+
+`yarn prettier` to format code
+
 ## Datasets and environments
 
 We have currently 2 [datasets](https://www.sanity.io/docs/datasets):
+
 - **staging**: used in development (both for running Sanity Studio locally and used to fetch Sanity content from the Registry app). It should be used for the Registry app deploy previews too after we merge https://github.com/regen-network/regen-web/pull/699 (this is configurable from https://github.com/regen-network/regen-web/blob/master/netlify.toml)
 - **production**: used in production from https://regen.sanity.studio/desk. Since we are using [built-in Sanity hosting solution](https://www.sanity.io/docs/deployment#bd4e07db3e37), we can only have one Studio available. But later on, we might want to use Netlify for hosting, which would allow us to have deploy previews for the Studio itself as well. In the mean time, we could use the [Spaces](https://www.sanity.io/docs/spaces) experimental feature to switch between datasets in the Studio.
 

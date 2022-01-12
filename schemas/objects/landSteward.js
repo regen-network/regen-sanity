@@ -15,10 +15,12 @@ export default {
       name: 'resources',
       type: 'array',
       description: 'Select existing resources from "Shared" content',
-      of: [{
-        type: 'reference',
-        to: [{type: 'resource'}] 
-      }],
+      of: [
+        {
+          type: 'reference',
+          to: [{ type: 'resource' }],
+        },
+      ],
       validation: Rule => Rule.required(),
     },
     {
@@ -26,14 +28,16 @@ export default {
       name: 'videos',
       type: 'array',
       description: 'Select existing media of type "video" from "Shared" content',
-      of: [{
-        type: 'reference',
-        to: [{type: 'media'}],
-        options: {
-          filter: 'type == $type',
-          filterParams: {type: 'video'}
-        }
-      }],
+      of: [
+        {
+          type: 'reference',
+          to: [{ type: 'media' }],
+          options: {
+            filter: 'type == $type',
+            filterParams: { type: 'video' },
+          },
+        },
+      ],
       validation: Rule => Rule.required(),
     },
     {
@@ -52,10 +56,13 @@ export default {
       title: 'Featured Project Handles',
       name: 'featuredProjectIds',
       type: 'array',
-      description: 'This should correspond to the last part of the project page URL: /projects/{handle}',
-      of: [{
-        type: 'string',
-      }],
+      description:
+        'This should correspond to the last part of the project page URL: /projects/{handle}',
+      of: [
+        {
+          type: 'string',
+        },
+      ],
       validation: Rule => Rule.required(),
     },
     {
@@ -65,13 +72,13 @@ export default {
       of: [
         {
           type: 'fullStepCardSection',
-        }
-      ]
+        },
+      ],
     },
     {
       title: 'Connect Section',
       name: 'connectSection',
       type: 'connectSection',
     },
-  ]
-}
+  ],
+};

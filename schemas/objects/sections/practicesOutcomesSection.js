@@ -19,15 +19,15 @@ export default {
       title: 'Land Management Practices',
       name: 'practices',
       type: 'array',
-      of: [{ type: 'reference', to: [{type: 'landManagementPractice'}] }],
+      of: [{ type: 'reference', to: [{ type: 'landManagementPractice' }] }],
       validation: Rule => Rule.required(),
     },
     {
       title: 'Ecological Outcomes',
       name: 'outcomes',
       type: 'array',
-      of: [{ type: 'reference', to: [{type: 'ecologicalOutcome'}] }],
+      of: [{ type: 'reference', to: [{ type: 'ecologicalOutcome' }] }],
       validation: Rule => Rule.required(),
     },
-  ]
-}
+  ],
+};

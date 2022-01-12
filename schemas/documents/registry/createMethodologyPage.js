@@ -26,7 +26,7 @@ export default {
       name: 'outcomes',
       type: 'array',
       title: 'Ecological Outcomes',
-      of: [{ type: 'reference', to: [{type: 'ecologicalOutcome'}] }],
+      of: [{ type: 'reference', to: [{ type: 'ecologicalOutcome' }] }],
       validation: Rule => Rule.required(),
     },
     {
@@ -34,10 +34,12 @@ export default {
       name: 'resources',
       type: 'array',
       description: 'Select existing resources from "Shared" content',
-      of: [{
-        type: 'reference',
-        to: [{type: 'resource'}] 
-      }],
+      of: [
+        {
+          type: 'reference',
+          to: [{ type: 'resource' }],
+        },
+      ],
       validation: Rule => Rule.required(),
     },
     {

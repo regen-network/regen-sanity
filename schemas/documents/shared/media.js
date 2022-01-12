@@ -40,11 +40,11 @@ export default {
       validation: Rule => Rule.required(),
       options: {
         list: [
-          {title: 'Video', value: 'video'},
-          {title: 'Article', value: 'article'},
-          {title: 'Podcast', value: 'podcast'}
+          { title: 'Video', value: 'video' },
+          { title: 'Article', value: 'article' },
+          { title: 'Podcast', value: 'podcast' },
         ],
-      }
+      },
     },
-  ]
-}
+  ],
+};

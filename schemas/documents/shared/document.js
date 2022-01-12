@@ -16,10 +16,16 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
+      title: 'Last Updated',
+      description: 'Optional',
+      name: 'date',
+      type: 'date',
+    },
+    {
       title: 'Type',
       name: 'type',
       description: 'Optional, e.g. "Monitoring", "Marketing", "Project Plan", etc.',
       type: 'string',
     },
-  ]
-}
+  ],
+};

@@ -43,8 +43,8 @@ export default {
       of: [
         {
           type: 'basicStepCardSection',
-        }
-      ]
-    }
-  ]
-}
+        },
+      ],
+    },
+  ],
+};

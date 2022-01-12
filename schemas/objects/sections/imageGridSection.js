@@ -7,14 +7,14 @@ export default {
       title: 'Background Image',
       name: 'backgroundImage',
       type: 'customImage',
-      description: '(Optional)'
+      description: '(Optional)',
     },
     {
       title: 'Items',
       name: 'items',
       type: 'array',
-      of: [{type: 'imageGridItem'}],
+      of: [{ type: 'imageGridItem' }],
       validation: Rule => Rule.required(),
     },
-  ]
-}
+  ],
+};

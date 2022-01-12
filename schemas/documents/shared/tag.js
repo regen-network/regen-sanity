@@ -1,4 +1,4 @@
-import isColor from "../../../utils/isColor"
+import isColor from '../../../utils/isColor';
 
 export default {
   name: 'tag',
@@ -15,10 +15,14 @@ export default {
       title: 'Color',
       name: 'color',
       type: 'string',
-      validation: Rule => Rule.custom(colorString => {
-        return isColor(colorString);
-      }).warning().required(),
-      description: 'Must be a legal CSS color, as in https://www.w3schools.com/cssref/css_colors_legal.asp',
+      validation: Rule =>
+        Rule.custom(colorString => {
+          return isColor(colorString);
+        })
+          .warning()
+          .required(),
+      description:
+        'Must be a legal CSS color, as in https://www.w3schools.com/cssref/css_colors_legal.asp',
     },
-  ]
-}
+  ],
+};

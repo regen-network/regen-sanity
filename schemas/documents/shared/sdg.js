@@ -1,4 +1,4 @@
-import slugifyToIRI from "../../../utils/slugifyToIRI";
+import slugifyToIRI from '../../../utils/slugifyToIRI';
 
 export default {
   title: 'SDG',
@@ -11,7 +11,7 @@ export default {
       type: 'string',
       validation: Rule => Rule.required(),
     },
-     {
+    {
       title: 'IRI',
       name: 'iri',
       description: 'This can be generated based on the title',
@@ -19,9 +19,9 @@ export default {
       validation: Rule => Rule.required(),
       options: {
         source: 'title',
-        slugify: (input) => {
+        slugify: input => {
           return slugifyToIRI(input);
-        }
+        },
       },
     },
     {
@@ -30,5 +30,5 @@ export default {
       type: 'customImage',
       validation: Rule => Rule.required(),
     },
-  ]
-}
+  ],
+};

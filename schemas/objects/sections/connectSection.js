@@ -13,10 +13,12 @@ export default {
       title: 'Links',
       name: 'links',
       type: 'array',
-      of: [{
-        type: 'connectSectionLink',
-      }],
+      of: [
+        {
+          type: 'connectSectionLink',
+        },
+      ],
       validation: Rule => Rule.required(),
-    }
+    },
   ],
-}
+};
