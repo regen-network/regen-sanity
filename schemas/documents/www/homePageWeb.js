@@ -17,6 +17,12 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
+      name: 'bannerTextSection',
+      type: 'titleImageCustomBody',
+      title: 'Banner Text Section',
+      validation: Rule => Rule.required(),
+    },
+    {
       name: 'climateSection',
       type: 'climateSection',
       title: 'Climate Section',
