@@ -13,7 +13,8 @@ export default {
       title: 'Launch Date',
       name: 'launchDate',
       type: 'date',
-      description: 'date of the NCT Liquidity pool launch',
+      description:
+        'date of the NCT Liquidity pool launch for countdown timer (NOTE: not currently used)',
     },
     {
       title: 'Top Section',
