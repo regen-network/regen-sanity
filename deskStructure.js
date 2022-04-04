@@ -138,6 +138,10 @@ export default () => {
                 .title('Wallet Address Registration Page')
                 .schemaType('walletAddressRegistrationPage')
                 .child(S.document().schemaType('walletAddressRegistrationPage')),
+              S.listItem()
+                .title('rNCT Page')
+                .schemaType('nctPage')
+                .child(S.document().schemaType('nctPage')),
             ]),
         ),
       // Shared
