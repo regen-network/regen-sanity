@@ -6,7 +6,7 @@ export default {
   fields: [
     {
       name: 'heroSection',
-      type: 'heroSection',
+      type: 'homePageTopSection',
       title: 'Hero Section',
       validation: Rule => Rule.required(),
     },
