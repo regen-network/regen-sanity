@@ -2,7 +2,6 @@ export default {
   title: 'Buyer',
   name: 'buyer',
   type: 'object',
-  validation: Rule => Rule.required(),
   fields: [
     {
       name: 'heroSection',

@@ -30,14 +30,19 @@ export default {
       name: 'path',
       type: 'string',
       description:
-        'This will be used in the credit class page url: "/credit-classes/{path}"',
+        'This will be used in the credit class page url: "/credit-classes/{path}", it can be a generic handle or an on chain credit class id',
+      validation: Rule => Rule.required(),
+    },
+    {
+      title: 'Image',
+      name: 'image',
+      type: 'customImage',
       validation: Rule => Rule.required(),
     },
     {
       title: 'Description',
       name: 'description',
       type: 'customPortableText',
-      validation: Rule => Rule.required(),
     },
     {
       title: 'Short Description',
@@ -55,14 +60,12 @@ export default {
           type: 'ecologicalImpactRelation',
         },
       ],
-      validation: Rule => Rule.required(),
     },
     {
       title: 'Overview Cards',
       name: 'overviewCards',
       type: 'array',
       of: [{ type: 'card' }],
-      validation: Rule => Rule.required(),
     },
     {
       title: 'SDGs',
@@ -75,19 +78,16 @@ export default {
           to: [{ type: 'sdg' }],
         },
       ],
-      validation: Rule => Rule.required(),
     },
     {
       title: 'Buyer',
       name: 'buyer',
       type: 'buyer',
-      validation: Rule => Rule.required(),
     },
     {
       title: 'Land Steward',
       name: 'landSteward',
       type: 'landSteward',
-      validation: Rule => Rule.required(),
     },
   ],
 };
