@@ -157,6 +157,7 @@ import nctOverviewSection from './objects/sections/nctPage/nctOverviewSection';
 import labeledTextLinkable from './objects/templates/labeledTextLinkable';
 import nctTokenSection from './objects/sections/nctPage/nctTokenSection';
 import nctLedgerSection from './objects/sections/nctPage/nctLedgerSection';
+import homePageTopSection from './objects/sections/homePage/homePageTopSection';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -229,6 +230,7 @@ export default createSchema({
     heroSection,
     homeFoldSection,
     homePage,
+    homePageTopSection,
     homePageWeb,
     homeValuesSection,
     imageBoldTextLabel,
