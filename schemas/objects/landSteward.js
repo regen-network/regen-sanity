@@ -2,7 +2,6 @@ export default {
   title: 'Land Steward',
   name: 'landSteward',
   type: 'object',
-  validation: Rule => Rule.required(),
   fields: [
     {
       name: 'heroSection',
