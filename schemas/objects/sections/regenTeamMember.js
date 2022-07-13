@@ -19,7 +19,6 @@ export default {
       title: 'Description',
       name: 'description',
       type: 'text',
-      validation: Rule => Rule.required(),
     },
     {
       title: 'Image',
