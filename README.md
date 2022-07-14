@@ -4,7 +4,8 @@ This is the [Sanity](https://sanity.io/) Studio for editing content on Regen Reg
 
 ## Setup
 
-Install dependencies using `yarn`.
+1. Install dependencies using `yarn`.
+2. Install sanity-cli globally using `npm install -g @sanity/cli`.
 
 ## Development
 
