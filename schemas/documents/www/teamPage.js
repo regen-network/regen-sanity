@@ -16,14 +16,8 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
-      title: 'Contributor Section',
-      name: 'contributorSection',
-      type: 'teamSection',
-      validation: Rule => Rule.required(),
-    },
-    {
-      title: 'Advisor Section',
-      name: 'advisorSection',
+      title: 'Board Section',
+      name: 'advisorSection', // this was renamed on the site, but easier to keep as is
       type: 'teamSection',
       validation: Rule => Rule.required(),
     },
