@@ -5,6 +5,12 @@ export default {
   __experimental_actions: ['update', /*'create', 'delete', */ 'publish'],
   fields: [
     {
+      name: 'seo',
+      type: 'seo',
+      title: 'SEO Info',
+      validation: Rule => Rule.required(),
+    },
+    {
       name: 'heroSection',
       type: 'homePageTopSection',
       title: 'Hero Section',
