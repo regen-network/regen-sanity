@@ -201,6 +201,14 @@ export default () => {
                 .title('Team Members')
                 .schemaType('regenTeamMember')
                 .child(S.documentTypeList('regenTeamMember').title('Team Members')),
+              S.listItem()
+                .title('Resources for Getting Started Sections')
+                .schemaType('gettingStartedResourcesSection')
+                .child(S.documentTypeList('gettingStartedResourcesSection').title('Resources for Getting Started Sections')),
+              S.listItem()
+                .title('Resource for Getting Started Card')
+                .schemaType('gettingStartedResourcesCard')
+                .child(S.documentTypeList('gettingStartedResourcesCard').title('Resource for Getting Started Card')),
             ]),
         ),
     ]);

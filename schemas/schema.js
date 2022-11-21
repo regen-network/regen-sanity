@@ -27,6 +27,8 @@ import ecologicalOutcome from './documents/shared/ecologicalOutcome';
 import landManagementPractice from './documents/shared/landManagementPractice';
 import tag from './documents/shared/tag';
 import featuredSection from './documents/shared/featuredSection';
+import gettingStartedResourcesSection from './documents/shared/gettingStartedResourcesSection';
+import gettingStartedResourcesCard from './documents/shared/gettingStartedResourcesCard';
 
 // Object types
 import heroSection from './objects/sections/heroSection';
@@ -227,6 +229,8 @@ export default createSchema({
     fullStepCardSection,
     fundCallToAction,
     fundPage,
+    gettingStartedResourcesCard,
+    gettingStartedResourcesSection,
     heroSection,
     homeFoldSection,
     homePage,

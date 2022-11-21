@@ -17,6 +17,13 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
+      name: 'gettingStartedResourcesSection',
+      type: 'reference',
+      to: [{ type: 'gettingStartedResourcesSection' }],
+      title: 'Resources for Getting Started Section',
+      validation: Rule => Rule.required(),
+    },
+    {
       name: 'bottomBanner',
       type: 'bottomBanner',
       title: 'Bottom Section',
