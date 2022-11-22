@@ -18,13 +18,13 @@ export default {
     {
       title: 'Image',
       name: 'image',
-      type: 'image',
+      type: 'customImage',
       validation: Rule => Rule.required(),
     },
     {
       title: 'Mobile Image',
       name: 'mobileImage',
-      type: 'image',
+      type: 'customImage',
       validation: Rule => Rule.required(),
     },
     {
