@@ -16,6 +16,8 @@ import creditClass from './documents/registry/creditClass';
 import landStewardsPage from './documents/registry/landStewardsPage';
 import buyersPage from './documents/registry/buyersPage';
 import mainnetPage from './documents/www/mainnetPage';
+import projectsPage from './documents/registry/projectsPage';
+import projectPage from './documents/registry/projectPage';
 
 import resource from './documents/shared/resource';
 import faq from './documents/shared/faq';
@@ -275,6 +277,8 @@ export default createSchema({
     presskitTeamSection,
     presskitTimelineItem,
     presskitTimelineSection,
+    projectPage,
+    projectsPage,
     regenTeamMember,
     requestType,
     resource,

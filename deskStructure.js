@@ -33,11 +33,11 @@ export default () => {
                 .schemaType('buyersPage')
                 .child(S.document().schemaType('buyersPage')),
               S.listItem()
-                .title('Create Credit Class')
+                .title('Create Credit Class Page')
                 .schemaType('createCreditClassPage')
                 .child(S.document().schemaType('createCreditClassPage')),
               S.listItem()
-                .title('Create Methodology')
+                .title('Create Methodology Page')
                 .schemaType('createMethodologyPage')
                 .child(S.document().schemaType('createMethodologyPage')),
               S.listItem()
@@ -45,9 +45,17 @@ export default () => {
                 .schemaType('landStewardsPage')
                 .child(S.document().schemaType('landStewardsPage')),
               S.listItem()
-                .title('Methodology Review Process')
+                .title('Methodology Review Process Page')
                 .schemaType('methodologyReviewProcessPage')
                 .child(S.document().schemaType('methodologyReviewProcessPage')),
+              S.listItem()
+                .title('Projects Page')
+                .schemaType('projectsPage')
+                .child(S.document().schemaType('projectsPage')),
+              S.listItem()
+                .title('Project Page')
+                .schemaType('projectPage')
+                .child(S.document().schemaType('projectPage')),
               S.listItem()
                 .title('Methodologies')
                 .schemaType('methodology')
@@ -206,9 +214,9 @@ export default () => {
                 .schemaType('gettingStartedResourcesSection')
                 .child(S.documentTypeList('gettingStartedResourcesSection').title('Resources for Getting Started Sections')),
               S.listItem()
-                .title('Resource for Getting Started Card')
+                .title('Resource for Getting Started Cards')
                 .schemaType('gettingStartedResourcesCard')
-                .child(S.documentTypeList('gettingStartedResourcesCard').title('Resource for Getting Started Card')),
+                .child(S.documentTypeList('gettingStartedResourcesCard').title('Resource for Getting Started Cards')),
             ]),
         ),
     ]);
