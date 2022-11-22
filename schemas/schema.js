@@ -18,6 +18,7 @@ import buyersPage from './documents/registry/buyersPage';
 import mainnetPage from './documents/www/mainnetPage';
 import projectsPage from './documents/registry/projectsPage';
 import projectPage from './documents/registry/projectPage';
+import bridgePage from './documents/registry/bridgePage';
 
 import resource from './documents/shared/resource';
 import faq from './documents/shared/faq';
@@ -175,6 +176,7 @@ export default createSchema({
     blogSection,
     bodyGreenTextWithPopover,
     bottomBanner,
+    bridgePage,
     button,
     buyer,
     buyersPage,

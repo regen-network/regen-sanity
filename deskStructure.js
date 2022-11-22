@@ -57,6 +57,10 @@ export default () => {
                 .schemaType('projectPage')
                 .child(S.document().schemaType('projectPage')),
               S.listItem()
+                .title('Bridge Page')
+                .schemaType('bridgePage')
+                .child(S.document().schemaType('bridgePage')),
+              S.listItem()
                 .title('Methodologies')
                 .schemaType('methodology')
                 .child(S.documentTypeList('methodology').title('Methodologies')),
