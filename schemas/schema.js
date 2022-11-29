@@ -16,6 +16,9 @@ import creditClass from './documents/registry/creditClass';
 import landStewardsPage from './documents/registry/landStewardsPage';
 import buyersPage from './documents/registry/buyersPage';
 import mainnetPage from './documents/www/mainnetPage';
+import projectsPage from './documents/registry/projectsPage';
+import projectPage from './documents/registry/projectPage';
+import bridgePage from './documents/registry/bridgePage';
 
 import resource from './documents/shared/resource';
 import faq from './documents/shared/faq';
@@ -27,6 +30,8 @@ import ecologicalOutcome from './documents/shared/ecologicalOutcome';
 import landManagementPractice from './documents/shared/landManagementPractice';
 import tag from './documents/shared/tag';
 import featuredSection from './documents/shared/featuredSection';
+import gettingStartedResourcesSection from './documents/shared/gettingStartedResourcesSection';
+import gettingStartedResourcesCard from './documents/shared/gettingStartedResourcesCard';
 
 // Object types
 import heroSection from './objects/sections/heroSection';
@@ -171,6 +176,7 @@ export default createSchema({
     blogSection,
     bodyGreenTextWithPopover,
     bottomBanner,
+    bridgePage,
     button,
     buyer,
     buyersPage,
@@ -227,6 +233,8 @@ export default createSchema({
     fullStepCardSection,
     fundCallToAction,
     fundPage,
+    gettingStartedResourcesCard,
+    gettingStartedResourcesSection,
     heroSection,
     homeFoldSection,
     homePage,
@@ -271,6 +279,8 @@ export default createSchema({
     presskitTeamSection,
     presskitTimelineItem,
     presskitTimelineSection,
+    projectPage,
+    projectsPage,
     regenTeamMember,
     requestType,
     resource,
