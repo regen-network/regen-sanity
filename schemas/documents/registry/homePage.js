@@ -17,6 +17,18 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
+      name: 'projectsSection',
+      type: 'titleCustomBody',
+      title: 'Projects Section',
+      validation: Rule => Rule.required(),
+    },
+    {
+      name: 'creditClassesSection',
+      type: 'titleCustomBody',
+      title: 'Credit Classes Section',
+      validation: Rule => Rule.required(),
+    },
+    {
       name: 'gettingStartedResourcesSection',
       type: 'reference',
       to: [{ type: 'gettingStartedResourcesSection' }],
