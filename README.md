@@ -11,6 +11,7 @@ This is the [Sanity](https://sanity.io/) Studio for editing content on Regen Reg
 
 1. Run `yarn start` to start the studio locally.
 2. When adding new documents or objects to the schema, make sure to import them from `schemas/schemas.js`. In case of documents, you'll also need to make sure to add them to the appropriate list in `deskStructure` so it gets displayed on the Studio, whether it's as part under "Registry", "Website" or "Shared".
+3. You might also need to change `__experimental_actions` field. When creating a new document you will need the `create` action to add a new entry in the local studio. This action should be commented back after to prevent having more than one entry for a document. Note that this is relevant only for documents that represent website/app pages. For other types of documents (eg SDG, impact...), we do no use experimental_actions at all because we do want to create multiple such documents, contrary to a website/app page that should be unique.
 
 **NOTE**: if changes have been made in the CMS since the last deploy, you should run `yarn import-production` to import the latest data before making changes locally
 

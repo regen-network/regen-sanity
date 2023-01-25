@@ -68,6 +68,10 @@ export default () => {
                 .title('Credit Classes')
                 .schemaType('creditClass')
                 .child(S.documentTypeList('creditClass').title('Credit Classes')),
+              S.listItem()
+                .title('Basket Details Page')
+                .schemaType('basketDetailsPage')
+                .child(S.document().schemaType('basketDetailsPage')),
             ]),
         ),
 
@@ -216,11 +220,19 @@ export default () => {
               S.listItem()
                 .title('Resources for Getting Started Sections')
                 .schemaType('gettingStartedResourcesSection')
-                .child(S.documentTypeList('gettingStartedResourcesSection').title('Resources for Getting Started Sections')),
+                .child(
+                  S.documentTypeList('gettingStartedResourcesSection').title(
+                    'Resources for Getting Started Sections',
+                  ),
+                ),
               S.listItem()
                 .title('Resource for Getting Started Cards')
                 .schemaType('gettingStartedResourcesCard')
-                .child(S.documentTypeList('gettingStartedResourcesCard').title('Resource for Getting Started Cards')),
+                .child(
+                  S.documentTypeList('gettingStartedResourcesCard').title(
+                    'Resource for Getting Started Cards',
+                  ),
+                ),
             ]),
         ),
     ]);

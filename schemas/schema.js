@@ -19,6 +19,7 @@ import mainnetPage from './documents/www/mainnetPage';
 import projectsPage from './documents/registry/projectsPage';
 import projectPage from './documents/registry/projectPage';
 import bridgePage from './documents/registry/bridgePage';
+import basketDetailsPage from './documents/registry/basketDetailsPage';
 
 import resource from './documents/shared/resource';
 import faq from './documents/shared/faq';
@@ -172,6 +173,7 @@ export default createSchema({
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
     basicStepCardSection,
+    basketDetailsPage,
     blogPost,
     blogSection,
     bodyGreenTextWithPopover,
