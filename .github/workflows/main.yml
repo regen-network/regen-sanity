@@ -1,4 +1,4 @@
-name: CI
+name: Deploy Sanity
 on:
   push:
     branches: [main]
@@ -8,8 +8,8 @@ jobs:
     name: Deploy Sanity
     steps:
       - uses: actions/checkout@v2
-      - uses: sanity-io/github-action-sanity@v0.2-alpha
+      - uses: sanity-io/github-action-sanity@v0.4
         env:
           SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
         with:
-          args: deploy
+          args: . deploy
