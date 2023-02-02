@@ -233,6 +233,10 @@ export default () => {
                     'Resource for Getting Started Cards',
                   ),
                 ),
+              S.listItem()
+                .title('Sold out projects')
+                .schemaType('soldOutProjects')
+                .child(S.documentTypeList('soldOutProjects').title('Sold out projects')),
             ]),
         ),
     ]);
