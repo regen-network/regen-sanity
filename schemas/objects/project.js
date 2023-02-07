@@ -4,12 +4,13 @@ export default {
   title: 'Project',
   fields: [
     {
+      // optionnal project name to make it easier to track projects already added to the list
       title: 'Project name',
       name: 'projectName',
       type: 'string',
-      validation: Rule => Rule.required(),
     },
     {
+      // on-chain project id
       title: 'Project id',
       name: 'projectId',
       type: 'string',
