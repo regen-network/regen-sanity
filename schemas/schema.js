@@ -33,6 +33,7 @@ import tag from './documents/shared/tag';
 import featuredSection from './documents/shared/featuredSection';
 import gettingStartedResourcesSection from './documents/shared/gettingStartedResourcesSection';
 import gettingStartedResourcesCard from './documents/shared/gettingStartedResourcesCard';
+import soldOutProjects from './documents/shared/soldOutProjects';
 
 // Object types
 import heroSection from './objects/sections/heroSection';
@@ -126,6 +127,7 @@ import titleImageLink from './objects/templates/titleImageLink';
 import presskitTimelineItem from './objects/presskitTimelineItem';
 import presskitTimelineSection from './objects/sections/presskit/presskitTimelineSection';
 import presskitTeamSection from './objects/sections/presskit/presskitTeamSection';
+import project from './objects/project';
 import nameTitleImage from './objects/templates/nameTitleImage';
 import presskitLogosSection from './objects/sections/presskit/presskitLogosSection';
 import presskitPhotosSection from './objects/sections/presskit/presskitPhotosSection';
@@ -281,6 +283,7 @@ export default createSchema({
     presskitTeamSection,
     presskitTimelineItem,
     presskitTimelineSection,
+    project,
     projectPage,
     projectsPage,
     regenTeamMember,
@@ -301,6 +304,7 @@ export default createSchema({
     sdg,
     seo,
     sharedSections,
+    soldOutProjects,
     stepCard,
     stepCardSection,
     tag,
