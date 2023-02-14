@@ -10,6 +10,11 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
+      title: 'Description',
+      name: 'description',
+      type: 'string',
+    },
+    {
       title: 'Image cards',
       name: 'imageCards',
       type: 'array',

@@ -11,6 +11,12 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
+      name: 'ecologicalCreditsSection',
+      type: 'imageItemsSection',
+      title: 'Ecological Credits Section',
+      validation: Rule => Rule.required(),
+    },
+    {
       name: 'imageGridSection',
       type: 'imageGridSection',
       title: 'Image Grid Section',
