@@ -34,6 +34,10 @@ import featuredSection from './documents/shared/featuredSection';
 import gettingStartedResourcesSection from './documents/shared/gettingStartedResourcesSection';
 import gettingStartedResourcesCard from './documents/shared/gettingStartedResourcesCard';
 import soldOutProjects from './documents/shared/soldOutProjects';
+import creditType from './documents/shared/creditType';
+import ecologicalCreditCard from './documents/shared/ecologicalCreditCard';
+import offsetMethod from './documents/shared/offsetMethod';
+import projectActivity from './documents/shared/projectActivity';
 
 // Object types
 import heroSection from './objects/sections/heroSection';
@@ -166,6 +170,8 @@ import labeledTextLinkable from './objects/templates/labeledTextLinkable';
 import nctTokenSection from './objects/sections/nctPage/nctTokenSection';
 import nctLedgerSection from './objects/sections/nctPage/nctLedgerSection';
 import homePageTopSection from './objects/sections/homePage/homePageTopSection';
+import ecologicalCreditCardsSection from './objects/sections/buyersPage/ecologicalCreditCardsSection';
+import creditInfos from './objects/creditInfos';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -215,6 +221,8 @@ export default createSchema({
     createMethodologyPage,
     createMethodologyStepCardSection,
     creditClass,
+    creditInfos,
+    creditType,
     creditTypeSection,
     customImage,
     customPortableText,
@@ -230,6 +238,8 @@ export default createSchema({
     ecologicalImpact,
     ecologicalImpactRelation,
     ecologicalOutcome,
+    ecologicalCreditCard,
+    ecologicalCreditCardsSection,
     faq,
     faqCategory,
     faqPage,
@@ -271,6 +281,7 @@ export default createSchema({
     nctOverviewSection,
     nctPage,
     nctTokenSection,
+    offsetMethod,
     pageMetadata,
     partnerLogo,
     partnersPage,
@@ -284,6 +295,7 @@ export default createSchema({
     presskitTimelineItem,
     presskitTimelineSection,
     project,
+    projectActivity,
     projectPage,
     projectsPage,
     regenTeamMember,

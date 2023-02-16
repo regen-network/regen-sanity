@@ -23,10 +23,9 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
-      name: 'featuredSection',
-      type: 'reference',
-      to: [{ type: 'featuredSection' }],
-      title: 'Featured Credit Section',
+      name: 'ecologicalCreditCardsSection',
+      type: 'ecologicalCreditCardsSection',
+      title: 'Ecological Credit Cards Section',
       validation: Rule => Rule.required(),
     },
     {
