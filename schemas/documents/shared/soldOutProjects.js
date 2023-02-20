@@ -9,7 +9,8 @@ export default {
       type: 'array',
       of: [
         {
-          type: 'project',
+          type: 'reference',
+          to: [{ type: 'project' }],
         },
       ],
     },

@@ -257,6 +257,18 @@ export default () => {
                 .title('Project Activity')
                 .schemaType('projectActivity')
                 .child(S.documentTypeList('projectActivity').title('Project Activity')),
+              S.listItem()
+                .title('Project')
+                .schemaType('project')
+                .child(S.documentTypeList('project').title('Project')),
+              S.listItem()
+                .title('Featured Project Card')
+                .schemaType('featuredProjectCard')
+                .child(
+                  S.documentTypeList('featuredProjectCard').title(
+                    'Featured Project Card',
+                  ),
+                ),
             ]),
         ),
     ]);

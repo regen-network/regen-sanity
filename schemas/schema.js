@@ -38,6 +38,8 @@ import creditType from './documents/shared/creditType';
 import ecologicalCreditCard from './documents/shared/ecologicalCreditCard';
 import offsetMethod from './documents/shared/offsetMethod';
 import projectActivity from './documents/shared/projectActivity';
+import project from './documents/shared/project';
+import featuredProjectCard from './documents/shared/featuredProjectCard';
 
 // Object types
 import heroSection from './objects/sections/heroSection';
@@ -131,7 +133,6 @@ import titleImageLink from './objects/templates/titleImageLink';
 import presskitTimelineItem from './objects/presskitTimelineItem';
 import presskitTimelineSection from './objects/sections/presskit/presskitTimelineSection';
 import presskitTeamSection from './objects/sections/presskit/presskitTeamSection';
-import project from './objects/project';
 import nameTitleImage from './objects/templates/nameTitleImage';
 import presskitLogosSection from './objects/sections/presskit/presskitLogosSection';
 import presskitPhotosSection from './objects/sections/presskit/presskitPhotosSection';
@@ -172,6 +173,7 @@ import nctLedgerSection from './objects/sections/nctPage/nctLedgerSection';
 import homePageTopSection from './objects/sections/homePage/homePageTopSection';
 import ecologicalCreditCardsSection from './objects/sections/buyersPage/ecologicalCreditCardsSection';
 import creditInfos from './objects/creditInfos';
+import featuredProjectCardsSection from './objects/sections/buyersPage/featuredProjectCardsSection';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -244,6 +246,8 @@ export default createSchema({
     faqCategory,
     faqPage,
     featuredSection,
+    featuredProjectCard,
+    featuredProjectCardsSection,
     fullStepCardSection,
     fundCallToAction,
     fundPage,

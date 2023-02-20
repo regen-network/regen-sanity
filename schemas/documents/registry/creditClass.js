@@ -89,5 +89,10 @@ export default {
       name: 'landSteward',
       type: 'landSteward',
     },
+    {
+      title: 'Icon',
+      name: 'icon',
+      type: 'image',
+    },
   ],
 };

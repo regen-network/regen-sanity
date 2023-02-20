@@ -29,6 +29,12 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
+      name: 'featuredProjectCardsSection',
+      type: 'buyersFeaturedProjectCardsSection',
+      title: 'Featured Project Cards Section',
+      validation: Rule => Rule.required(),
+    },
+    {
       name: 'faqSection',
       type: 'bottomBanner',
       title: 'FAQ Section',
