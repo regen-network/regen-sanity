@@ -269,6 +269,10 @@ export default () => {
                     'Featured Project Card',
                   ),
                 ),
+              S.listItem()
+                .title('Partner')
+                .schemaType('partner')
+                .child(S.documentTypeList('partner').title('Partner')),
             ]),
         ),
     ]);

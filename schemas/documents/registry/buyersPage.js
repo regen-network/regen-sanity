@@ -35,6 +35,12 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
+      name: 'partnersSection',
+      type: 'buyersPartnersSection',
+      title: 'Partners Section',
+      validation: Rule => Rule.required(),
+    },
+    {
       name: 'faqSection',
       type: 'bottomBanner',
       title: 'FAQ Section',

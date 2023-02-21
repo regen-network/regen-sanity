@@ -40,6 +40,7 @@ import offsetMethod from './documents/shared/offsetMethod';
 import projectActivity from './documents/shared/projectActivity';
 import project from './documents/shared/project';
 import featuredProjectCard from './documents/shared/featuredProjectCard';
+import partner from './documents/shared/partner';
 
 // Object types
 import heroSection from './objects/sections/heroSection';
@@ -174,6 +175,7 @@ import homePageTopSection from './objects/sections/homePage/homePageTopSection';
 import ecologicalCreditCardsSection from './objects/sections/buyersPage/ecologicalCreditCardsSection';
 import creditInfos from './objects/creditInfos';
 import featuredProjectCardsSection from './objects/sections/buyersPage/featuredProjectCardsSection';
+import partnersSection from './objects/sections/buyersPage/partnersSection';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -287,7 +289,9 @@ export default createSchema({
     nctTokenSection,
     offsetMethod,
     pageMetadata,
+    partner,
     partnerLogo,
+    partnersSection,
     partnersPage,
     practicesOutcomesSection,
     presskitAwardsSection,
