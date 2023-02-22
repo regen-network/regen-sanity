@@ -172,10 +172,10 @@ import labeledTextLinkable from './objects/templates/labeledTextLinkable';
 import nctTokenSection from './objects/sections/nctPage/nctTokenSection';
 import nctLedgerSection from './objects/sections/nctPage/nctLedgerSection';
 import homePageTopSection from './objects/sections/homePage/homePageTopSection';
-import ecologicalCreditCardsSection from './objects/sections/buyersPage/ecologicalCreditCardsSection';
 import creditInfos from './objects/creditInfos';
-import featuredProjectCardsSection from './objects/sections/buyersPage/featuredProjectCardsSection';
-import partnersSection from './objects/sections/buyersPage/partnersSection';
+import buyersEcologicalCreditCardsSection from './objects/sections/buyersPage/ecologicalCreditCardsSection';
+import buyersFeaturedProjectCardsSection from './objects/sections/buyersPage/featuredProjectCardsSection';
+import buyersPartnersSection from './objects/sections/buyersPage/partnersSection';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -194,6 +194,9 @@ export default createSchema({
     button,
     buyer,
     buyersPage,
+    buyersEcologicalCreditCardsSection,
+    buyersFeaturedProjectCardsSection,
+    buyersPartnersSection,
     callToAction,
     carbonPlusSection,
     card,
@@ -243,13 +246,11 @@ export default createSchema({
     ecologicalImpactRelation,
     ecologicalOutcome,
     ecologicalCreditCard,
-    ecologicalCreditCardsSection,
     faq,
     faqCategory,
     faqPage,
     featuredSection,
     featuredProjectCard,
-    featuredProjectCardsSection,
     fullStepCardSection,
     fundCallToAction,
     fundPage,
@@ -291,7 +292,6 @@ export default createSchema({
     pageMetadata,
     partner,
     partnerLogo,
-    partnersSection,
     partnersPage,
     practicesOutcomesSection,
     presskitAwardsSection,

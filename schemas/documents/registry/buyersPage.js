@@ -41,9 +41,9 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
-      name: 'faqSection',
+      name: 'contactSection',
       type: 'bottomBanner',
-      title: 'FAQ Section',
+      title: 'Contact Section',
       validation: Rule => Rule.required(),
     },
     {
