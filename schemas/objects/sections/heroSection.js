@@ -16,6 +16,11 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
+      title: 'Background Image',
+      name: 'backgroundImage',
+      type: 'customImage',
+    },
+    {
       title: 'Tooltip Message',
       name: 'tooltipText',
       type: 'string',
