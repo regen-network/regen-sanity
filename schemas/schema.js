@@ -20,6 +20,8 @@ import projectsPage from './documents/registry/projectsPage';
 import projectPage from './documents/registry/projectPage';
 import bridgePage from './documents/registry/bridgePage';
 import basketDetailsPage from './documents/registry/basketDetailsPage';
+import buyModal from './documents/registry/buyModal';
+import buyModalOptions from './documents/registry/buyModalOptions';
 
 import resource from './documents/shared/resource';
 import faq from './documents/shared/faq';
@@ -59,7 +61,7 @@ import imageGridSection from './objects/sections/imageGridSection';
 
 import stepCard from './objects/stepCard';
 import bottomBanner from './objects/bottomBanner';
-import card from './objects/card';
+import card from './objects/cards/card';
 import pageMetadata from './objects/pageMetadata';
 import customPortableText from './objects/customPortableText';
 import button from './objects/button';
@@ -176,6 +178,8 @@ import creditInfos from './objects/creditInfos';
 import buyersEcologicalCreditCardsSection from './objects/sections/buyersPage/ecologicalCreditCardsSection';
 import buyersFeaturedProjectCardsSection from './objects/sections/buyersPage/featuredProjectCardsSection';
 import buyersPartnersSection from './objects/sections/buyersPage/partnersSection';
+import actionCard from './objects/cards/actionCard';
+import infoCard from './objects/cards/infoCard';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -184,6 +188,7 @@ export default createSchema({
   // Then proceed to concatenate our document type
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
+    actionCard,
     basicStepCardSection,
     basketDetailsPage,
     blogPost,
@@ -192,6 +197,8 @@ export default createSchema({
     bottomBanner,
     bridgePage,
     button,
+    buyModal,
+    buyModalOptions,
     buyer,
     buyersPage,
     buyersEcologicalCreditCardsSection,
@@ -269,6 +276,7 @@ export default createSchema({
     imageItemsSection,
     imageLink,
     imageWithTitle,
+    infoCard,
     labeledTextLinkable,
     landManagementPractice,
     landSteward,
