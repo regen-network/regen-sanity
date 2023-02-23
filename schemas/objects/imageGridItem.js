@@ -21,5 +21,10 @@ export default {
       type: 'customImage',
       validation: Rule => Rule.required(),
     },
+    {
+      title: 'Button',
+      name: 'button',
+      type: 'button',
+    },
   ],
 };

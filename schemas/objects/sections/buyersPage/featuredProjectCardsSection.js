@@ -1,7 +1,7 @@
 export default {
   type: 'object',
-  name: 'heroSection',
-  title: 'Hero Section',
+  title: 'Featured Project Cards Section',
+  name: 'buyersFeaturedProjectCardsSection',
   fields: [
     {
       title: 'Title',
@@ -21,11 +21,16 @@ export default {
       type: 'customImage',
     },
     {
-      title: 'Tooltip Message',
-      name: 'tooltipText',
-      type: 'string',
-      description:
-        '(Optional) If any text is underlined in the description, it will show this message when hovered',
+      title: 'Cards',
+      name: 'cards',
+      type: 'array',
+      of: [
+        {
+          type: 'reference',
+          to: [{ type: 'featuredProjectCard' }],
+        },
+      ],
+      validation: Rule => Rule.required().min(1),
     },
   ],
 };

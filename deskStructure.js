@@ -237,6 +237,42 @@ export default () => {
                 .title('Sold out projects')
                 .schemaType('soldOutProjects')
                 .child(S.documentTypeList('soldOutProjects').title('Sold out projects')),
+              S.listItem()
+                .title('Credit Type')
+                .schemaType('creditType')
+                .child(S.documentTypeList('creditType').title('Credit Type')),
+              S.listItem()
+                .title('Ecological Credit Card')
+                .schemaType('ecologicalCreditCard')
+                .child(
+                  S.documentTypeList('ecologicalCreditCard').title(
+                    'Ecological Credit Card',
+                  ),
+                ),
+              S.listItem()
+                .title('Offset Method')
+                .schemaType('offsetMethod')
+                .child(S.documentTypeList('offsetMethod').title('Offset Method')),
+              S.listItem()
+                .title('Project Activity')
+                .schemaType('projectActivity')
+                .child(S.documentTypeList('projectActivity').title('Project Activity')),
+              S.listItem()
+                .title('Project')
+                .schemaType('project')
+                .child(S.documentTypeList('project').title('Project')),
+              S.listItem()
+                .title('Featured Project Card')
+                .schemaType('featuredProjectCard')
+                .child(
+                  S.documentTypeList('featuredProjectCard').title(
+                    'Featured Project Card',
+                  ),
+                ),
+              S.listItem()
+                .title('Partner')
+                .schemaType('partner')
+                .child(S.documentTypeList('partner').title('Partner')),
             ]),
         ),
     ]);
