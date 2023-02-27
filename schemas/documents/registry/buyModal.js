@@ -2,7 +2,7 @@ export default {
   type: 'document',
   name: 'buyModal',
   title: 'Buy Modal',
-  __experimental_actions: ['update', 'create', /* 'delete', */ 'publish'],
+  __experimental_actions: ['update', /* 'create', 'delete', */ 'publish'],
   fields: [
     {
       title: 'Info card',
