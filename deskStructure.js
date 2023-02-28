@@ -72,6 +72,14 @@ export default () => {
                 .title('Basket Details Page')
                 .schemaType('basketDetailsPage')
                 .child(S.document().schemaType('basketDetailsPage')),
+              S.listItem()
+                .title('Buy Modal Options')
+                .schemaType('buyModalOptions')
+                .child(S.document().schemaType('buyModalOptions')),
+              S.listItem()
+                .title('Buy Modal')
+                .schemaType('buyModal')
+                .child(S.document().schemaType('buyModal')),
             ]),
         ),
 
