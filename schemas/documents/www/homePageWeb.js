@@ -17,6 +17,18 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
+      name: 'homeWebPartnersSection',
+      type: 'homeWebPartnersSection',
+      title: 'Partners Section',
+      validation: Rule => Rule.required(),
+    },
+    {
+      name: 'homeWebEcologicalCreditCardsSection',
+      type: 'homeWebEcologicalCreditCardsSection',
+      title: 'Ecological Credit Cards Section',
+      validation: Rule => Rule.required(),
+    },
+    {
       name: 'bannerTextSection',
       type: 'titleImageCustomBody',
       title: 'Banner Text Section',

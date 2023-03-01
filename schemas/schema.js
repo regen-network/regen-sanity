@@ -180,6 +180,8 @@ import buyersFeaturedProjectCardsSection from './objects/sections/buyersPage/fea
 import buyersPartnersSection from './objects/sections/buyersPage/partnersSection';
 import actionCard from './objects/cards/actionCard';
 import infoCard from './objects/cards/infoCard';
+import homeWebPartnersSection from './objects/sections/homePageWeb/partnersSection';
+import homeWebEcologicalCreditCardsSection from './objects/sections/homePageWeb/ecologicalCreditCardsSection';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -269,6 +271,8 @@ export default createSchema({
     homePageTopSection,
     homePageWeb,
     homeValuesSection,
+    homeWebEcologicalCreditCardsSection,
+    homeWebPartnersSection,
     imageBoldTextLabel,
     imageCustomBody,
     imageGridItem,
