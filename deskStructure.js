@@ -281,6 +281,10 @@ export default () => {
                 .title('Partner')
                 .schemaType('partner')
                 .child(S.documentTypeList('partner').title('Partner')),
+              S.listItem()
+                .title('Stat Card')
+                .schemaType('statCard')
+                .child(S.documentTypeList('statCard').title('Stat Card')),
             ]),
         ),
     ]);

@@ -29,6 +29,12 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
+      name: 'homeWebStatsSection',
+      type: 'homeWebStatsSection',
+      title: 'Stats Cards Section',
+      validation: Rule => Rule.required(),
+    },
+    {
       name: 'bannerTextSection',
       type: 'titleImageCustomBody',
       title: 'Banner Text Section',
