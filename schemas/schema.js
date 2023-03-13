@@ -43,6 +43,7 @@ import projectActivity from './documents/shared/projectActivity';
 import project from './documents/shared/project';
 import featuredProjectCard from './documents/shared/featuredProjectCard';
 import partner from './documents/shared/partner';
+import statCard from './documents/shared/statCard';
 
 // Object types
 import heroSection from './objects/sections/heroSection';
@@ -180,6 +181,9 @@ import buyersFeaturedProjectCardsSection from './objects/sections/buyersPage/fea
 import buyersPartnersSection from './objects/sections/buyersPage/partnersSection';
 import actionCard from './objects/cards/actionCard';
 import infoCard from './objects/cards/infoCard';
+import homeWebPartnersSection from './objects/sections/homePageWeb/partnersSection';
+import homeWebEcologicalCreditCardsSection from './objects/sections/homePageWeb/ecologicalCreditCardsSection';
+import homeWebStatsSection from './objects/sections/homePageWeb/statsSection';
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -269,6 +273,9 @@ export default createSchema({
     homePageTopSection,
     homePageWeb,
     homeValuesSection,
+    homeWebEcologicalCreditCardsSection,
+    homeWebPartnersSection,
+    homeWebStatsSection,
     imageBoldTextLabel,
     imageCustomBody,
     imageGridItem,
@@ -333,6 +340,7 @@ export default createSchema({
     seo,
     sharedSections,
     soldOutProjects,
+    statCard,
     stepCard,
     stepCardSection,
     tag,

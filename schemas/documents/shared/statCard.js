@@ -1,18 +1,24 @@
 export default {
-  type: 'object',
-  name: 'homeFoldSection',
-  title: 'Home Fold Section',
+  name: 'statCard',
+  type: 'document',
+  title: 'Stat Card',
   fields: [
     {
-      title: 'Title',
-      name: 'title',
+      title: 'Label',
+      name: 'label',
       type: 'string',
       validation: Rule => Rule.required(),
     },
     {
-      title: 'Body',
-      name: 'body',
+      title: 'Stat',
+      name: 'stat',
       type: 'string',
+      validation: Rule => Rule.required(),
+    },
+    {
+      title: 'Description',
+      name: 'description',
+      type: 'customPortableText',
       validation: Rule => Rule.required(),
     },
     {
