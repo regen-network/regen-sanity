@@ -37,6 +37,18 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
+      title: 'SDGs',
+      name: 'sdgs',
+      type: 'array',
+      description: 'Select existing SDGs from "Shared" content',
+      of: [
+        {
+          type: 'reference',
+          to: [{ type: 'sdg' }],
+        },
+      ],
+    },
+    {
       title: 'Standard',
       name: 'standard',
       type: 'customImage',
