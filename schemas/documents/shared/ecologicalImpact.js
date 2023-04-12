@@ -47,6 +47,7 @@ export default {
           to: [{ type: 'sdg' }],
         },
       ],
+      validation: Rule => Rule.required().max(3),
     },
     {
       title: 'Standard',
