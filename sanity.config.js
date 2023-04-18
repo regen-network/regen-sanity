@@ -6,7 +6,7 @@ import { uniqueDocuments } from './uniqueDocuments';
 
 export default defineConfig({
   title: 'regen-sanity',
-  projectId: 'jm12rn9t',
+  projectId: process.env.SANITY_STUDIO_PROJECT_ID,
   dataset: process.env.SANITY_STUDIO_DATASET,
   plugins: [
     deskTool({
