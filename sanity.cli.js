@@ -2,7 +2,7 @@ import { defineCliConfig } from 'sanity/cli';
 
 export default defineCliConfig({
   api: {
-    projectId: 'regen-sanity',
-    dataset: 'jm12rn9t',
+    projectId: 'jm12rn9t',
+    dataset: process.env.SANITY_STUDIO_DATASET,
   },
 });
