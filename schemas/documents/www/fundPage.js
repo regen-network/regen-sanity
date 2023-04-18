@@ -2,7 +2,6 @@ export default {
   name: 'fundPage',
   type: 'document',
   title: 'Fund Page',
-  __experimental_actions: ['update', /* 'create', 'delete', */ 'publish'],
   fields: [
     {
       title: 'SEO Title',

@@ -2,7 +2,6 @@ export default {
   name: 'presskitPage',
   type: 'document',
   title: 'Presskit Page',
-  __experimental_actions: ['update', /* 'create', 'delete', */ 'publish'],
   fields: [
     {
       name: 'topSection',

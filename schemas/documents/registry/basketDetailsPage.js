@@ -2,7 +2,6 @@ export default {
   name: 'basketDetailsPage',
   type: 'document',
   title: 'Basket Details Page',
-  __experimental_actions: ['update', /* 'create', 'delete', */ 'publish'],
   fields: [
     {
       name: 'gettingStartedResourcesCard',

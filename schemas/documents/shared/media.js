@@ -1,7 +1,7 @@
 export default {
   name: 'media',
   type: 'document',
-  title: 'Media: ',
+  title: 'Media',
   fields: [
     {
       name: 'title',

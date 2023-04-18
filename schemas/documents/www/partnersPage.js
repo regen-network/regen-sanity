@@ -2,7 +2,6 @@ export default {
   name: 'partnersPage',
   type: 'document',
   title: 'Media Page',
-  __experimental_actions: ['update', /* 'create', 'delete', */ 'publish'],
   fields: [
     {
       name: 'header',

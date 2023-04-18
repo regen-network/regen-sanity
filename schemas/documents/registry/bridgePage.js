@@ -2,7 +2,6 @@ export default {
   name: 'bridgePage',
   type: 'document',
   title: 'Bridge Page',
-  __experimental_actions: ['update', /*'create', 'delete', */ 'publish'],
   fields: [
     {
       name: 'gettingStartedResourcesCard',

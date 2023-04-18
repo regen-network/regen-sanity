@@ -2,7 +2,6 @@ export default {
   name: 'createCreditClassPage',
   type: 'document',
   title: 'Create Credit Class Page',
-  __experimental_actions: ['update', /* 'create', 'delete', */ 'publish'],
   fields: [
     {
       name: 'heroSection',

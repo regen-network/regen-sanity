@@ -2,7 +2,6 @@ export default {
   name: 'communityPage',
   type: 'document',
   title: 'Community Page',
-  __experimental_actions: ['update', /* 'create', 'delete', */ 'publish'],
   fields: [
     {
       name: 'topSection',
