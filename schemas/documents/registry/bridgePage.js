@@ -8,7 +8,8 @@ export default {
       type: 'reference',
       to: [{ type: 'gettingStartedResourcesCard' }],
       title: 'Resources for Getting Started Card',
-      description: 'This content will appear at the bottom of the Bridge page (on both /ecocredits/bridge and /ecocredits/accounts/{addr}/bridge)',
+      description:
+        'This content will appear at the bottom of the Bridge page (on both /ecocredits/bridge and /ecocredits/accounts/{addr}/bridge)',
       validation: Rule => Rule.required(),
     },
   ],

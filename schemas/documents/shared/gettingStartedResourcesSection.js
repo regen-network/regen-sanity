@@ -13,7 +13,8 @@ export default {
       title: 'Resources cards',
       name: 'resourcesCards',
       type: 'array',
-      description: 'Select existing resources for getting started cards from "Shared" content, maximum 4',
+      description:
+        'Select existing resources for getting started cards from "Shared" content, maximum 4',
       of: [
         {
           type: 'reference',
