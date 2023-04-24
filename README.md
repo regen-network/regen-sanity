@@ -16,6 +16,7 @@ We have currently 2 [datasets](https://www.sanity.io/docs/datasets):
 
 ## Development
 
+0. Create `.env.local` based on `.env`, you can get a `SANITY_TOKEN` from the Sanity dashboard.
 1. Run `yarn dev` to start the studio locally.
 2. When adding new documents or objects to the schema, make sure to import them from `schemas/schemas.js`. In case of documents, you'll also need to make sure to add them to the appropriate list in `deskStructure` so it gets displayed on the Studio, whether it's as part under "Registry", "Website" or "Shared".
 3. If you want a document to be unique (like website/app pages), you can add its name to the list in `uniqueDocuments.js`, once you created a first instance of it.

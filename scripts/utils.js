@@ -14,7 +14,7 @@ const sourceClient = createClient({
 const destinationClient = createClient({
   apiVersion,
   projectId,
-  dataset: 'marie-test',
+  dataset: 'production',
   token,
 });
 
