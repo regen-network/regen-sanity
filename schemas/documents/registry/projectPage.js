@@ -2,7 +2,6 @@ export default {
   name: 'projectPage',
   type: 'document',
   title: 'Project Page',
-  __experimental_actions: ['update', /*'create', 'delete', */ 'publish'],
   fields: [
     {
       name: 'gettingStartedResourcesSection',

@@ -2,7 +2,6 @@ export default {
   name: 'caseStudiesAboutSection',
   type: 'object',
   title: 'Case Studies About Section',
-  __experimental_actions: ['update', 'create', /*'delete', */ 'publish'],
   fields: [
     {
       title: 'Header',

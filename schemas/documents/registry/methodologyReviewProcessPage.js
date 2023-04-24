@@ -2,7 +2,6 @@ export default {
   name: 'methodologyReviewProcessPage',
   type: 'document',
   title: 'Methodology Review Process Page',
-  __experimental_actions: ['update', /*'create', 'delete', */ 'publish'],
   fields: [
     {
       name: 'heroSection',

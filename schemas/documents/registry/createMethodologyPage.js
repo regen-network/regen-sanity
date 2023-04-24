@@ -2,7 +2,6 @@ export default {
   name: 'createMethodologyPage',
   type: 'document',
   title: 'Create Methodology Page',
-  __experimental_actions: ['update', /*'create', 'delete', */ 'publish'],
   fields: [
     {
       name: 'heroSection',

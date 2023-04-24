@@ -2,7 +2,6 @@ export default {
   name: 'caseStudiesFundingSection',
   type: 'object',
   title: 'Case Studies Funding Section',
-  __experimental_actions: ['update', 'create', /*'delete', */ 'publish'],
   fields: [
     {
       title: 'Header',

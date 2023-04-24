@@ -2,7 +2,6 @@ export default {
   name: 'buyersPage',
   type: 'document',
   title: 'For Buyers Page',
-  __experimental_actions: ['update', 'publish'],
   fields: [
     {
       name: 'heroSection',

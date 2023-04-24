@@ -2,7 +2,6 @@ export default {
   type: 'document',
   name: 'buyModalOptions',
   title: 'Buy Modal Options',
-  __experimental_actions: ['update', /* 'create', 'delete', */ 'publish'],
   fields: [
     {
       title: 'Title',

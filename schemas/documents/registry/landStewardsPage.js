@@ -2,7 +2,6 @@ export default {
   name: 'landStewardsPage',
   type: 'document',
   title: 'For Land Stewards Page',
-  __experimental_actions: ['update', 'publish'],
   fields: [
     {
       name: 'heroSection',
