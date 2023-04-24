@@ -68,7 +68,7 @@ yarn patch-document documentTypeName fieldName
 This might be useful if you add a new field to a document type.
 Under the hood, this uses [`set` within a `patch` mutation](https://www.sanity.io/docs/http-patches#6TPENSW3).
 
-Those scripts uses [our fork](https://github.com/regen-network/sanity-graph-import) of [@sanctuarycomputer/sanity-graph-import](https://github.com/sanctuarycomputer/sanity-graph-import), which adds the ability to not only create documents but also patch existing ones.
+Those scripts use [our fork](https://github.com/regen-network/sanity-graph-import) of [@sanctuarycomputer/sanity-graph-import](https://github.com/sanctuarycomputer/sanity-graph-import), which adds the ability to not only create documents but also patch existing ones.
 
 Further resources:
 
