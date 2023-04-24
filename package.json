@@ -14,7 +14,8 @@
     "deploy-graphql:staging": "sanity graphql deploy --playground --dataset staging",
     "deploy-graphql:production": "sanity graphql deploy --playground --dataset production",
     "import-production": "sanity dataset export production production.tar.gz && sanity dataset import production.tar.gz staging --replace && rm production.tar.gz",
-    "create-documents": "sanity exec scripts/create-documents.js --"
+    "create-documents": "sanity exec scripts/create-documents.js --",
+    "patch-document": "sanity exec scripts/patch-document.js --"
   },
   "keywords": [
     "sanity"
@@ -27,7 +28,7 @@
     "styled-components": "^5.2.0"
   },
   "devDependencies": {
-    "@sanctucompu/sanity-graph-import": "^1.1.2",
+    "@sanctucompu/sanity-graph-import": "https://github.com/regen-network/sanity-graph-import",
     "prettier": "^2.5.1"
   }
 }

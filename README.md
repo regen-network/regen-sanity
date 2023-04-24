@@ -52,16 +52,22 @@ There are a few scripts set up to do that automatically so you don't have to cop
 #### To create new documents
 
 ```sh
-yarn create-documents documentType1 documentType2
+yarn create-documents documentTypeName1 documentTypeName2
 ```
 
 This might be useful if you created brand new documents or re-arranged existing ones extensively and you don't care about the existing documents (since it's using [`createOrReplace` mutation](https://www.sanity.io/docs/http-mutations#95bb692d7fb0)).
 This also traverses through all referenced documents, find all assets used by any of these documents in the staging dataset, then add them to the production dataset. But the depth of graph traversal is limited to 1 for now so if you want to add documents with deeper references, they will have to be specified manually in the document types list as first items.
-This script uses [@sanctuarycomputer/sanity-graph-import](https://github.com/sanctuarycomputer/sanity-graph-import) under the hood.
 
 #### To patch existing documents
 
+```sh
+yarn patch-document documentTypeName fieldName
+```
 
+This might be useful if you add a new field to a document type.
+Under the hood, this uses [`set` within a `patch` mutation](https://www.sanity.io/docs/http-patches#6TPENSW3).
+
+Those scripts uses [our fork](https://github.com/regen-network/sanity-graph-import) of [@sanctuarycomputer/sanity-graph-import](https://github.com/sanctuarycomputer/sanity-graph-import), which adds the ability to not only create documents but also patch existing ones.
 
 Further resources:
 
