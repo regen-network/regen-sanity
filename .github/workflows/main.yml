@@ -8,6 +8,8 @@ jobs:
     name: Deploy Sanity
     steps:
       - uses: actions/checkout@v2
+      - name: install
+        run: yarn install
       - name: deploy-studio
         uses: sanity-io/github-action-sanity@v0.4
         env:
@@ -15,4 +17,4 @@ jobs:
         with:
           args: . deploy
       - name: deploy-graphql
-        uses: yarn deploy-graphql:production
+        run: yarn deploy-graphql:production
