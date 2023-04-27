@@ -56,7 +56,10 @@ There are a few scripts set up to do that automatically so you don't have to cop
 yarn create-documents documentTypeName1 documentTypeName2
 ```
 
-This might be useful if you created brand new documents or re-arranged existing ones extensively and you don't care about the existing documents (since it's using [`createOrReplace` mutation](https://www.sanity.io/docs/http-mutations#95bb692d7fb0)).
+This might be useful if you created brand new documents or re-arranged existing ones extensively and you don't care about the existing documents.
+
+:warning: Be mindful about not using an existing document name, unless you explicitly want it, otherwise it will replace its instances since it's using [`createOrReplace` mutation](https://www.sanity.io/docs/http-mutations#95bb692d7fb0).
+
 This also traverses through all referenced documents, find all assets used by any of these documents in the staging dataset, then add them to the production dataset. But the depth of graph traversal is limited to 1 for now so if you want to add documents with deeper references, they will have to be specified manually in the document types list as first items.
 
 #### To patch existing documents
