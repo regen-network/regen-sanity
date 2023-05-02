@@ -9,10 +9,5 @@ export default {
       type: 'string',
       validation: Rule => Rule.required(),
     },
-    {
-      title: 'Third Party Verified',
-      name: 'thirdPartyVerified',
-      type: 'boolean',
-    },
   ],
 };
