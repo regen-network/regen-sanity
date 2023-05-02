@@ -1,4 +1,4 @@
-name: Deploy Sanity
+name: CI
 on:
   push:
     branches: [main]
@@ -8,13 +8,15 @@ jobs:
     name: Deploy Sanity
     steps:
       - uses: actions/checkout@v2
-      - name: install
-        run: yarn install
       - name: deploy-studio
         uses: sanity-io/github-action-sanity@v0.4
         env:
           SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
         with:
-          args: . deploy
+          args: deploy
       - name: deploy-graphql
-        run: yarn deploy-graphql:production
+        uses: sanity-io/github-action-sanity@v0.4
+        env:
+          SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
+        with:
+          args: graphql deploy --playground --dataset production
