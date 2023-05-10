@@ -56,6 +56,7 @@ import practicesOutcomesSection from './objects/sections/practicesOutcomesSectio
 import timelineSection from './objects/sections/timelineSection';
 import imageGridSection from './objects/sections/imageGridSection';
 import projectDetails from './objects/sections/projectPage/projectDetails';
+import projectDetailsCard from './objects/sections/projectPage/projectDetailsCard';
 
 import stepCard from './objects/stepCard';
 import bottomBanner from './objects/bottomBanner';
@@ -313,6 +314,7 @@ export default [
   project,
   projectActivity,
   projectDetails,
+  projectDetailsCard,
   projectPage,
   projectsPage,
   regenTeamMember,

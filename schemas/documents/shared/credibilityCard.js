@@ -20,17 +20,5 @@ export default {
       name: 'icon',
       type: 'image',
     },
-    {
-      title: 'Claims',
-      name: 'claims',
-      type: 'array',
-      of: [
-        {
-          type: 'reference',
-          to: [{ type: 'claim' }],
-        },
-      ],
-      validation: Rule => Rule.required(),
-    },
   ],
 };

@@ -23,8 +23,7 @@ export default {
       type: 'array',
       of: [
         {
-          type: 'reference',
-          to: [{ type: 'credibilityCard' }],
+          type: 'projectDetailsCard',
         },
       ],
       validation: Rule => Rule.required(),
