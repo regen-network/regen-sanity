@@ -15,8 +15,6 @@ jobs:
         with:
           args: . deploy
       - name: deploy-graphql
-        uses: sanity-io/github-action-sanity@v0.4
-        env:
-          SANITY_AUTH_TOKEN: ${{ secrets.SANITY_AUTH_TOKEN }}
-        with:
-          args: . graphql deploy --playground --dataset production
+        run: |
+          SANITY_AUTH_TOKEN="${{ secrets.SANITY_AUTH_TOKEN }}" \
+          yarn deploy-graphql:production
