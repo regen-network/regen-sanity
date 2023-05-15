@@ -23,4 +23,21 @@ export default {
       validation: Rule => Rule.required(),
     },
   ],
+  preview: {
+    select: {
+      credibilityCardTitle: 'credibilityCard.title',
+      claim0: 'claims.0.description',
+      claim1: 'claims.1.description',
+      claim2: 'claims.2.description',
+    },
+    prepare(selection) {
+      const { credibilityCardTitle, claim0, claim1, claim2 } = selection;
+      const claims = [claim0, claim1, claim2].filter(Boolean);
+
+      return {
+        title: credibilityCardTitle,
+        subtitle: claims.join(', '),
+      };
+    },
+  },
 };
