@@ -269,6 +269,14 @@ export default S =>
                 .title('Stat Card')
                 .schemaType('statCard')
                 .child(S.documentTypeList('statCard').title('Stat Card')),
+              S.listItem()
+                .title('Claim')
+                .schemaType('claim')
+                .child(S.documentTypeList('claim').title('Claim')),
+              S.listItem()
+                .title('Credibility Card')
+                .schemaType('credibilityCard')
+                .child(S.documentTypeList('credibilityCard').title('Credibility Card')),
             ]),
         ),
     ]);

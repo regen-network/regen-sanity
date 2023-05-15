@@ -38,6 +38,8 @@ import project from './documents/shared/project';
 import featuredProjectCard from './documents/shared/featuredProjectCard';
 import partner from './documents/shared/partner';
 import statCard from './documents/shared/statCard';
+import claim from './documents/shared/claim';
+import credibilityCard from './documents/shared/credibilityCard';
 
 // Object types
 import heroSection from './objects/sections/heroSection';
@@ -53,6 +55,8 @@ import dualImageSection from './objects/sections/dualImageSection';
 import practicesOutcomesSection from './objects/sections/practicesOutcomesSection';
 import timelineSection from './objects/sections/timelineSection';
 import imageGridSection from './objects/sections/imageGridSection';
+import projectDetails from './objects/sections/projectPage/projectDetails';
+import projectDetailsCard from './objects/sections/projectPage/projectDetailsCard';
 
 import stepCard from './objects/stepCard';
 import bottomBanner from './objects/bottomBanner';
@@ -214,7 +218,9 @@ export default [
   caseStudyFigureSection,
   caseStudyFundingSection,
   caseStudyPage,
+  claim,
   climateSection,
+  credibilityCard,
   communityCollaborateSection,
   communityCollectiveSection,
   communityConnectSection,
@@ -307,6 +313,8 @@ export default [
   presskitTimelineSection,
   project,
   projectActivity,
+  projectDetails,
+  projectDetailsCard,
   projectPage,
   projectsPage,
   regenTeamMember,

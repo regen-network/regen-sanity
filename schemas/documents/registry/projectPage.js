@@ -11,5 +11,11 @@ export default {
       title: 'Resources for Getting Started Section',
       validation: Rule => Rule.required(),
     },
+    {
+      name: 'projectDetailsSection',
+      type: 'projectDetailsSection',
+      title: 'Project Details Section',
+      validation: Rule => Rule.required(),
+    },
   ],
 };

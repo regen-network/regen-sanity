@@ -17,5 +17,16 @@ export default {
       description: 'on-chain project id',
       validation: Rule => Rule.required(),
     },
+    {
+      title: 'Credibility Cards',
+      name: 'credibilityCards',
+      type: 'array',
+      of: [
+        {
+          type: 'projectDetailsCard',
+        },
+      ],
+      validation: Rule => Rule.required(),
+    },
   ],
 };
