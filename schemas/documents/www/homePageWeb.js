@@ -10,6 +10,12 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
+      name: 'carbonPlusSection',
+      type: 'carbonPlusSection',
+      title: 'Carbon Plus Section',
+      validation: Rule => Rule.required(),
+    },
+    {
       name: 'marketplaceSection',
       type: 'marketplaceSection',
       title: 'Marketplace Section',
@@ -43,12 +49,6 @@ export default {
       name: 'climateSection',
       type: 'climateSection',
       title: 'Climate Section',
-      validation: Rule => Rule.required(),
-    },
-    {
-      name: 'carbonPlusSection',
-      type: 'carbonPlusSection',
-      title: 'Carbon Plus Section',
       validation: Rule => Rule.required(),
     },
     {
