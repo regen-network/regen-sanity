@@ -39,5 +39,11 @@ export default {
       type: 'string',
       validation: Rule => Rule.required(),
     },
+    {
+      title: 'Image',
+      name: 'image',
+      type: 'customImage',
+      validation: Rule => Rule.required(),
+    },
   ],
 };
