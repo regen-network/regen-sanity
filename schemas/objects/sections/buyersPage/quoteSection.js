@@ -4,6 +4,11 @@ export default {
   name: 'buyersQuoteSection',
   fields: [
     {
+      title: 'Background Image',
+      name: 'backgroundImage',
+      type: 'customImage',
+    },
+    {
       title: 'Quote first part',
       name: 'quoteFirstPart',
       description: 'This part has a green gradient',
