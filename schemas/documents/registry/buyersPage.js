@@ -34,6 +34,12 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
+      name: 'quoteSection',
+      type: 'buyersQuoteSection',
+      title: 'Quote Section',
+      validation: Rule => Rule.required(),
+    },
+    {
       name: 'partnersSection',
       type: 'buyersPartnersSection',
       title: 'Partners Section',
