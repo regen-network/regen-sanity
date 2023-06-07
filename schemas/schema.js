@@ -143,9 +143,7 @@ import presskitLogosSection from './objects/sections/presskit/presskitLogosSecti
 import presskitPhotosSection from './objects/sections/presskit/presskitPhotosSection';
 import regenTeamMember from './objects/sections/regenTeamMember';
 import resourcesPage from './documents/www/resourcesPage';
-import resourcesRegistrySection from './objects/sections/resourcesPage/resourcesRegistrySection';
-import resourcesRegistrySubSection from './objects/sections/resourcesPage/resourcesRegistrySubSection';
-import resourcesLedgerSection from './objects/sections/resourcesPage/resourcesLedgerSection';
+import resourcesSection from './objects/sections/resourcesPage/resourcesSection';
 import sciencePage from './documents/www/sciencePage';
 import scienceOpenScienceSection from './objects/sections/sciencePage/scienceOpenScienceSection';
 import imageCustomBody from './objects/templates/imageCustomBody';
@@ -327,10 +325,8 @@ export default [
   requestType,
   resource,
   resourcesCard,
-  resourcesLedgerSection,
+  resourcesSection,
   resourcesPage,
-  resourcesRegistrySection,
-  resourcesRegistrySubSection,
   reviewSection,
   scienceCommunityMember,
   scienceCommunitySection,

@@ -10,16 +10,11 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
-      name: 'registrySection',
-      type: 'resourcesRegistrySection',
-      title: 'Registry Section',
-      validation: Rule => Rule.required(),
-    },
-    {
-      name: 'ledgerSection',
-      type: 'resourcesLedgerSection',
-      title: 'Ledger Section',
-      validation: Rule => Rule.required(),
+      title: 'Resources Sections',
+      name: 'resourcesSections',
+      type: 'array',
+      of: [{ type: 'resourcesSection' }],
+      validation: Rule => Rule.required().min(1),
     },
   ],
 };

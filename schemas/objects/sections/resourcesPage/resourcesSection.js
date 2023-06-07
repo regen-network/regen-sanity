@@ -1,6 +1,6 @@
 export default {
-  title: 'Resources Ledger Section',
-  name: 'resourcesLedgerSection',
+  title: 'Resources Section',
+  name: 'resourcesSection',
   type: 'object',
   fields: [
     {
