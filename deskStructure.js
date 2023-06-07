@@ -277,6 +277,10 @@ export default S =>
                 .title('Credibility Card')
                 .schemaType('credibilityCard')
                 .child(S.documentTypeList('credibilityCard').title('Credibility Card')),
+              S.listItem()
+                .title('Person')
+                .schemaType('person')
+                .child(S.documentTypeList('person').title('Person')),
             ]),
         ),
     ]);

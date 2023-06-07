@@ -40,6 +40,7 @@ import partner from './documents/shared/partner';
 import statCard from './documents/shared/statCard';
 import claim from './documents/shared/claim';
 import credibilityCard from './documents/shared/credibilityCard';
+import person from './documents/shared/person';
 
 // Object types
 import heroSection from './objects/sections/heroSection';
@@ -57,6 +58,8 @@ import timelineSection from './objects/sections/timelineSection';
 import imageGridSection from './objects/sections/imageGridSection';
 import projectDetails from './objects/sections/projectPage/projectDetails';
 import projectDetailsCard from './objects/sections/projectPage/projectDetailsCard';
+import quoteSection from './objects/sections/buyersPage/quoteSection';
+import quoteText from './objects/sections/buyersPage/quoteText';
 
 import stepCard from './objects/stepCard';
 import bottomBanner from './objects/bottomBanner';
@@ -302,6 +305,7 @@ export default [
   partner,
   partnerLogo,
   partnersPage,
+  person,
   practicesOutcomesSection,
   presskitAwardsSection,
   presskitFeaturedSection,
@@ -317,6 +321,8 @@ export default [
   projectDetailsCard,
   projectPage,
   projectsPage,
+  quoteSection,
+  quoteText,
   regenTeamMember,
   requestType,
   resource,
