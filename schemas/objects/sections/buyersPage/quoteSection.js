@@ -9,23 +9,10 @@ export default {
       type: 'customImage',
     },
     {
-      title: 'Quote first part',
-      name: 'quoteFirstPart',
-      description: 'This part has a green gradient',
-      type: 'string',
-      validation: Rule => Rule.required(),
-    },
-    {
-      title: 'Quote middle part',
-      name: 'quoteMiddlePart',
-      type: 'string',
-      validation: Rule => Rule.required(),
-    },
-    {
-      title: 'Quote last part',
-      name: 'quoteLastPart',
-      description: 'This part has a green gradient',
-      type: 'string',
+      title: 'Quote text',
+      name: 'quoteText',
+      description: 'Text for the quote',
+      type: 'buyersQuoteText',
       validation: Rule => Rule.required(),
     },
     {

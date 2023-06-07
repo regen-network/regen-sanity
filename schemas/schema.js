@@ -59,6 +59,7 @@ import imageGridSection from './objects/sections/imageGridSection';
 import projectDetails from './objects/sections/projectPage/projectDetails';
 import projectDetailsCard from './objects/sections/projectPage/projectDetailsCard';
 import quoteSection from './objects/sections/buyersPage/quoteSection';
+import quoteText from './objects/sections/buyersPage/quoteText';
 
 import stepCard from './objects/stepCard';
 import bottomBanner from './objects/bottomBanner';
@@ -321,6 +322,7 @@ export default [
   projectPage,
   projectsPage,
   quoteSection,
+  quoteText,
   regenTeamMember,
   requestType,
   resource,

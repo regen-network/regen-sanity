@@ -5,13 +5,13 @@ export default {
   fields: [
     {
       title: 'Person Name',
-      name: 'personName',
+      name: 'name',
       type: 'string',
       validation: Rule => Rule.required(),
     },
     {
       title: 'Person Role',
-      name: 'personRole',
+      name: 'role',
       type: 'string',
       validation: Rule => Rule.required(),
     },
