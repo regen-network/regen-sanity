@@ -6,7 +6,7 @@ export default {
     {
       title: 'Quote first part',
       name: 'quoteFirstPart',
-      description: 'This part has a green gradient',
+      description: 'This part is highlighted in green',
       type: 'string',
       validation: Rule => Rule.required(),
     },
@@ -19,7 +19,7 @@ export default {
     {
       title: 'Quote last part',
       name: 'quoteLastPart',
-      description: 'This part has a green gradient',
+      description: 'This part is highlighted in green',
       type: 'string',
       validation: Rule => Rule.required(),
     },
