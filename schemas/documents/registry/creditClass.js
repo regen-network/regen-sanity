@@ -94,5 +94,15 @@ export default {
       name: 'icon',
       type: 'image',
     },
+    {
+      title: 'Credit Type Icon',
+      name: 'creditTypeIcon',
+      type: 'image',
+    },
+    {
+      title: 'Credit Generation Method Icon',
+      name: 'creditGenerationMethodIcon',
+      type: 'image',
+    },
   ],
 };
