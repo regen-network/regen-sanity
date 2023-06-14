@@ -94,5 +94,10 @@ export default {
       name: 'icon',
       type: 'image',
     },
+    {
+      title: 'Community Credit',
+      name: 'isCommunityCredit',
+      type: 'boolean',
+    },
   ],
 };
