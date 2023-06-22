@@ -17,5 +17,13 @@ export default {
       title: 'Project Details Section',
       validation: Rule => Rule.required(),
     },
+    {
+      title: 'OTC Card',
+      name: 'otcCard',
+      type: 'actionCard',
+      description:
+        'Create the OTC card to be displayed in the top right column of the project page',
+      validation: Rule => Rule.required(),
+    },
   ],
 };
