@@ -258,6 +258,10 @@ export default S =>
                 .schemaType('projectActivity')
                 .child(S.documentTypeList('projectActivity').title('Project Activity')),
               S.listItem()
+                .title('Project Ecosystem')
+                .schemaType('projectEcosystem')
+                .child(S.documentTypeList('projectEcosystem').title('Project Ecosystem')),
+              S.listItem()
                 .title('Project')
                 .schemaType('project')
                 .child(S.documentTypeList('project').title('Project')),
