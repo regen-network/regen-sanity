@@ -242,6 +242,12 @@ export default S =>
                   ),
                 ),
               S.listItem()
+                .title('Credit Certification')
+                .schemaType('creditCertification')
+                .child(
+                  S.documentTypeList('creditCertification').title('Credit Certification'),
+                ),
+              S.listItem()
                 .title('Ecological Credit Card')
                 .schemaType('ecologicalCreditCard')
                 .child(
@@ -261,6 +267,10 @@ export default S =>
                 .title('Project Ecosystem')
                 .schemaType('projectEcosystem')
                 .child(S.documentTypeList('projectEcosystem').title('Project Ecosystem')),
+              S.listItem()
+                .title('Project Rating')
+                .schemaType('projectRating')
+                .child(S.documentTypeList('projectRating').title('Project Rating')),
               S.listItem()
                 .title('Project')
                 .schemaType('project')

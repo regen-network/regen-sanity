@@ -36,6 +36,8 @@ import ecologicalCreditCard from './documents/shared/ecologicalCreditCard';
 import offsetMethod from './documents/shared/offsetMethod';
 import projectActivity from './documents/shared/projectActivity';
 import projectEcosystem from './documents/shared/projectEcosystem';
+import creditCertification from './documents/shared/creditCertification';
+import projectRating from './documents/shared/projectRating';
 import project from './documents/shared/project';
 import featuredProjectCard from './documents/shared/featuredProjectCard';
 import partner from './documents/shared/partner';
@@ -235,6 +237,7 @@ export default [
   createCreditClassPage,
   createMethodologyPage,
   createMethodologyStepCardSection,
+  creditCertification,
   creditClass,
   creditInfos,
   creditType,
@@ -322,6 +325,7 @@ export default [
   projectDetails,
   projectDetailsCard,
   projectPage,
+  projectRating,
   projectsPage,
   quoteSection,
   quoteText,
