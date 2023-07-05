@@ -94,17 +94,5 @@ export default {
       name: 'icon',
       type: 'image',
     },
-    {
-      title: 'Credit Type',
-      name: 'creditType',
-      type: 'reference',
-      to: [{ type: 'creditType' }],
-    },
-    {
-      title: 'Credit Generation Method',
-      name: 'creditGenerationMethod',
-      type: 'reference',
-      to: [{ type: 'creditGenerationMethod' }],
-    },
   ],
 };

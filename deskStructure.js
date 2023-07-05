@@ -234,14 +234,6 @@ export default S =>
                 .schemaType('creditType')
                 .child(S.documentTypeList('creditType').title('Credit Type')),
               S.listItem()
-                .title('Credit Generation Method')
-                .schemaType('creditGenerationMethod')
-                .child(
-                  S.documentTypeList('creditGenerationMethod').title(
-                    'Credit Generation Method',
-                  ),
-                ),
-              S.listItem()
                 .title('Credit Certification')
                 .schemaType('creditCertification')
                 .child(

@@ -1,5 +1,5 @@
 export default {
-  title: 'Offset Method',
+  title: 'Offset Generation Method',
   name: 'offsetMethod',
   type: 'document',
   fields: [
