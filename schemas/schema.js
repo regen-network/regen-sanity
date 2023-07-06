@@ -31,7 +31,6 @@ import gettingStartedResourcesSection from './documents/shared/gettingStartedRes
 import gettingStartedResourcesCard from './documents/shared/gettingStartedResourcesCard';
 import soldOutProjects from './documents/shared/soldOutProjects';
 import creditType from './documents/shared/creditType';
-import creditGenerationMethod from './documents/shared/creditGenerationMethod';
 import ecologicalCreditCard from './documents/shared/ecologicalCreditCard';
 import offsetMethod from './documents/shared/offsetMethod';
 import projectActivity from './documents/shared/projectActivity';
@@ -241,7 +240,6 @@ export default [
   creditClass,
   creditInfos,
   creditType,
-  creditGenerationMethod,
   creditTypeSection,
   customImage,
   customPortableText,
