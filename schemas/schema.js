@@ -7,6 +7,7 @@ import developersPage from './documents/www/developersPage';
 import methodologyReviewProcessPage from './documents/registry/methodologyReviewProcessPage';
 import methodology from './documents/registry/methodology';
 import creditClass from './documents/registry/creditClass';
+import creditClassPage from './documents/registry/creditClassPage';
 import landStewardsPage from './documents/registry/landStewardsPage';
 import buyersPage from './documents/registry/buyersPage';
 import mainnetPage from './documents/www/mainnetPage';
@@ -59,7 +60,7 @@ import dualImageSection from './objects/sections/dualImageSection';
 import practicesOutcomesSection from './objects/sections/practicesOutcomesSection';
 import timelineSection from './objects/sections/timelineSection';
 import imageGridSection from './objects/sections/imageGridSection';
-import projectDetails from './objects/sections/projectPage/projectDetails';
+import detailsSection from './objects/sections/detailsSection';
 import projectDetailsCard from './objects/sections/projectPage/projectDetailsCard';
 import quoteSection from './objects/sections/buyersPage/quoteSection';
 import quoteText from './objects/sections/buyersPage/quoteText';
@@ -238,6 +239,7 @@ export default [
   createMethodologyStepCardSection,
   creditCertification,
   creditClass,
+  creditClassPage,
   creditInfos,
   creditType,
   creditTypeSection,
@@ -320,7 +322,7 @@ export default [
   project,
   projectActivity,
   projectEcosystem,
-  projectDetails,
+  detailsSection,
   projectDetailsCard,
   projectPage,
   projectRating,

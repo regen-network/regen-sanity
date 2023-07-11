@@ -13,7 +13,7 @@ export default {
     },
     {
       name: 'projectDetailsSection',
-      type: 'projectDetailsSection',
+      type: 'detailsSection',
       title: 'Project Details Section',
       validation: Rule => Rule.required(),
     },

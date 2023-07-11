@@ -1,7 +1,7 @@
 export default {
   type: 'object',
-  title: 'Project Details Section',
-  name: 'projectDetailsSection',
+  title: 'Details Section',
+  name: 'detailsSection',
   fields: [
     {
       title: 'Label',
