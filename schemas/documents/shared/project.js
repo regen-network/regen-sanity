@@ -23,7 +23,7 @@ export default {
       type: 'array',
       of: [
         {
-          type: 'projectDetailsCard',
+          type: 'detailsCard',
         },
       ],
     },

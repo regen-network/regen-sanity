@@ -61,7 +61,7 @@ import practicesOutcomesSection from './objects/sections/practicesOutcomesSectio
 import timelineSection from './objects/sections/timelineSection';
 import imageGridSection from './objects/sections/imageGridSection';
 import detailsSection from './objects/sections/detailsSection';
-import projectDetailsCard from './objects/sections/projectPage/projectDetailsCard';
+import detailsCard from './objects/detailsCard';
 import quoteSection from './objects/sections/buyersPage/quoteSection';
 import quoteText from './objects/sections/buyersPage/quoteText';
 
@@ -323,7 +323,7 @@ export default [
   projectActivity,
   projectEcosystem,
   detailsSection,
-  projectDetailsCard,
+  detailsCard,
   projectPage,
   projectRating,
   projectsPage,
