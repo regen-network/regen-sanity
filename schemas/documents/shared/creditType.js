@@ -15,5 +15,11 @@ export default {
       type: 'image',
       validation: Rule => Rule.required(),
     },
+    {
+      title: 'Large Image',
+      name: 'largeImage',
+      type: 'image',
+      validation: Rule => Rule.required(),
+    },
   ],
 };
