@@ -9,5 +9,11 @@ export default {
       title: 'Credit Class Details Section',
       validation: Rule => Rule.required(),
     },
+    {
+      title: 'Credit Image',
+      name: 'creditImage',
+      type: 'image',
+      validation: Rule => Rule.required(),
+    },
   ],
 };
