@@ -8,6 +8,7 @@ export const uniqueDocuments = [
   'createCreditClassPage',
   'createMethodologyPage',
   'createCreditClassPage',
+  'creditClassPage',
   'homePage',
   'landStewardsPage',
   'methodologyReviewProcessPage',

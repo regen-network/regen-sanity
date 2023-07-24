@@ -64,6 +64,10 @@ export default S =>
                 .title('Buy Modal')
                 .schemaType('buyModal')
                 .child(S.document().schemaType('buyModal')),
+              S.listItem()
+                .title('Credit Class Page')
+                .schemaType('creditClassPage')
+                .child(S.document().schemaType('creditClassPage')),
             ]),
         ),
 

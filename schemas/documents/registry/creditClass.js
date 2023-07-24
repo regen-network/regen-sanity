@@ -52,6 +52,16 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
+      title: 'Credibility Cards',
+      name: 'credibilityCards',
+      type: 'array',
+      of: [
+        {
+          type: 'detailsCard',
+        },
+      ],
+    },
+    {
       title: 'Ecological Impact',
       name: 'ecologicalImpact',
       type: 'array',

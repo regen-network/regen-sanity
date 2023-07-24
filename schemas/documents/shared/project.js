@@ -23,10 +23,9 @@ export default {
       type: 'array',
       of: [
         {
-          type: 'projectDetailsCard',
+          type: 'detailsCard',
         },
       ],
-      validation: Rule => Rule.required(),
     },
   ],
 };

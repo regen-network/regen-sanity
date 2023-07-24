@@ -1,7 +1,7 @@
 export default {
   type: 'object',
-  title: 'Project Details Card',
-  name: 'projectDetailsCard',
+  title: 'Details Card',
+  name: 'detailsCard',
   fields: [
     {
       title: 'Credibility Card',
