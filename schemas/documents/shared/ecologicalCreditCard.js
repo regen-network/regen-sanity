@@ -29,6 +29,12 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
+      title: 'CreditClass',
+      name: 'creditClass',
+      type: 'reference',
+      to: [{ type: 'creditClass' }],
+    },
+    {
       title: 'Credit Infos',
       name: 'creditInfos',
       type: 'creditInfos',
