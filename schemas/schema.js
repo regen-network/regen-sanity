@@ -9,7 +9,7 @@ import methodology from './documents/registry/methodology';
 import creditClass from './documents/registry/creditClass';
 import creditClassPage from './documents/registry/creditClassPage';
 import landStewardsPage from './documents/registry/landStewardsPage';
-import buyersPage from './documents/registry/buyersPage';
+import buyersPage from './documents/www/buyersPage';
 import mainnetPage from './documents/www/mainnetPage';
 import projectsPage from './documents/registry/projectsPage';
 import projectPage from './documents/registry/projectPage';
