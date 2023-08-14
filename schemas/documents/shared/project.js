@@ -37,7 +37,9 @@ export default {
       title: 'Area unit',
       name: 'areaUnit',
       type: 'string',
-      list: ['hectares', 'acres'],
+      options: {
+        list: ['hectares', 'acres'],
+      },
     },
     {
       title: 'Credibility Cards',
