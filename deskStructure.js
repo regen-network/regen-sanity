@@ -299,6 +299,10 @@ export default S =>
                 .title('Person')
                 .schemaType('person')
                 .child(S.documentTypeList('person').title('Person')),
+              S.listItem()
+                .title('Program')
+                .schemaType('program')
+                .child(S.documentTypeList('program').title('Program')),
             ]),
         ),
     ]);

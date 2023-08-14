@@ -104,5 +104,11 @@ export default {
       name: 'icon',
       type: 'image',
     },
+    {
+      title: 'Program',
+      name: 'program',
+      type: 'reference',
+      to: [{ type: 'program' }],
+    },
   ],
 };

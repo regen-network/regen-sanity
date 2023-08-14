@@ -45,6 +45,7 @@ import statCard from './documents/shared/statCard';
 import claim from './documents/shared/claim';
 import credibilityCard from './documents/shared/credibilityCard';
 import person from './documents/shared/person';
+import program from './documents/shared/program';
 
 // Object types
 import heroSection from './objects/sections/heroSection';
@@ -310,6 +311,7 @@ export default [
   partnerLogo,
   partnersPage,
   person,
+  program,
   practicesOutcomesSection,
   presskitAwardsSection,
   presskitFeaturedSection,
