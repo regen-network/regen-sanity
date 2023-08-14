@@ -29,6 +29,17 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
+      title: 'Area',
+      name: 'area',
+      type: 'number',
+    },
+    {
+      title: 'Area unit',
+      name: 'areaUnit',
+      type: 'string',
+      list: ['hectares', 'acres'],
+    },
+    {
       title: 'Credibility Cards',
       name: 'credibilityCards',
       type: 'array',
