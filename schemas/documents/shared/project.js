@@ -7,8 +7,7 @@ export default {
       title: 'Project name',
       name: 'projectName',
       type: 'string',
-      description:
-        'optional project name to make it easier to track projects already added to the list',
+      validation: Rule => Rule.required(),
     },
     {
       title: 'Project id',
@@ -16,6 +15,31 @@ export default {
       type: 'string',
       description: 'on-chain project id',
       validation: Rule => Rule.required(),
+    },
+    {
+      title: 'Project Image',
+      name: 'image',
+      type: 'customImage',
+      validation: Rule => Rule.required(),
+    },
+    {
+      title: 'Project Location',
+      name: 'location',
+      type: 'string',
+      validation: Rule => Rule.required(),
+    },
+    {
+      title: 'Area',
+      name: 'area',
+      type: 'number',
+    },
+    {
+      title: 'Area unit',
+      name: 'areaUnit',
+      type: 'string',
+      options: {
+        list: ['hectares', 'acres'],
+      },
     },
     {
       title: 'Credibility Cards',

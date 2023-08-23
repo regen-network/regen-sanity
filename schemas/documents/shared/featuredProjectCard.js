@@ -4,11 +4,6 @@ export default {
   type: 'document',
   fields: [
     {
-      title: 'Name',
-      name: 'name',
-      type: 'string',
-    },
-    {
       title: 'Project',
       name: 'project',
       type: 'reference',

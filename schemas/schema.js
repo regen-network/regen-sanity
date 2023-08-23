@@ -9,7 +9,7 @@ import methodology from './documents/registry/methodology';
 import creditClass from './documents/registry/creditClass';
 import creditClassPage from './documents/registry/creditClassPage';
 import landStewardsPage from './documents/registry/landStewardsPage';
-import buyersPage from './documents/registry/buyersPage';
+import buyersPage from './documents/www/buyersPage';
 import mainnetPage from './documents/www/mainnetPage';
 import projectsPage from './documents/registry/projectsPage';
 import projectPage from './documents/registry/projectPage';
@@ -45,6 +45,7 @@ import statCard from './documents/shared/statCard';
 import claim from './documents/shared/claim';
 import credibilityCard from './documents/shared/credibilityCard';
 import person from './documents/shared/person';
+import program from './documents/shared/program';
 
 // Object types
 import heroSection from './objects/sections/heroSection';
@@ -310,6 +311,7 @@ export default [
   partnerLogo,
   partnersPage,
   person,
+  program,
   practicesOutcomesSection,
   presskitAwardsSection,
   presskitFeaturedSection,

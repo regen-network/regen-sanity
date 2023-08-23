@@ -13,10 +13,6 @@ export default S =>
                 .schemaType('homePage')
                 .child(S.document().schemaType('homePage')),
               S.listItem()
-                .title('Buyers Page')
-                .schemaType('buyersPage')
-                .child(S.document().schemaType('buyersPage')),
-              S.listItem()
                 .title('Create Credit Class Page')
                 .schemaType('createCreditClassPage')
                 .child(S.document().schemaType('createCreditClassPage')),
@@ -82,6 +78,10 @@ export default S =>
                 .title('Home Page')
                 .schemaType('homePageWeb')
                 .child(S.document().schemaType('homePageWeb')),
+              S.listItem()
+                .title('Buyers Page')
+                .schemaType('buyersPage')
+                .child(S.document().schemaType('buyersPage')),
               S.listItem()
                 .title('Developers Page')
                 .schemaType('developersPage')
@@ -299,6 +299,10 @@ export default S =>
                 .title('Person')
                 .schemaType('person')
                 .child(S.documentTypeList('person').title('Person')),
+              S.listItem()
+                .title('Program')
+                .schemaType('program')
+                .child(S.documentTypeList('program').title('Program')),
             ]),
         ),
     ]);
