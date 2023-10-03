@@ -110,5 +110,10 @@ export default {
       type: 'reference',
       to: [{ type: 'program' }],
     },
+    {
+      title: 'Retirement Label',
+      name: 'retirementLabel',
+      type: 'string',
+    },
   ],
 };
