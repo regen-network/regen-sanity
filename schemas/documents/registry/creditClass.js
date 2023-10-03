@@ -115,5 +115,10 @@ export default {
       name: 'retirementLabel',
       type: 'string',
     },
+    {
+      title: 'Retirement Icon',
+      name: 'retirementIcon',
+      type: 'image',
+    },
   ],
 };
