@@ -111,12 +111,12 @@ export default {
       to: [{ type: 'program' }],
     },
     {
-      title: 'Retirement Label',
+      title: 'Retirement Certificate Label',
       name: 'retirementLabel',
       type: 'string',
     },
     {
-      title: 'Retirement Icon',
+      title: 'Retirement Certificate Icon',
       name: 'retirementIcon',
       type: 'image',
     },
