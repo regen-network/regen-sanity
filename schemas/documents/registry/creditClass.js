@@ -110,5 +110,15 @@ export default {
       type: 'reference',
       to: [{ type: 'program' }],
     },
+    {
+      title: 'Retirement Certificate Label',
+      name: 'retirementLabel',
+      type: 'string',
+    },
+    {
+      title: 'Retirement Certificate Icon',
+      name: 'retirementIcon',
+      type: 'image',
+    },
   ],
 };
