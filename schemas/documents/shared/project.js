@@ -20,13 +20,11 @@ export default {
       title: 'Project Image',
       name: 'image',
       type: 'customImage',
-      validation: Rule => Rule.required(),
     },
     {
       title: 'Project Location',
       name: 'location',
       type: 'string',
-      validation: Rule => Rule.required(),
     },
     {
       title: 'Area',
