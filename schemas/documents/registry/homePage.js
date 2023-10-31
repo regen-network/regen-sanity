@@ -17,7 +17,7 @@ export default {
     },
     {
       name: 'projectsSection',
-      type: 'titleCustomBody',
+      type: 'homePageProjectsSection',
       title: 'Projects Section',
       validation: Rule => Rule.required(),
     },

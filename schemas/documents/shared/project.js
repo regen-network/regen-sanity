@@ -10,23 +10,21 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
-      title: 'Project id',
+      title: 'Project id, uuid or slug',
       name: 'projectId',
       type: 'string',
-      description: 'on-chain project id',
+      description: 'on-chain project id, off-chain uuid or slug',
       validation: Rule => Rule.required(),
     },
     {
       title: 'Project Image',
       name: 'image',
       type: 'customImage',
-      validation: Rule => Rule.required(),
     },
     {
       title: 'Project Location',
       name: 'location',
       type: 'string',
-      validation: Rule => Rule.required(),
     },
     {
       title: 'Area',

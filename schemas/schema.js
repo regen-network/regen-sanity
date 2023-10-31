@@ -188,6 +188,7 @@ import infoCard from './objects/cards/infoCard';
 import homeWebPartnersSection from './objects/sections/homePageWeb/partnersSection';
 import homeWebEcologicalCreditCardsSection from './objects/sections/homePageWeb/ecologicalCreditCardsSection';
 import homeWebStatsSection from './objects/sections/homePageWeb/statsSection';
+import homePageProjectsSection from './objects/sections/homePage/homePageProjectsSection';
 
 export default [
   actionCard,
@@ -273,6 +274,7 @@ export default [
   homeFoldSection,
   homePage,
   homePageTopSection,
+  homePageProjectsSection,
   homePageWeb,
   homeValuesSection,
   homeWebEcologicalCreditCardsSection,
