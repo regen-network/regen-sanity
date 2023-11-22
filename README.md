@@ -43,6 +43,20 @@ There's another playground for production dataset at <https://jm12rn9t.api.sanit
 
 These can be used for querying, but not mutations (see sanity's [docs](https://www.sanity.io/docs/migrating-data) on migrations).
 
+Sanity provides a way to [deploy a GraphQL API to different "tags"](https://www.sanity.io/docs/graphql#e2e900be2233), using the same underlying dataset:
+
+```sh
+yarn deploy-graphql:staging --tag example
+```
+
+This is useful when developing features with breaking changes so this doesn't break the `default` GraphQL tagged endpoint that is used in our deploy previews and [dev app](https://dev.app.regen.network/).
+
+Don't forget to undeploy the tagged GraphQL API once it's not needed anymore:
+
+```sh
+npx sanity graphql undeploy --dataset staging --tag example
+```
+
 ### Deploying to production
 
 When merging a PR, we have a Github workflow defined to deploy the latest changes to the [main studio](https://regen.sanity.studio/desk) and the production GraphQL API.
