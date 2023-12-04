@@ -50,7 +50,6 @@ export default {
           to: [{ type: 'offsetMethod' }],
         },
       ],
-      validation: Rule => Rule.required().min(1),
     },
     {
       title: 'Project Activities',
