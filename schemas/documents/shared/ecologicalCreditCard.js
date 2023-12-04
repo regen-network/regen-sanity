@@ -67,5 +67,10 @@ export default {
       name: 'button',
       type: 'button',
     },
+    {
+      title: 'Secondary Button',
+      name: 'secondaryButton',
+      type: 'button',
+    },
   ],
 };
