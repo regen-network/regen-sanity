@@ -4,10 +4,8 @@ import schemas from './schemas/schema';
 import deskStructure from './deskStructure';
 import { uniqueDocuments } from './uniqueDocuments';
 
-export default defineConfig({
-  title: 'regen-sanity',
+const config = {
   projectId: process.env.SANITY_STUDIO_PROJECT_ID,
-  dataset: process.env.SANITY_STUDIO_DATASET,
   plugins: [
     deskTool({
       structure: deskStructure,
@@ -36,4 +34,26 @@ export default defineConfig({
       return prev;
     },
   },
-});
+};
+
+export default defineConfig([
+  {
+    title: 'regen-sanity',
+    // The default dataset will be set to production in the deployed studio (see .env.production)
+    // but it will usually be staging in local dev for easier access.
+    dataset: process.env.SANITY_STUDIO_DATASET,
+    name: 'default-workspace',
+    basePath: '/default',
+    ...config,
+  },
+  {
+    title: 'regen-sanity-staging',
+    // The secondary workspace always uses the staging dataset.
+    // This is primarily useful for content editors to edit content on staging
+    // from the deployed studio when needed.
+    dataset: 'staging',
+    name: 'staging-workspace',
+    basePath: '/staging',
+    ...config,
+  }
+]);
