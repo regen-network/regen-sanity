@@ -1,4 +1,3 @@
-
 import { prefinanceTimelineItemPreview } from './projectPrefinanceTimelineItem';
 
 export default {
