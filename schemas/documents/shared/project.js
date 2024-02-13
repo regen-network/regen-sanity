@@ -4,16 +4,31 @@ export default {
   type: 'document',
   fields: [
     {
-      title: 'Project name',
-      name: 'projectName',
-      type: 'string',
-      validation: Rule => Rule.required(),
-    },
-    {
       title: 'Project id, uuid or slug',
       name: 'projectId',
       type: 'string',
       description: 'on-chain project id, off-chain uuid or slug',
+      validation: Rule => Rule.required(),
+    },
+    {
+      title: 'Project Pre-Financing',
+      name: 'projectPreFinancing',
+      type: 'projectPreFinancing',
+    },
+    {
+      title: 'Credibility Cards',
+      name: 'credibilityCards',
+      type: 'array',
+      of: [
+        {
+          type: 'detailsCard',
+        },
+      ],
+    },
+    {
+      title: 'Project name',
+      name: 'projectName',
+      type: 'string',
       validation: Rule => Rule.required(),
     },
     {
@@ -38,16 +53,6 @@ export default {
       options: {
         list: ['hectares', 'acres'],
       },
-    },
-    {
-      title: 'Credibility Cards',
-      name: 'credibilityCards',
-      type: 'array',
-      of: [
-        {
-          type: 'detailsCard',
-        },
-      ],
     },
   ],
 };

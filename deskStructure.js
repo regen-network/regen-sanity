@@ -272,6 +272,14 @@ export default S =>
                 .schemaType('project')
                 .child(S.documentTypeList('project').title('Project')),
               S.listItem()
+                .title('Credit Class Prefinance Timeline Status')
+                .schemaType('classPrefinanceTimelineStatus')
+                .child(S.documentTypeList('classPrefinanceTimelineStatus').title('Credit Class Prefinance Timeline Status')),
+              S.listItem()
+                .title('Project Class Prefinance Timeline Status')
+                .schemaType('projectPrefinanceTimelineStatus')
+                .child(S.documentTypeList('projectPrefinanceTimelineStatus').title('Project Class Prefinance Timeline Status')),
+              S.listItem()
                 .title('Featured Project Card')
                 .schemaType('featuredProjectCard')
                 .child(
