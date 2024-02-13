@@ -195,6 +195,7 @@ import homePageProjectsSection from './objects/sections/homePage/homePageProject
 import projectPrefinanceTimelineItem from './objects/projectPrefinanceTimelineItem';
 import classPrefinanceTimelineItem from './objects/classPrefinanceTimelineItem';
 import prefinanceTimelineItem from './objects/prefinanceTimelineItem';
+import prefinanceProjects from './objects/prefinanceProjects';
 
 export default [
   actionCard,
@@ -323,6 +324,7 @@ export default [
   person,
   program,
   practicesOutcomesSection,
+  prefinanceProjects,
   prefinanceTimelineItem,
   presskitAwardsSection,
   presskitFeaturedSection,

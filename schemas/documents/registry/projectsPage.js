@@ -10,5 +10,11 @@ export default {
       title: 'Resources for Getting Started Section',
       validation: Rule => Rule.required(),
     },
+    {
+      name: 'prefinanceProjects',
+      type: 'prefinanceProjects',
+      title: 'Prefinance Projects',
+      description: 'This will appear under the Prefinance projects tab',
+    },
   ],
 };
