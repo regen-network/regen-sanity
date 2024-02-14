@@ -1,4 +1,3 @@
-
 export default {
   title: 'Prefinance Timeline Item',
   name: 'prefinanceTimelineItem',
@@ -23,13 +22,12 @@ export default {
       options: {
         list: [
           { title: "Projected", value: "projected" },
-          { title: "In progress", value: "inProgress" },
           { title: "Done", value: "done" }
         ],
         layout: "radio",
       },
-      description: '"In progress" shown with a yellow dot and "done" with a green dot on the project page',
       validate: Rule => Rule.required(),
+      description: 'Timeline items that are done will be written in black text on the timeline while projected items are greyed out. The most recent done item will show up as the current status on the project page.'
     },
   ],
 };
