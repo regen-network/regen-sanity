@@ -12,8 +12,8 @@ export default {
     },
     {
       title: 'Project Pre-Financing',
-      name: 'projectPreFinancing',
-      type: 'projectPreFinancing',
+      name: 'projectPrefinancing',
+      type: 'projectPrefinancing',
     },
     {
       title: 'Credibility Cards',

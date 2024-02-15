@@ -1,6 +1,6 @@
 export default {
   title: 'Project Prefinancing',
-  name: 'projectPreFinancing',
+  name: 'projectPrefinancing',
   type: 'object',
   fields: [
     {
