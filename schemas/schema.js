@@ -46,6 +46,8 @@ import claim from './documents/shared/claim';
 import credibilityCard from './documents/shared/credibilityCard';
 import person from './documents/shared/person';
 import program from './documents/shared/program';
+import classPrefinanceTimelineStatus from './documents/shared/classPrefinanceTimelineStatus';
+import projectPrefinanceTimelineStatus from './documents/shared/projectPrefinanceTimelineStatus';
 
 // Object types
 import heroSection from './objects/sections/heroSection';
@@ -143,6 +145,7 @@ import titleImageLink from './objects/templates/titleImageLink';
 import presskitTimelineItem from './objects/presskitTimelineItem';
 import presskitTimelineSection from './objects/sections/presskit/presskitTimelineSection';
 import presskitTeamSection from './objects/sections/presskit/presskitTeamSection';
+import projectPrefinancing from './objects/projectPrefinancing';
 import nameTitleImage from './objects/templates/nameTitleImage';
 import presskitLogosSection from './objects/sections/presskit/presskitLogosSection';
 import presskitPhotosSection from './objects/sections/presskit/presskitPhotosSection';
@@ -189,6 +192,10 @@ import homeWebPartnersSection from './objects/sections/homePageWeb/partnersSecti
 import homeWebEcologicalCreditCardsSection from './objects/sections/homePageWeb/ecologicalCreditCardsSection';
 import homeWebStatsSection from './objects/sections/homePageWeb/statsSection';
 import homePageProjectsSection from './objects/sections/homePage/homePageProjectsSection';
+import projectPrefinanceTimelineItem from './objects/projectPrefinanceTimelineItem';
+import classPrefinanceTimelineItem from './objects/classPrefinanceTimelineItem';
+import prefinanceTimelineItem from './objects/prefinanceTimelineItem';
+import prefinanceProjects from './objects/prefinanceProjects';
 
 export default [
   actionCard,
@@ -226,6 +233,8 @@ export default [
   caseStudyFundingSection,
   caseStudyPage,
   claim,
+  classPrefinanceTimelineItem,
+  classPrefinanceTimelineStatus,
   climateSection,
   credibilityCard,
   communityCollaborateSection,
@@ -315,6 +324,8 @@ export default [
   person,
   program,
   practicesOutcomesSection,
+  prefinanceProjects,
+  prefinanceTimelineItem,
   presskitAwardsSection,
   presskitFeaturedSection,
   presskitLogosSection,
@@ -326,6 +337,9 @@ export default [
   project,
   projectActivity,
   projectEcosystem,
+  projectPrefinancing,
+  projectPrefinanceTimelineItem,
+  projectPrefinanceTimelineStatus,
   detailsSection,
   detailsCard,
   projectPage,
