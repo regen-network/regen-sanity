@@ -75,7 +75,7 @@ export default {
           type: 'text',
         },
       ],
-      validation,
+      validation: Rule => validation(Rule).max(6),
     },
   ],
 };
