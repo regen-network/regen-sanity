@@ -31,7 +31,7 @@ export default {
     {
       title: 'Unit definition',
       name: 'unitDefinition',
-      type: 'string',
+      type: 'customPortableText',
       description: '"Learn more" about the credit unit',
     },
   ],
