@@ -16,8 +16,8 @@ export default {
       description: 'This image will appear on the credit class pages of this type. If none specified, the image from the credit category will be shown.',
     },
     {
-      title: 'Type',
-      name: 'type',
+      title: 'Category',
+      name: 'category',
       type: 'reference',
       to: [{ type: 'creditCategory' }],
       validation: Rule => Rule.required(),
