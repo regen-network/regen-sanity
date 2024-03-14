@@ -234,6 +234,10 @@ export default S =>
                 .schemaType('soldOutProjects')
                 .child(S.documentTypeList('soldOutProjects').title('Sold out projects')),
               S.listItem()
+                .title('Credit Category')
+                .schemaType('creditCategory')
+                .child(S.documentTypeList('creditCategory').title('Credit Category')),
+              S.listItem()
                 .title('Credit Type')
                 .schemaType('creditType')
                 .child(S.documentTypeList('creditType').title('Credit Type')),
