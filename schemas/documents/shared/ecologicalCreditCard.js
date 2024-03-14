@@ -22,10 +22,10 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
-      title: 'Type',
+      title: 'Credit Category',
       name: 'type',
       type: 'reference',
-      to: [{ type: 'creditType' }],
+      to: [{ type: 'creditCategory' }],
       validation: Rule => Rule.required(),
     },
     {
