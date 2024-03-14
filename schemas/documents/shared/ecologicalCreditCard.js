@@ -23,7 +23,7 @@ export default {
     },
     {
       title: 'Credit Category',
-      name: 'type',
+      name: 'creditCategory',
       type: 'reference',
       to: [{ type: 'creditCategory' }],
       validation: Rule => Rule.required(),
