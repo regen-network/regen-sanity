@@ -196,6 +196,7 @@ import projectPrefinanceTimelineItem from './objects/projectPrefinanceTimelineIt
 import classPrefinanceTimelineItem from './objects/classPrefinanceTimelineItem';
 import prefinanceTimelineItem from './objects/prefinanceTimelineItem';
 import prefinanceProjects from './objects/prefinanceProjects';
+import creditCategory from './documents/shared/creditCategory';
 
 export default [
   actionCard,
@@ -248,6 +249,7 @@ export default [
   createCreditClassPage,
   createMethodologyPage,
   createMethodologyStepCardSection,
+  creditCategory,
   creditCertification,
   creditClass,
   creditClassPage,
