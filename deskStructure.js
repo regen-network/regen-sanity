@@ -37,6 +37,10 @@ export default S =>
                 .schemaType('projectPage')
                 .child(S.document().schemaType('projectPage')),
               S.listItem()
+                .title('Profile Page')
+                .schemaType('profilePage')
+                .child(S.document().schemaType('profilePage')),
+              S.listItem()
                 .title('Bridge Page')
                 .schemaType('bridgePage')
                 .child(S.document().schemaType('bridgePage')),
