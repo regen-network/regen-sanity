@@ -9,7 +9,6 @@ export default {
       type: 'bannerCard',
       description:
         'This card gets displayed to project admins the first time they access one of their project pages',
-      validation: Rule => Rule.required(),
     },
     {
       name: 'gettingStartedResourcesSection',
