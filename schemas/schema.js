@@ -11,6 +11,7 @@ import creditClassPage from './documents/registry/creditClassPage';
 import landStewardsPage from './documents/registry/landStewardsPage';
 import buyersPage from './documents/www/buyersPage';
 import mainnetPage from './documents/www/mainnetPage';
+import profilePage from './documents/registry/profilePage';
 import projectsPage from './documents/registry/projectsPage';
 import projectPage from './documents/registry/projectPage';
 import bridgePage from './documents/registry/bridgePage';
@@ -73,6 +74,7 @@ import bottomBanner from './objects/bottomBanner';
 import card from './objects/cards/card';
 import pageMetadata from './objects/pageMetadata';
 import customPortableText from './objects/customPortableText';
+import bannerCard from './objects/cards/bannerCard';
 import button from './objects/button';
 import customImage from './objects/customImage';
 import link from './objects/link';
@@ -200,6 +202,7 @@ import creditCategory from './documents/shared/creditCategory';
 
 export default [
   actionCard,
+  bannerCard,
   basicStepCardSection,
   basketDetailsPage,
   blogPost,
@@ -344,6 +347,7 @@ export default [
   projectPrefinanceTimelineStatus,
   detailsSection,
   detailsCard,
+  profilePage,
   projectPage,
   projectRating,
   projectsPage,

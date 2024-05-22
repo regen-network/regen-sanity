@@ -4,6 +4,13 @@ export default {
   title: 'Project Page',
   fields: [
     {
+      title: 'Banner Card',
+      name: 'bannerCard',
+      type: 'bannerCard',
+      description:
+        'This card gets displayed to project admins the first time they access one of their project pages',
+    },
+    {
       name: 'gettingStartedResourcesSection',
       description: 'This content will appear on all project pages',
       type: 'reference',
