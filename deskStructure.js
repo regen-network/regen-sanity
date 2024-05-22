@@ -21,6 +21,10 @@ export default S =>
                 .schemaType('createMethodologyPage')
                 .child(S.document().schemaType('createMethodologyPage')),
               S.listItem()
+                .title('Create Project Page')
+                .schemaType('createProjectPage')
+                .child(S.document().schemaType('createProjectPage')),
+              S.listItem()
                 .title('Land Stewards Page')
                 .schemaType('landStewardsPage')
                 .child(S.document().schemaType('landStewardsPage')),
