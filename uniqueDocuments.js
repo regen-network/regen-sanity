@@ -31,4 +31,5 @@ export const uniqueDocuments = [
   'tokenPage',
   'validatorsPage',
   'walletAddressRegistrationPage',
+  'profilePage'
 ];
