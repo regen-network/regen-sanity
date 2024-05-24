@@ -3,6 +3,7 @@ import homePage from './documents/registry/homePage';
 import homePageWeb from './documents/www/homePageWeb';
 import createCreditClassPage from './documents/registry/createCreditClassPage';
 import createMethodologyPage from './documents/registry/createMethodologyPage';
+import createProjectPage from './documents/registry/createProjectPage';
 import developersPage from './documents/www/developersPage';
 import methodologyReviewProcessPage from './documents/registry/methodologyReviewProcessPage';
 import methodology from './documents/registry/methodology';
@@ -199,6 +200,7 @@ import classPrefinanceTimelineItem from './objects/classPrefinanceTimelineItem';
 import prefinanceTimelineItem from './objects/prefinanceTimelineItem';
 import prefinanceProjects from './objects/prefinanceProjects';
 import creditCategory from './documents/shared/creditCategory';
+import createProjectPagePopup from './objects/createProjectPagePopup';
 
 export default [
   actionCard,
@@ -251,6 +253,8 @@ export default [
   contactPage,
   createCreditClassPage,
   createMethodologyPage,
+  createProjectPage,
+  createProjectPagePopup,
   createMethodologyStepCardSection,
   creditCategory,
   creditCertification,
