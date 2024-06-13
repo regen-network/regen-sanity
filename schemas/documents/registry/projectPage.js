@@ -32,5 +32,11 @@ export default {
         'Create the OTC card to be displayed in the top right column of the project page',
       validation: Rule => Rule.required(),
     },
+    {
+      title: 'Data Stream Admin Body',
+      name: 'dataStreamAdminBody',
+      type: 'customPortableText',
+      validation: Rule => Rule.required(),
+    }
   ],
 };
