@@ -33,8 +33,8 @@ export default {
       validation: Rule => Rule.required(),
     },
     {
-      title: 'Data Stream Admin Body',
-      name: 'dataStreamAdminBody',
+      title: 'Data Stream Admin Description',
+      name: 'dataStreamAdminDescription',
       type: 'customPortableText',
       validation: Rule => Rule.required(),
     }
