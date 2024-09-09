@@ -267,6 +267,7 @@ import classPrefinanceTimelineItem from './objects/classPrefinanceTimelineItem';
 import prefinanceTimelineItem from './objects/prefinanceTimelineItem';
 import prefinanceProjects from './objects/prefinanceProjects';
 import createProjectPagePopup from './objects/createProjectPagePopup';
+import sellOrderPrice from './objects/sellOrderPrice';
 
 export const objectSchemas = [
   heroSection,
@@ -404,6 +405,7 @@ export const objectSchemas = [
   prefinanceTimelineItem,
   prefinanceProjects,
   createProjectPagePopup,
+  sellOrderPrice,
 ];
 
 export default [

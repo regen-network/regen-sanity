@@ -26,6 +26,16 @@ export default {
       ],
     },
     {
+      title: 'Sell orders available for fiat purchases',
+      name: 'fiatSellOrders',
+      type: 'array',
+      of: [
+        {
+          type: 'sellOrderPrice',
+        },
+      ],
+    },
+    {
       title: 'Project name',
       name: 'projectName',
       type: 'string',
