@@ -21,11 +21,12 @@
     "sanity"
   ],
   "dependencies": {
+    "@sanity/document-internationalization": "^3.0.1",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sanity": "^3.20.1",
-    "styled-components": "^5.2.0"
+    "sanity": "^3.57.4",
+    "styled-components": "^6.1.13"
   },
   "devDependencies": {
     "@sanctucompu/sanity-graph-import": "https://github.com/regen-network/sanity-graph-import",

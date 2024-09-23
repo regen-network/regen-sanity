@@ -1,14 +1,20 @@
+import { documentInternationalization } from '@sanity/document-internationalization';
 import { defineConfig } from 'sanity';
-import { deskTool } from 'sanity/desk';
-import schemas from './schemas/schema';
+import { structureTool } from 'sanity/structure';
 import deskStructure from './deskStructure';
+import schemas, { documentsSchemas } from './schemas/schema';
 import { uniqueDocuments } from './uniqueDocuments';
+import { languages } from './languages';
 
 const config = {
   projectId: process.env.SANITY_STUDIO_PROJECT_ID,
   plugins: [
-    deskTool({
+    structureTool({
       structure: deskStructure,
+    }),
+    documentInternationalization({
+      supportedLanguages: languages,
+      schemaTypes: documentsSchemas.map(schema => schema.name),
     }),
   ],
   schema: {
@@ -55,5 +61,5 @@ export default defineConfig([
     name: 'staging-workspace',
     basePath: '/staging',
     ...config,
-  }
+  },
 ]);
