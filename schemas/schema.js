@@ -267,11 +267,7 @@ import classPrefinanceTimelineItem from './objects/classPrefinanceTimelineItem';
 import prefinanceTimelineItem from './objects/prefinanceTimelineItem';
 import prefinanceProjects from './objects/prefinanceProjects';
 import createProjectPagePopup from './objects/createProjectPagePopup';
-
-// Terrasos
-import tebuBanner from './documents/terrasos/tebuBanner';
-
-const terrasosSchemas = [tebuBanner];
+import linkItem from './objects/linkItem';
 
 export const objectSchemas = [
   heroSection,
@@ -409,7 +405,13 @@ export const objectSchemas = [
   prefinanceTimelineItem,
   prefinanceProjects,
   createProjectPagePopup,
+  linkItem,
 ];
+
+// Terrasos
+import tebuBanner from './documents/terrasos/tebuBanner';
+
+const terrasosSchemas = [tebuBanner];
 
 export default [
   ...documentsSchemas.map(schema => ({

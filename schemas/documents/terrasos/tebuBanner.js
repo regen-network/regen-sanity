@@ -8,7 +8,7 @@ export default {
       type: 'array',
       title: 'Links',
       description: 'Items to be displayed in the banner',
-      of: [{ type: 'link' }],
+      of: [{ type: 'linkItem' }],
     },
   ],
 };
