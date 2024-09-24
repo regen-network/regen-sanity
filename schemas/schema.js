@@ -1,3 +1,5 @@
+import { defineField } from 'sanity';
+
 // document schemas
 import homePage from './documents/registry/homePage';
 import homePageWeb from './documents/www/homePageWeb';
@@ -19,7 +21,6 @@ import bridgePage from './documents/registry/bridgePage';
 import basketDetailsPage from './documents/registry/basketDetailsPage';
 import buyModal from './documents/registry/buyModal';
 import buyModalOptions from './documents/registry/buyModalOptions';
-
 import resource from './documents/shared/resource';
 import faq from './documents/shared/faq';
 import document from './documents/shared/document';
@@ -50,6 +51,85 @@ import person from './documents/shared/person';
 import program from './documents/shared/program';
 import classPrefinanceTimelineStatus from './documents/shared/classPrefinanceTimelineStatus';
 import projectPrefinanceTimelineStatus from './documents/shared/projectPrefinanceTimelineStatus';
+import sharedSections from './documents/www/sharedSections';
+import caseStudiesPage from './documents/www/caseStudiesPage';
+import caseStudyPage from './documents/www/caseStudyPage';
+import communityPage from './documents/www/communityPage';
+import partnersPage from './documents/www/partnersPage';
+import presskitPage from './documents/www/presskitPage';
+import resourcesPage from './documents/www/resourcesPage';
+import sciencePage from './documents/www/sciencePage';
+import teamPage from './documents/www/teamPage';
+import tokenPage from './documents/www/tokenPage';
+import walletAddressRegistrationPage from './documents/www/walletAddressRegistrationPage';
+import nctPage from './documents/www/nctPage';
+import creditCategory from './documents/shared/creditCategory';
+
+export const documentsSchemas = [
+  homePage,
+  homePageWeb,
+  createCreditClassPage,
+  createMethodologyPage,
+  createProjectPage,
+  developersPage,
+  methodologyReviewProcessPage,
+  methodology,
+  creditClass,
+  creditClassPage,
+  landStewardsPage,
+  buyersPage,
+  mainnetPage,
+  profilePage,
+  projectsPage,
+  projectPage,
+  bridgePage,
+  basketDetailsPage,
+  buyModal,
+  buyModalOptions,
+  resource,
+  faq,
+  document,
+  ecologicalImpact,
+  media,
+  sdg,
+  ecologicalOutcome,
+  landManagementPractice,
+  tag,
+  featuredSection,
+  gettingStartedResourcesSection,
+  gettingStartedResourcesCard,
+  soldOutProjects,
+  creditType,
+  ecologicalCreditCard,
+  offsetMethod,
+  projectActivity,
+  projectEcosystem,
+  creditCertification,
+  projectRating,
+  project,
+  featuredProjectCard,
+  partner,
+  statCard,
+  claim,
+  credibilityCard,
+  person,
+  program,
+  classPrefinanceTimelineStatus,
+  projectPrefinanceTimelineStatus,
+  sharedSections,
+  caseStudiesPage,
+  caseStudyPage,
+  communityPage,
+  partnersPage,
+  presskitPage,
+  resourcesPage,
+  sciencePage,
+  teamPage,
+  tokenPage,
+  walletAddressRegistrationPage,
+  nctPage,
+  creditCategory,
+];
 
 // Object types
 import heroSection from './objects/sections/heroSection';
@@ -69,7 +149,6 @@ import detailsSection from './objects/sections/detailsSection';
 import detailsCard from './objects/detailsCard';
 import quoteSection from './objects/sections/buyersPage/quoteSection';
 import quoteText from './objects/sections/buyersPage/quoteText';
-
 import stepCard from './objects/stepCard';
 import bottomBanner from './objects/bottomBanner';
 import card from './objects/cards/card';
@@ -102,14 +181,12 @@ import devCareersSection from './objects/sections/developerPage/devCareersSectio
 import devTestnetSection from './objects/sections/developerPage/devTestnetSection';
 import homeFoldSection from './objects/sections/homePageWeb/homeFoldSection';
 import titleCustomBody from './objects/templates/titleCustomBody';
-import sharedSections from './documents/www/sharedSections';
 import mainnetLaunchInfoSection from './objects/sections/mainnetPage/mainnetLaunchInfoSection';
 import mainnetActionItem from './objects/sections/mainnetActionItem';
 import mainnetWhatsNextSection from './objects/sections/mainnetPage/mainnetWhatsNextSection';
 import mainnetInfoItem from './objects/sections/mainnetInfoItem';
 import blogSection from './objects/sections/blogSection';
 import blogPost from './objects/blogPost';
-import caseStudiesPage from './documents/www/caseStudiesPage';
 import caseStudyAboutSection from './objects/sections/caseStudyPage/caseStudyAboutSection';
 import caseStudyApproachSection from './objects/sections/caseStudyPage/caseStudyApproachSection';
 import caseStudyBottomSection from './objects/sections/caseStudyPage/caseStudyBottomSection';
@@ -118,14 +195,12 @@ import caseStudyContextSection from './objects/sections/caseStudyPage/caseStudyC
 import caseStudyFigureSection from './objects/sections/caseStudyPage/caseStudyFigureSection';
 import caseStudyFundingSection from './objects/sections/caseStudyPage/caseStudyFundingSection';
 import caseStudyFigure from './objects/sections/caseStudyFigure';
-import caseStudyPage from './documents/www/caseStudyPage';
 import caseStudiesListSection from './objects/sections/caseStudiesPage/caseStudiesListSection';
 import caseStudiesAboutSection from './objects/sections/caseStudiesPage/caseStudiesAboutSection';
 import caseStudiesContextSection from './objects/sections/caseStudiesPage/caseStudiesContextSection';
 import caseStudiesApproachSection from './objects/sections/caseStudiesPage/caseStudiesApproachSection';
 import caseStudiesFundingSection from './objects/sections/caseStudiesPage/caseStudiesFundingSection';
 import imageWithTitle from './objects/imageWithTitle';
-import communityPage from './documents/www/communityPage';
 import communityConnectSection from './objects/sections/communityPage/communityConnectSection';
 import communityGoToSection from './objects/sections/communityPage/communityGoToSection';
 import communityCollectiveSection from './objects/sections/communityPage/communityCollectiveSection';
@@ -139,9 +214,7 @@ import faqPage from './documents/www/faqPage';
 import faqCategory from './objects/faqCategory';
 import fundPage from './documents/www/fundPage';
 import fundCallToAction from './objects/fundCallToAction';
-import partnersPage from './documents/www/partnersPage';
 import partnerLogo from './objects/partnerLogo';
-import presskitPage from './documents/www/presskitPage';
 import presskitFeaturedSection from './objects/sections/presskit/presskitFeaturedSection';
 import presskitAwardsSection from './objects/sections/presskit/presskitAwardsSection';
 import titleImageLink from './objects/templates/titleImageLink';
@@ -153,9 +226,7 @@ import nameTitleImage from './objects/templates/nameTitleImage';
 import presskitLogosSection from './objects/sections/presskit/presskitLogosSection';
 import presskitPhotosSection from './objects/sections/presskit/presskitPhotosSection';
 import regenTeamMember from './objects/sections/regenTeamMember';
-import resourcesPage from './documents/www/resourcesPage';
 import resourcesSection from './objects/sections/resourcesPage/resourcesSection';
-import sciencePage from './documents/www/sciencePage';
 import scienceOpenScienceSection from './objects/sections/sciencePage/scienceOpenScienceSection';
 import imageCustomBody from './objects/templates/imageCustomBody';
 import sciencePartnershipSection from './objects/sections/sciencePage/sciencePartnershipSection';
@@ -163,9 +234,7 @@ import scienceCommunitySection from './objects/sections/sciencePage/scienceCommu
 import scienceCommunityMember from './objects/sections/sciencePage/scienceCommunityMember';
 import titleImageBody from './objects/templates/titleImageBody';
 import scienceTitleDescriptionSection from './objects/sections/sciencePage/scienceTitleDescriptionSection';
-import teamPage from './documents/www/teamPage';
 import teamSection from './objects/sections/teamPage/teamSection';
-import tokenPage from './documents/www/tokenPage';
 import tokenInfoSection from './objects/sections/tokenPage/tokenInfoSection';
 import tokenPoolSection from './objects/sections/tokenPage/tokenPoolSection';
 import teamStakingSection from './objects/sections/tokenPage/teamStakingSection';
@@ -175,10 +244,8 @@ import imageLink from './objects/templates/imageLink';
 import validatorsPage from './documents/www/validatorsPage';
 import validator from './objects/sections/validatorsPage/validator';
 import validatorWhoSection from './objects/sections/validatorsPage/validatorWhoSection';
-import walletAddressRegistrationPage from './documents/www/walletAddressRegistrationPage';
 import walletAddressRegistrationWalletSection from './objects/sections/walletAddressRegistrationPage/walletAddressRegistrationWalletSection';
 import walletAddressRegistrationFormSection from './objects/sections/walletAddressRegistrationPage/walletAddressRegistrationFormSection';
-import nctPage from './documents/www/nctPage';
 import seo from './objects/seo';
 import nctOverviewSection from './objects/sections/nctPage/nctOverviewSection';
 import labeledTextLinkable from './objects/templates/labeledTextLinkable';
@@ -199,206 +266,158 @@ import projectPrefinanceTimelineItem from './objects/projectPrefinanceTimelineIt
 import classPrefinanceTimelineItem from './objects/classPrefinanceTimelineItem';
 import prefinanceTimelineItem from './objects/prefinanceTimelineItem';
 import prefinanceProjects from './objects/prefinanceProjects';
-import creditCategory from './documents/shared/creditCategory';
 import createProjectPagePopup from './objects/createProjectPagePopup';
 
-export default [
-  actionCard,
-  bannerCard,
+export const objectSchemas = [
+  heroSection,
+  stepCardSection,
   basicStepCardSection,
-  basketDetailsPage,
-  blogPost,
-  blogSection,
-  bodyGreenTextWithPopover,
+  fullStepCardSection,
+  createMethodologyStepCardSection,
+  creditTypeSection,
+  reviewSection,
+  connectSection,
+  imageItemsSection,
+  dualImageSection,
+  practicesOutcomesSection,
+  timelineSection,
+  imageGridSection,
+  detailsSection,
+  detailsCard,
+  quoteSection,
+  quoteText,
+  stepCard,
   bottomBanner,
-  bridgePage,
-  button,
-  buyModal,
-  buyModalOptions,
-  buyer,
-  buyersPage,
-  buyersEcologicalCreditCardsSection,
-  buyersFeaturedProjectCardsSection,
-  buyersPartnersSection,
-  callToAction,
-  carbonPlusSection,
   card,
-  caseStudiesAboutSection,
-  caseStudiesApproachSection,
-  caseStudiesContextSection,
-  caseStudiesFundingSection,
-  caseStudiesListSection,
-  caseStudiesPage,
+  pageMetadata,
+  customPortableText,
+  bannerCard,
+  button,
+  customImage,
+  link,
+  ecologicalImpactRelation,
+  documentation,
+  buyer,
+  landSteward,
+  connectSectionLink,
+  imageBoldTextLabel,
+  imageGridItem,
+  timelineItem,
+  titleBody,
+  bodyGreenTextWithPopover,
+  marketplaceSection,
+  callToAction,
+  climateSection,
+  carbonPlusSection,
+  homeValuesSection,
+  valuesImageItem,
+  devApproachSection,
+  devLedgerSection,
+  devOpenAgSection,
+  devCareersSection,
+  devTestnetSection,
+  homeFoldSection,
+  titleCustomBody,
+  mainnetLaunchInfoSection,
+  mainnetActionItem,
+  mainnetWhatsNextSection,
+  mainnetInfoItem,
+  blogSection,
+  blogPost,
   caseStudyAboutSection,
   caseStudyApproachSection,
   caseStudyBottomSection,
   caseStudyConclusionSection,
   caseStudyContextSection,
-  caseStudyFigure,
   caseStudyFigureSection,
   caseStudyFundingSection,
-  caseStudyPage,
-  claim,
-  classPrefinanceTimelineItem,
-  classPrefinanceTimelineStatus,
-  climateSection,
-  credibilityCard,
-  communityCollaborateSection,
-  communityCollectiveSection,
+  caseStudyFigure,
+  caseStudiesListSection,
+  caseStudiesAboutSection,
+  caseStudiesContextSection,
+  caseStudiesApproachSection,
+  caseStudiesFundingSection,
+  imageWithTitle,
   communityConnectSection,
   communityGoToSection,
-  communityPage,
-  connectSection,
-  connectSectionLink,
+  communityCollectiveSection,
+  communityCollaborateSection,
+  resourcesCard,
   contactPage,
-  createCreditClassPage,
-  createMethodologyPage,
-  createProjectPage,
-  createProjectPagePopup,
-  createMethodologyStepCardSection,
-  creditCategory,
-  creditCertification,
-  creditClass,
-  creditClassPage,
-  creditInfos,
-  creditType,
-  creditTypeSection,
-  customImage,
-  customPortableText,
-  devApproachSection,
-  devCareersSection,
-  developersPage,
-  devLedgerSection,
-  devOpenAgSection,
-  devTestnetSection,
-  document,
-  documentation,
-  dualImageSection,
-  ecologicalImpact,
-  ecologicalImpactRelation,
-  ecologicalOutcome,
-  ecologicalCreditCard,
-  faq,
-  faqCategory,
+  requestType,
+  titleImageCustomBody,
+  titleImage,
   faqPage,
-  featuredSection,
-  featuredProjectCard,
-  fullStepCardSection,
-  fundCallToAction,
+  faqCategory,
   fundPage,
-  gettingStartedResourcesCard,
-  gettingStartedResourcesSection,
-  heroSection,
-  homeFoldSection,
-  homePage,
-  homePageTopSection,
-  homePageProjectsSection,
-  homePageWeb,
-  homeValuesSection,
-  homeWebEcologicalCreditCardsSection,
-  homeWebPartnersSection,
-  homeWebStatsSection,
-  imageBoldTextLabel,
-  imageCustomBody,
-  imageGridItem,
-  imageGridSection,
-  imageItemsSection,
-  imageLink,
-  imageWithTitle,
-  infoCard,
-  labeledTextLinkable,
-  landManagementPractice,
-  landSteward,
-  landStewardsPage,
-  link,
-  mainnetActionItem,
-  mainnetInfoItem,
-  mainnetLaunchInfoSection,
-  mainnetPage,
-  mainnetWhatsNextSection,
-  marketplaceSection,
-  media,
-  methodology,
-  methodologyReviewProcessPage,
-  nameTitleImage,
-  nctLedgerSection,
-  nctOverviewSection,
-  nctPage,
-  nctTokenSection,
-  offsetMethod,
-  pageMetadata,
-  partner,
+  fundCallToAction,
   partnerLogo,
-  partnersPage,
-  person,
-  program,
-  practicesOutcomesSection,
-  prefinanceProjects,
-  prefinanceTimelineItem,
-  presskitAwardsSection,
   presskitFeaturedSection,
-  presskitLogosSection,
-  presskitPage,
-  presskitPhotosSection,
-  presskitTeamSection,
+  presskitAwardsSection,
+  titleImageLink,
   presskitTimelineItem,
   presskitTimelineSection,
-  project,
-  projectActivity,
-  projectEcosystem,
+  presskitTeamSection,
   projectPrefinancing,
-  projectPrefinanceTimelineItem,
-  projectPrefinanceTimelineStatus,
-  detailsSection,
-  detailsCard,
-  profilePage,
-  projectPage,
-  projectRating,
-  projectsPage,
-  quoteSection,
-  quoteText,
+  nameTitleImage,
+  presskitLogosSection,
+  presskitPhotosSection,
   regenTeamMember,
-  requestType,
-  resource,
-  resourcesCard,
   resourcesSection,
-  resourcesPage,
-  reviewSection,
-  scienceCommunityMember,
-  scienceCommunitySection,
   scienceOpenScienceSection,
-  sciencePage,
+  imageCustomBody,
   sciencePartnershipSection,
-  scienceTitleDescriptionSection,
-  sdg,
-  seo,
-  sharedSections,
-  soldOutProjects,
-  statCard,
-  stepCard,
-  stepCardSection,
-  tag,
-  teamPage,
-  teamSection,
-  teamStakingSection,
-  timelineItem,
-  timelineSection,
-  titleBody,
-  titleBodyButton,
-  titleCustomBody,
-  titleImage,
+  scienceCommunitySection,
+  scienceCommunityMember,
   titleImageBody,
-  titleImageCustomBody,
-  titleImageLink,
+  scienceTitleDescriptionSection,
+  teamSection,
   tokenInfoSection,
-  tokenNewsletterSection,
-  tokenPage,
   tokenPoolSection,
-  validator,
+  teamStakingSection,
+  tokenNewsletterSection,
+  titleBodyButton,
+  imageLink,
   validatorsPage,
+  validator,
   validatorWhoSection,
-  valuesImageItem,
-  walletAddressRegistrationFormSection,
-  walletAddressRegistrationPage,
   walletAddressRegistrationWalletSection,
+  walletAddressRegistrationFormSection,
+  seo,
+  nctOverviewSection,
+  labeledTextLinkable,
+  nctTokenSection,
+  nctLedgerSection,
+  homePageTopSection,
+  creditInfos,
+  buyersEcologicalCreditCardsSection,
+  buyersFeaturedProjectCardsSection,
+  buyersPartnersSection,
+  actionCard,
+  infoCard,
+  homeWebPartnersSection,
+  homeWebEcologicalCreditCardsSection,
+  homeWebStatsSection,
+  homePageProjectsSection,
+  projectPrefinanceTimelineItem,
+  classPrefinanceTimelineItem,
+  prefinanceTimelineItem,
+  prefinanceProjects,
+  createProjectPagePopup,
+];
+
+export default [
+  ...documentsSchemas.map(schema => ({
+    ...schema,
+    fields: [
+      ...schema.fields,
+      defineField({
+        name: 'language',
+        type: 'string',
+        readOnly: true,
+        hidden: true,
+      }),
+    ],
+  })),
+  ...objectSchemas,
 ];
