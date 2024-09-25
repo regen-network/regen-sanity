@@ -64,6 +64,7 @@ import tokenPage from './documents/www/tokenPage';
 import walletAddressRegistrationPage from './documents/www/walletAddressRegistrationPage';
 import nctPage from './documents/www/nctPage';
 import creditCategory from './documents/shared/creditCategory';
+import tebuBanner from './documents/terrasos/tebuBanner';
 
 export const documentsSchemas = [
   homePage,
@@ -129,6 +130,7 @@ export const documentsSchemas = [
   walletAddressRegistrationPage,
   nctPage,
   creditCategory,
+  tebuBanner,
 ];
 
 // Object types
