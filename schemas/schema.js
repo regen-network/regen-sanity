@@ -409,9 +409,9 @@ export const objectSchemas = [
 ];
 
 // Terrasos
-import tebuBanner from './documents/terrasos/tebuBanner';
+import terrasosHeader from './documents/terrasos/terrasosHeader';
 
-const terrasosSchemas = [tebuBanner];
+const terrasosSchemas = [terrasosHeader];
 
 export default [
   ...documentsSchemas.map(schema => ({

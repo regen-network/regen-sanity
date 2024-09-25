@@ -1,13 +1,13 @@
 export default {
-  name: 'tebuBanner',
+  name: 'terrasosHeader',
   type: 'document',
-  title: 'Tebu Banner',
+  title: 'Terrasos Header',
   fields: [
     {
       name: 'links',
       type: 'array',
       title: 'Links',
-      description: 'Items to be displayed in the banner',
+      description: 'Items to be displayed in the header',
       of: [{ type: 'linkItem' }],
     },
   ],

@@ -341,9 +341,9 @@ export default S =>
             .title('Terrasos')
             .items([
               S.listItem()
-                .title('Tebu Banner')
-                .schemaType('tebuBanner')
-                .child(S.document().schemaType('tebuBanner')),
+                .title('Terrasos Header')
+                .schemaType('terrasosHeader')
+                .child(S.document().schemaType('terrasosHeader')),
             ]),
         ),
     ]);
