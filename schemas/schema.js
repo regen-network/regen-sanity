@@ -270,6 +270,7 @@ import prefinanceTimelineItem from './objects/prefinanceTimelineItem';
 import prefinanceProjects from './objects/prefinanceProjects';
 import createProjectPagePopup from './objects/createProjectPagePopup';
 import sellOrderPrice from './objects/sellOrderPrice';
+import linkItem from './objects/linkItem';
 
 export const objectSchemas = [
   heroSection,
@@ -408,6 +409,7 @@ export const objectSchemas = [
   prefinanceProjects,
   createProjectPagePopup,
   sellOrderPrice,
+  linkItem,
 ];
 
 export default [

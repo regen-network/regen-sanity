@@ -12,7 +12,13 @@ export default {
     {
       title: 'Learn more link',
       name: 'learnMoreLink',
-      type: 'url',
+      type: 'linkItem',
+      validation: Rule => Rule.required(),
+    },
+    {
+      title: 'Logo',
+      name: 'logo',
+      type: 'customImage',
       validation: Rule => Rule.required(),
     },
   ],
