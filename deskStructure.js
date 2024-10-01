@@ -286,11 +286,19 @@ export default S =>
               S.listItem()
                 .title('Credit Class Prefinance Timeline Status')
                 .schemaType('classPrefinanceTimelineStatus')
-                .child(S.documentTypeList('classPrefinanceTimelineStatus').title('Credit Class Prefinance Timeline Status')),
+                .child(
+                  S.documentTypeList('classPrefinanceTimelineStatus').title(
+                    'Credit Class Prefinance Timeline Status',
+                  ),
+                ),
               S.listItem()
                 .title('Project Class Prefinance Timeline Status')
                 .schemaType('projectPrefinanceTimelineStatus')
-                .child(S.documentTypeList('projectPrefinanceTimelineStatus').title('Project Class Prefinance Timeline Status')),
+                .child(
+                  S.documentTypeList('projectPrefinanceTimelineStatus').title(
+                    'Project Class Prefinance Timeline Status',
+                  ),
+                ),
               S.listItem()
                 .title('Featured Project Card')
                 .schemaType('featuredProjectCard')
@@ -323,6 +331,19 @@ export default S =>
                 .title('Program')
                 .schemaType('program')
                 .child(S.documentTypeList('program').title('Program')),
+            ]),
+        ),
+      // Terrasos
+      S.listItem()
+        .title('Terrasos')
+        .child(
+          S.list()
+            .title('Terrasos')
+            .items([
+              S.listItem()
+                .title('Tebu Banner')
+                .schemaType('tebuBanner')
+                .child(S.document().schemaType('tebuBanner')),
             ]),
         ),
     ]);

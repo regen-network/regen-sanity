@@ -64,6 +64,7 @@ import tokenPage from './documents/www/tokenPage';
 import walletAddressRegistrationPage from './documents/www/walletAddressRegistrationPage';
 import nctPage from './documents/www/nctPage';
 import creditCategory from './documents/shared/creditCategory';
+import tebuBanner from './documents/terrasos/tebuBanner';
 
 export const documentsSchemas = [
   homePage,
@@ -129,6 +130,7 @@ export const documentsSchemas = [
   walletAddressRegistrationPage,
   nctPage,
   creditCategory,
+  tebuBanner,
 ];
 
 // Object types
@@ -268,6 +270,7 @@ import prefinanceTimelineItem from './objects/prefinanceTimelineItem';
 import prefinanceProjects from './objects/prefinanceProjects';
 import createProjectPagePopup from './objects/createProjectPagePopup';
 import sellOrderPrice from './objects/sellOrderPrice';
+import linkItem from './objects/linkItem';
 
 export const objectSchemas = [
   heroSection,
@@ -406,6 +409,7 @@ export const objectSchemas = [
   prefinanceProjects,
   createProjectPagePopup,
   sellOrderPrice,
+  linkItem,
 ];
 
 export default [
