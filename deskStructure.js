@@ -347,7 +347,7 @@ export default S =>
               S.listItem()
                 .title('Terrasos Project')
                 .schemaType('terrasosProject')
-                .child(S.document().schemaType('terrasosProject')),
+                .child(S.documentTypeList('terrasosProject').title('Terrasos Project')),
             ]),
         ),
     ]);
