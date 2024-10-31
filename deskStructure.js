@@ -344,6 +344,10 @@ export default S =>
                 .title('Tebu Banner')
                 .schemaType('tebuBanner')
                 .child(S.document().schemaType('tebuBanner')),
+              S.listItem()
+                .title('Terrasos Project')
+                .schemaType('terrasosProject')
+                .child(S.documentTypeList('terrasosProject').title('Terrasos Project')),
             ]),
         ),
     ]);

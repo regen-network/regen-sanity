@@ -7,7 +7,8 @@ export default {
       title: 'Project slug, on-chain id or off-chain uuid',
       name: 'projectId',
       type: 'string',
-      description: 'Slug should be the prefered option if the project has a slug, otherwise it might result in the data below not being displayed on the project page.',
+      description:
+        'Slug should be the prefered option if the project has a slug, otherwise it might result in the data below not being displayed on the project page.',
       validation: Rule => Rule.required(),
     },
     {
