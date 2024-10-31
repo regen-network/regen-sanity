@@ -65,6 +65,7 @@ import walletAddressRegistrationPage from './documents/www/walletAddressRegistra
 import nctPage from './documents/www/nctPage';
 import creditCategory from './documents/shared/creditCategory';
 import tebuBanner from './documents/terrasos/tebuBanner';
+import terrasosProject from './documents/terrasos/terrasosProject';
 
 export const documentsSchemas = [
   homePage,
@@ -131,6 +132,7 @@ export const documentsSchemas = [
   nctPage,
   creditCategory,
   tebuBanner,
+  terrasosProject,
 ];
 
 // Object types
@@ -271,6 +273,7 @@ import prefinanceProjects from './objects/prefinanceProjects';
 import createProjectPagePopup from './objects/createProjectPagePopup';
 import sellOrderPrice from './objects/sellOrderPrice';
 import linkItem from './objects/linkItem';
+import complianceCredits from './objects/complianceCredits';
 
 export const objectSchemas = [
   heroSection,
@@ -410,6 +413,7 @@ export const objectSchemas = [
   createProjectPagePopup,
   sellOrderPrice,
   linkItem,
+  complianceCredits,
 ];
 
 export default [

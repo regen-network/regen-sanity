@@ -65,10 +65,5 @@ export default {
         list: ['hectares', 'acres'],
       },
     },
-    {
-      title: 'Compliance credits',
-      name: 'complianceCredits',
-      type: 'number',
-    },
   ],
 };
