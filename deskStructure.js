@@ -348,6 +348,10 @@ export default S =>
                 .title('Terrasos Project')
                 .schemaType('terrasosProject')
                 .child(S.documentTypeList('terrasosProject').title('Terrasos Project')),
+              S.listItem()
+                .title('Compliance Info')
+                .schemaType('complianceInfo')
+                .child(S.document().schemaType('complianceInfo')),
             ]),
         ),
     ]);
