@@ -1,6 +1,7 @@
 import { documentInternationalization } from '@sanity/document-internationalization';
 import { defineConfig } from 'sanity';
 import { structureTool } from 'sanity/structure';
+import { assist } from '@sanity/assist';
 import deskStructure from './deskStructure';
 import schemas, { documentsSchemas } from './schemas/schema';
 import { uniqueDocuments } from './uniqueDocuments';
@@ -16,6 +17,7 @@ const config = {
       supportedLanguages: languages,
       schemaTypes: documentsSchemas.map(schema => schema.name),
     }),
+    assist(),
   ],
   schema: {
     types: schemas,
