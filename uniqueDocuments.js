@@ -33,4 +33,6 @@ export const uniqueDocuments = [
   'walletAddressRegistrationPage',
   'profilePage',
   'createProjectPage',
+  'complianceInfo',
+  'tebuBanner',
 ];
