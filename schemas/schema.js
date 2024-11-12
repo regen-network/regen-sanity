@@ -66,7 +66,7 @@ import nctPage from './documents/www/nctPage';
 import creditCategory from './documents/shared/creditCategory';
 import tebuBanner from './documents/terrasos/tebuBanner';
 import terrasosProject from './documents/terrasos/terrasosProject';
-
+import complianceInfo from './documents/terrasos/complianceInfo';
 export const documentsSchemas = [
   homePage,
   homePageWeb,
@@ -133,6 +133,7 @@ export const documentsSchemas = [
   creditCategory,
   tebuBanner,
   terrasosProject,
+  complianceInfo,
 ];
 
 // Object types
