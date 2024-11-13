@@ -1,4 +1,5 @@
 import slugifyToIRI from '../../../utils/slugifyToIRI';
+import isUniqueSlug from '../../../utils/isUniqueSlug';
 
 export default {
   title: 'Ecological Impact',
@@ -19,6 +20,7 @@ export default {
       validation: Rule => Rule.required(),
       options: {
         source: 'name',
+        isUnique: isUniqueSlug,
         slugify: input => {
           return slugifyToIRI(input);
         },

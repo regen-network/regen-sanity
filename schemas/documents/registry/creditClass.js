@@ -1,4 +1,5 @@
 import slugifyToIRI from '../../../utils/slugifyToIRI';
+import isUniqueSlug from '../../../utils/isUniqueSlug';
 import toPlainText from '../../../utils/toPlainText';
 
 export default {
@@ -20,6 +21,7 @@ export default {
       validation: Rule => Rule.required(),
       options: {
         source: 'name',
+        isUnique: isUniqueSlug,
         slugify: input => {
           return `${slugifyToIRI(toPlainText(input))}CreditClass`;
         },
