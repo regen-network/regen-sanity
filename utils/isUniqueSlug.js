@@ -5,14 +5,15 @@ export default function isUniqueSlug(slug, context) {
   const language = document.language || 'en';
 
   const query = `
-    *[_type == $docType && language == $language && iri.current == $iri && _id != $id][0]
+    *[_type == $docType && language == $language && iri.current == $iri && _id != $idWithDraftPrefix && _id != $idWithoutDraftPrefix][0]
   `;
-
+  const idWithoutDraftPrefix = document._id.replace(/^drafts\./, '');
   const params = {
     docType,
     language,
     iri: slug,
-    id: document._id,
+    idWithoutDraftPrefix,
+    idWithDraftPrefix: `drafts.${idWithoutDraftPrefix}`,
   };
 
   return getClient({ apiVersion: '2023-01-01' })
