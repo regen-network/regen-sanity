@@ -17,7 +17,13 @@ const config = {
       supportedLanguages: languages,
       schemaTypes: documentsSchemas.map(schema => schema.name),
     }),
-    assist(),
+    assist({
+      translate: {
+        document: {
+          languageField: 'language',
+        },
+      },
+    }),
   ],
   schema: {
     types: schemas,
