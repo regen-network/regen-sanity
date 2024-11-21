@@ -24,27 +24,31 @@ const config = {
   },
   document: {
     newDocumentOptions: (prev, { creationContext }) => {
-      return prev
-        .filter(templateItem =>
-          // Removes certain document types from the global “create new” menu in the top left navigation bar
-          creationContext.type === 'global'
-            ? !uniqueDocuments.includes(templateItem.templateId)
-            : true &&
+      return (
+        prev
+          .filter(templateItem =>
+            // Removes certain document types from the global “create new” menu in the top left navigation bar
+            creationContext.type === 'global'
+              ? !uniqueDocuments.includes(templateItem.templateId)
+              : true,
+          )
+          .filter(templateItem =>
             // Only allows to create either English or Spanish documents
-              (templateItem.templateId.endsWith('-en') ||
-                templateItem.templateId.endsWith('-es')),
-        )
-        // eg Update title from "English Example Doc" to "Example Doc (EN)"
-        .map(templateItem => ({
-          ...templateItem,
-          title: templateItem.title.replace(
-            /^(English|Spanish) (.+)/,
-            (_, language, rest) => {
-              const languageCode = language === 'English' ? 'EN' : 'ES';
-              return `${rest} (${languageCode})`;
-            },
-          ),
-        }));
+            templateItem.templateId.endsWith('-en') ||
+            templateItem.templateId.endsWith('-es'),
+          )
+          // eg Update title from "English Example Doc" to "Example Doc (EN)"
+          .map(templateItem => ({
+            ...templateItem,
+            title: templateItem.title.replace(
+              /^(English|Spanish) (.+)/,
+              (_, language, rest) => {
+                const languageCode = language === 'English' ? 'EN' : 'ES';
+                return `${rest} (${languageCode})`;
+              },
+            ),
+          }))
+      );
     },
     // Disable unpublish, delete, and duplicate actions in the documents actions menu
     actions: (prev, { schemaType }) => {

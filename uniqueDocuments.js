@@ -4,7 +4,6 @@ export const uniqueDocuments = [
   'buyersPage',
   'buyModal',
   'buyModalOptions',
-  'caseStudiesPage',
   'createCreditClassPage',
   'createMethodologyPage',
   'createCreditClassPage',
