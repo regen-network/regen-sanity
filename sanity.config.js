@@ -24,12 +24,13 @@ const config = {
   },
   document: {
     newDocumentOptions: (prev, { creationContext }) => {
+      console.log( prev)
       return (
         prev
           .filter(templateItem =>
             // Removes certain document types from the global “create new” menu in the top left navigation bar
             creationContext.type === 'global'
-              ? !uniqueDocuments.includes(templateItem.templateId)
+              ? !uniqueDocuments.includes(templateItem.templateId.replace(/-es$|-en$/, ''))
               : true,
           )
           .filter(templateItem =>
