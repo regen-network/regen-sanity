@@ -8,6 +8,6 @@ export default {
       name: 'description',
       type: 'customPortableText',
       validation: Rule => Rule.required(),
-    }
+    },
   ],
 };
