@@ -34,4 +34,5 @@ export const uniqueDocuments = [
   'createProjectPage',
   'complianceInfo',
   'tebuBanner',
+  'terrasosBookCall',
 ];

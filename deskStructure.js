@@ -214,6 +214,10 @@ export default S =>
                 .title('Compliance Info')
                 .schemaType('complianceInfo')
                 .child(S.document().schemaType('complianceInfo')),
+              S.listItem()
+                .title('Book a Call')
+                .schemaType('terrasosBookCall')
+                .child(S.document().schemaType('terrasosBookCall')),
             ]),
         ),
     ]);
