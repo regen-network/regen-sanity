@@ -67,6 +67,7 @@ import creditCategory from './documents/shared/creditCategory';
 import tebuBanner from './documents/terrasos/tebuBanner';
 import terrasosProject from './documents/terrasos/terrasosProject';
 import complianceInfo from './documents/terrasos/complianceInfo';
+import terrasosBookCall from './documents/terrasos/terrasosBookCall';
 export const documentsSchemas = [
   homePage,
   homePageWeb,
@@ -134,6 +135,7 @@ export const documentsSchemas = [
   tebuBanner,
   terrasosProject,
   complianceInfo,
+  terrasosBookCall,
 ];
 
 // Object types
