@@ -57,13 +57,9 @@ export default S =>
                 .schemaType('basketDetailsPage')
                 .child(S.document().schemaType('basketDetailsPage')),
               S.listItem()
-                .title('Buy Modal Options')
-                .schemaType('buyModalOptions')
-                .child(S.document().schemaType('buyModalOptions')),
-              S.listItem()
-                .title('Buy Modal')
-                .schemaType('buyModal')
-                .child(S.document().schemaType('buyModal')),
+                .title('Buy Flow Choose Credits Card')
+                .schemaType('buyFlowChooseCreditsCard')
+                .child(S.document().schemaType('buyFlowChooseCreditsCard')),
               S.listItem()
                 .title('Credit Class Page')
                 .schemaType('creditClassPage')

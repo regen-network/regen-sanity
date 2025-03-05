@@ -19,8 +19,7 @@ import projectsPage from './documents/registry/projectsPage';
 import projectPage from './documents/registry/projectPage';
 import bridgePage from './documents/registry/bridgePage';
 import basketDetailsPage from './documents/registry/basketDetailsPage';
-import buyModal from './documents/registry/buyModal';
-import buyModalOptions from './documents/registry/buyModalOptions';
+import buyFlowChooseCreditsCard from './documents/registry/buyFlowChooseCreditsCard';
 import resource from './documents/shared/resource';
 import faq from './documents/shared/faq';
 import document from './documents/shared/document';
@@ -87,8 +86,7 @@ export const documentsSchemas = [
   projectPage,
   bridgePage,
   basketDetailsPage,
-  buyModal,
-  buyModalOptions,
+  buyFlowChooseCreditsCard,
   resource,
   faq,
   document,
