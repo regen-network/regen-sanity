@@ -1,13 +1,13 @@
 export default {
   type: 'document',
-  name: 'buyModal',
-  title: 'Buy Modal',
+  name: 'buyFlowChooseCreditsCard',
+  title: 'Buy Flow Choose Credits Card',
   fields: [
     {
       title: 'Info card',
       name: 'infoCard',
       type: 'infoCard',
-      description: 'Create the card to be displayed at the top of the buy modal',
+      description: 'Create the card to be displayed on the first step "Choose credits" of the buy flow',
       validation: Rule => Rule.required(),
     },
   ],

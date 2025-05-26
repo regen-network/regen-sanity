@@ -15,5 +15,11 @@ export default {
       type: 'image',
       validation: Rule => Rule.required(),
     },
+    {
+      title: 'Book a call link',
+      name: 'bookCallLink',
+      type: 'link',
+      validation: Rule => Rule.required(),
+    },
   ],
 };
