@@ -55,5 +55,10 @@ export default {
         list: ['hectares', 'acres'],
       },
     },
+    {
+      title: 'Terrasos Compliance credits',
+      name: 'complianceCredits',
+      type: 'complianceCredits',
+    },
   ],
 };

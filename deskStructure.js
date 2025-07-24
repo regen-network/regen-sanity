@@ -205,7 +205,6 @@ export default S =>
                 .title('Tebu Banner')
                 .schemaType('tebuBanner')
                 .child(S.document().schemaType('tebuBanner')),
-              manyDocumentListItem(S, 'Terrasos Projects', 'terrasosProject'),
               S.listItem()
                 .title('Compliance Info')
                 .schemaType('complianceInfo')
