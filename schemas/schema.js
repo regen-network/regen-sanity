@@ -64,7 +64,6 @@ import walletAddressRegistrationPage from './documents/www/walletAddressRegistra
 import nctPage from './documents/www/nctPage';
 import creditCategory from './documents/shared/creditCategory';
 import tebuBanner from './documents/terrasos/tebuBanner';
-import terrasosProject from './documents/terrasos/terrasosProject';
 import complianceInfo from './documents/terrasos/complianceInfo';
 import terrasosBookCall from './documents/terrasos/terrasosBookCall';
 export const documentsSchemas = [
@@ -131,7 +130,6 @@ export const documentsSchemas = [
   nctPage,
   creditCategory,
   tebuBanner,
-  terrasosProject,
   complianceInfo,
   terrasosBookCall,
 ];
