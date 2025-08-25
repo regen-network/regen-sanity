@@ -29,7 +29,7 @@ export default {
     {
       title: 'Icon',
       name: 'icon',
-      type: 'customImage',
+      type: 'optionalCustomImage',
     },
   ],
 };

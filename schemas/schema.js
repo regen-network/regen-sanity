@@ -160,6 +160,7 @@ import customPortableText from './objects/customPortableText';
 import bannerCard from './objects/cards/bannerCard';
 import button from './objects/button';
 import customImage from './objects/customImage';
+import optionalCustomImage from './objects/optionalCustomImage';
 import link from './objects/link';
 import ecologicalImpactRelation from './objects/ecologicalImpactRelation';
 import documentation from './objects/documentation';
@@ -300,6 +301,7 @@ export const objectSchemas = [
   bannerCard,
   button,
   customImage,
+  optionalCustomImage,
   link,
   ecologicalImpactRelation,
   documentation,
